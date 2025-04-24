@@ -10,9 +10,9 @@ import banner3 from '../assets/carrossel/banner3.png';
 
 function BannerCarousel() {
   const banners = [
-    { image: banner1, title: 'Título 1', text: 'Texto descritivo do banner 1' },
-    { image: banner2, title: 'Título 2', text: 'Texto descritivo do banner 2' },
-    { image: banner3, title: 'Título 3', text: 'Texto descritivo do banner 3' },
+    { image: banner1, title: 'O espaço ideal para Arquitetos de Software', text: 'Um projeto para alunos e toda comunidade' },
+    { image: banner2, title: 'Evento de abertura - 2º semestre de 2025', text: 'Venha participar do evento inaugural do programa' },
+    { image: banner3, title: 'Artigos e Insights em Arquitetura de Software', text: 'Explore artigos especializados e fique por dentro de tudo' },
   ];
 
   return (

@@ -1,0 +1,46 @@
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+  
+  .info-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .info-card img {
+    height: 78px;
+    flex-shrink: 0;
+    margin: 16px 32px auto 0;
+  }
+  
+  .info-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+
+  }
+  
+  .info-content p {
+    font-size: 1rem;
+    color: #444;
+
+
+  }
+  

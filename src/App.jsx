@@ -6,6 +6,9 @@ import './style/App.css'
 
 import { useState } from 'react'
 import Header from './components/Header.jsx'
+import BannerCarousel from './components/BannerCarousel';
+import VerticalCardSection from './components/VerticalCardSection';
+import HorizontalCardSection from './components/HorizontalCardSection';
 
 
 function App() {
@@ -43,8 +46,11 @@ function App() {
     <>
     <div className='App'>
       <Header />
+
       <main>
         <BannerCarousel />
+        <VerticalCardSection />
+        <HorizontalCardSection />
       </main>
     </div>
     </>

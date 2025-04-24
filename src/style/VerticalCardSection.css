@@ -1,0 +1,50 @@
+.features-section {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+  }
+  
+  .feature-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-card img {
+    height: 128px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  
+  .feature-card button {
+    padding: 0.7rem 1.2rem;
+    background-color: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .feature-card button:hover {
+    background-color: #005ccc;
+  }
+  
