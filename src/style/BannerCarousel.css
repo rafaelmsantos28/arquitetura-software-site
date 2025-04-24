@@ -1,0 +1,60 @@
+.banner-swiper {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .slide-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-container {
+    color: #fff;
+    max-width: 500px;
+    margin-left: 5%;
+  }
+  
+  .text-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-container button {
+    padding: 0.75rem 1.5rem;
+    background-color: #0077ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .text-container button:hover {
+    background-color: #005ccc;
+  }
+  
+  /* Customização das bolinhas */
+  .swiper-pagination-bullets {
+    bottom: 10px;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #0077ff;
+  }
+  

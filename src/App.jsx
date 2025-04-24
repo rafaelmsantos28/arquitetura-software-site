@@ -44,7 +44,7 @@ function App() {
     <div className='App'>
       <Header />
       <main>
-        
+        <BannerCarousel />
       </main>
     </div>
     </>
