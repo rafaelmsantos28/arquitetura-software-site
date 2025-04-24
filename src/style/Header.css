@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100vw;
   box-sizing: border-box;
@@ -68,80 +69,15 @@ html, body {
   transform: scale(1.2);
 }
 
-/* Menu como seção */
-.menu-overlay {
-  background-color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-width: 100vw;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
 
-.menu-overlay.open {
-  opacity: 1;
-  visibility: visible;
-}
 
-/* Container da logo dentro do overlay */
-.menu-overlay .logo-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.overlay-links {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 4rem;
-  padding: 0;
-}
-
-.overlay-links a {
-  text-decoration: none;
-  color: #000;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.overlay-socials {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-
-.overlay-socials img {
-  height: 32px;
-  width: 32px;
-  transition: transform 0.3s ease;
-}
-
-.overlay-socials img:hover {
-  transform: scale(1.2);
-}
-
-.overlay-top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.close-button {
-  display: none;
-}
+/* MOBILE */
 
 @media (max-width: 768px) {
-  .nav-links, .social-icons {
+
+  .nav-links,
+  .social-icons {
     display: none;
   }
 
@@ -153,24 +89,76 @@ html, body {
   .menu-toggle img {
     height: 32px;
     width: 32px;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-toggle.open img {
+    transform: rotate(90deg);
   }
 
   /* Garante que o menu overlay ocupe espaço como um bloco */
   .menu-overlay {
-    position: static; /* Importante para o fluxo normal */
-    width: 100%;
-    height: auto; /* Ajusta a altura ao conteúdo */
-    max-height: none; /* Remove a limitação de altura */
-    padding: 2rem;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 2rem;
+    transition: max-height 0.5s ease, padding 0.3s ease;
   }
 
   .menu-overlay.open {
-    /* Mantém a visibilidade */
-    opacity: 1;
-    visibility: visible;
-    /* Adicione qualquer outra estilização específica para quando estiver aberto */
+    max-height: 1000px; /* ou um valor seguro pro conteúdo */
+    padding: 2rem;
   }
+
+
+
+  .overlay-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    padding: 0;
+  }
+
+  .overlay-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .overlay-socials {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .overlay-socials img {
+    height: 32px;
+    width: 32px;
+    transition: transform 0.3s ease;
+  }
+
+  .overlay-socials img:hover {
+    transform: scale(1.2);
+  }
+
+  .overlay-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
 }
+
+/*Isso garante que o menu do mobile não aparece no site desktop*/
 
 @media (min-width: 769px) {
   .menu-toggle {

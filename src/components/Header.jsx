@@ -47,7 +47,7 @@ function Header() {
           <a href="https://www.youtube.com/" target="_blank"><SocialIcon defaultIcon={youtubeIcon} hoverIcon={youtubeIconBlue} alt="Youtube" /></a>
         </div>
 
-        <div className="menu-toggle" onClick={toggleMenu}>
+        <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-expanded={menuOpen}>
           <img src={menuIcon} alt="Menu" />
         </div>
       </nav>
