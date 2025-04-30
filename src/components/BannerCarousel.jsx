@@ -16,25 +16,27 @@ function BannerCarousel() {
   ];
 
   return (
-    <Swiper
-      modules={[Pagination, Autoplay]}
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 4000, disableOnInteraction: false }}
-      loop={true}
-      className="banner-swiper"
-    >
-      {banners.map((banner, index) => (
-        <SwiperSlide key={index}>
-          <div className="slide-content" style={{ backgroundImage: `url(${banner.image})` }}>
-            <div className="text-container">
-              <h2>{banner.title}</h2>
-              <p>{banner.text}</p>
-              <button>Saiba mais</button>
+    <section className="hero-section">
+      <Swiper
+        modules={[Pagination, Autoplay]}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 8000, disableOnInteraction: false }}
+        loop={true}
+        className="banner-swiper"
+      >
+        {banners.map((banner, index) => (
+          <SwiperSlide key={index}>
+            <div className="slide-content" style={{ backgroundImage: `url(${banner.image})` }}>
+              <div className="text-container">
+                <h2>{banner.title}</h2>
+                <p>{banner.text}</p>
+                <button>Saiba mais</button>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 }
 

@@ -1,61 +1,32 @@
-/**
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './style/App.css'
-**/
-
-import { useState } from 'react'
 import Header from './components/Header.jsx'
 import BannerCarousel from './components/BannerCarousel';
 import VerticalCardSection from './components/VerticalCardSection';
+import SideInfoColumn from './components/SideInfoColumn';
 import HorizontalCardSection from './components/HorizontalCardSection';
-
+import './style/App.css'
 
 function App() {
-  /**
-   * CONTADOR:
-   *  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <p>Heeeyyyy</p>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-    **/
-  return (
-    <>
     <div className='App'>
       <Header />
-
       <main>
         <BannerCarousel />
-        <VerticalCardSection />
+
+        <div className="content-layout">
+          <div className="main-column">
+            <VerticalCardSection />
+          </div>
+
+          <div className="side-column">
+            <SideInfoColumn />
+          </div>
+        </div>
+
+        {/* Aqui o horizontal card poderia ficar logo acima do rodapé, se quiser */}
         <HorizontalCardSection />
       </main>
     </div>
-    </>
   )
-
 }
 
 export default App

@@ -6,25 +6,14 @@ body {
 }
 
 .header {
-  background-color: #f1f1f1;
-  padding: 1rem 2rem;
-  color: #fff;
+
+  padding: 1rem 0;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo-container {
-  flex-shrink: 0;
-}
-
+/* Logo */
 .logo {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
   transition: filter 300ms;
 }
 
@@ -32,21 +21,22 @@ body {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Ícones sociais no header */
+.social-icon {
+  height: 24px;
+  width: 24px;
+  transition: transform 0.3s ease;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+.social-icon:hover {
+  transform: scale(1.2);
 }
 
 .nav-links a {
   text-decoration: none;
   color: #000000;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .nav-links a:hover {
@@ -54,114 +44,83 @@ body {
   text-decoration: underline;
 }
 
-.social-icons {
-  display: flex;
-  gap: 1rem;
+
+/* MENU MOBILE */
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
 }
 
-.social-icons img {
-  height: 24px;
-  width: 24px;
+.menu-toggle img {
+  height: 32px;
+  width: 32px;
   transition: transform 0.3s ease;
 }
 
-.social-icons img:hover {
+.menu-toggle.open img {
+  transform: rotate(90deg);
+}
+
+.menu-overlay {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 2rem;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+.menu-overlay.open {
+  max-height: 1000px;
+  padding: 2rem;
+}
+
+.overlay-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding: 0;
+}
+
+.overlay-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.overlay-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.overlay-socials img {
+  height: 32px;
+  width: 32px;
+  transition: transform 0.3s ease;
+}
+
+.overlay-socials img:hover {
   transform: scale(1.2);
 }
 
-
-
-
-/* MOBILE */
-
+/* Controla a exibição do menu mobile */
 @media (max-width: 768px) {
-
-  .nav-links,
-  .social-icons {
-    display: none;
-  }
-
   .menu-toggle {
     display: block;
-    cursor: pointer;
   }
-
-  .menu-toggle img {
-    height: 32px;
-    width: 32px;
-    transition: transform 0.3s ease;
-  }
-
-  .menu-toggle.open img {
-    transform: rotate(90deg);
-  }
-
-  /* Garante que o menu overlay ocupe espaço como um bloco */
-  .menu-overlay {
-    background-color: #f1f1f1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    max-height: 0;
-    padding: 0 2rem;
-    transition: max-height 0.5s ease, padding 0.3s ease;
-  }
-
-  .menu-overlay.open {
-    max-height: 1000px; /* ou um valor seguro pro conteúdo */
-    padding: 2rem;
-  }
-
-
-
-  .overlay-links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 4rem;
-    padding: 0;
-  }
-
-  .overlay-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 2rem;
-    font-weight: 600;
-  }
-
-  .overlay-socials {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 3rem;
-  }
-
-  .overlay-socials img {
-    height: 32px;
-    width: 32px;
-    transition: transform 0.3s ease;
-  }
-
-  .overlay-socials img:hover {
-    transform: scale(1.2);
-  }
-
-  .overlay-top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-
 }
 
-/*Isso garante que o menu do mobile não aparece no site desktop*/
-
+/* Impede o menu mobile de aparecer no desktop */
 @media (min-width: 769px) {
-  .menu-toggle {
+  .menu-overlay {
     display: none;
   }
 }

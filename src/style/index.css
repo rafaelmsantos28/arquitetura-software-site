@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+div {    
+  border-style: dotted;    
+  border-width: thin;
+  margin: 0px;
+  padding: 0px;
+  border-color: #cacaca;
+}
+
 
 #root {
   width: 100%;

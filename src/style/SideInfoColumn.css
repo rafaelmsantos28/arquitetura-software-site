@@ -1,0 +1,42 @@
+.side-info {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .info-section {
+    margin-bottom: 2rem;
+  }
+  
+  .info-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .info-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .info-section ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .info-section ul li a {
+    color: #0077ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .info-section ul li a:hover {
+    color: #005ccc;
+  }
+  
+  .info-section p {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  

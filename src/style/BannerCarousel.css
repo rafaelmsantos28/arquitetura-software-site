@@ -1,61 +1,89 @@
+.hero-section {
+  width: 100%;
+  height: calc(100vh - 80px); /* Ajuste para o tamanho real do header */
+  overflow: hidden;
+}
+
 .banner-swiper {
-    width: 100%;
-    height: 556px;
-  }
-  
-  .slide-content {  
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-  }
-  
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  color: #1B1B1B;
+  max-width: 500px;
+  margin-left: 5%;
+}
+
+.text-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 3.2rem;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-container button {
+  padding: 0.75rem 1.5rem;
+  background-color: #0077ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.text-container button:hover {
+  background-color: #005ccc;
+}
+
+/* Customização das bolinhas */
+.swiper-pagination-bullets {
+  bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0077ff;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
   .text-container {
-    color: #1B1B1B;
-    max-width: 500px;
-    margin-left: 5%;
+    margin-left: 10%;
+    max-width: 90%;
   }
-  
+
   .text-container h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    line-height: 3.2rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
-  
+
   .text-container p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
   }
-  
+
   .text-container button {
-    padding: 0.75rem 1.5rem;
-    background-color: #0077ff;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
-  
-  .text-container button:hover {
-    background-color: #005ccc;
-  }
-  
-  /* Customização das bolinhas */
-  .swiper-pagination-bullets {
-    bottom: 10px;
-  }
-  
-  .swiper-pagination-bullet {
-    background: #ccc;
-    opacity: 1;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: #0077ff;
-  }
-  
+}

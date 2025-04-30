@@ -28,39 +28,64 @@ function Header() {
 
   return (
     <header className="header">
-      <nav className="nav">
-        <div className="logo-container">
-          <img src={logo} alt="Logo do site" className="logo" />
-        </div>
+      <nav className="navbar navbar-expand-lg bg-white">
+        <div className="container">
+          <a className="navbar-brand" href="#home">
+            <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
+          </a>
 
-        <ul className="nav-links">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#capacitação">Capacitação</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-          <li><a href="#contribuidores">Contribuidores</a></li>
-        </ul>
+          {/* Botão menu mobile */}
+          <button
+            className={`navbar-toggler ${menuOpen ? 'collapsed' : ''}`}
+            type="button"
+            onClick={toggleMenu}
+            aria-controls="navbarNav"
+            aria-expanded={menuOpen}
+            aria-label="Toggle navigation"
+          >
+            <img src={menuIcon} alt="Menu" style={{ height: '32px' }} />
+          </button>
 
-        <div className="social-icons">
-          <a href="https://www.linkedin.com" target="_blank"><SocialIcon defaultIcon={linkedinIcon} hoverIcon={linkedinIconBlue} alt="Linkedin" /></a>
-          <a href="https://www.instagram.com/acadarqsoftware/" target="_blank"><SocialIcon defaultIcon={instagramIcon} hoverIcon={instagramIconBlue} alt="Instagram" /></a>
-          <a href="https://www.youtube.com/" target="_blank"><SocialIcon defaultIcon={youtubeIcon} hoverIcon={youtubeIconBlue} alt="Youtube" /></a>
-        </div>
+          {/* Itens do menu desktop */}
+          <div className="collapse navbar-collapse justify-content-end d-none d-lg-flex flex-column align-items-end">
+            {/* Ícones sociais no topo */}
+            <div className="d-flex gap-3 mb-2 pe-3">
+              <a href="https://www.linkedin.com" target="_blank">
+                <SocialIcon defaultIcon={linkedinIcon} hoverIcon={linkedinIconBlue} alt="Linkedin" />
+              </a>
+              <a href="https://www.instagram.com/acadarqsoftware/" target="_blank">
+                <SocialIcon defaultIcon={instagramIcon} hoverIcon={instagramIconBlue} alt="Instagram" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <SocialIcon defaultIcon={youtubeIcon} hoverIcon={youtubeIconBlue} alt="Youtube" />
+              </a>
+            </div>
 
-        <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-expanded={menuOpen}>
-          <img src={menuIcon} alt="Menu" />
+            {/* Itens de navegação abaixo */}
+            <ul className="navbar-nav me-3 gap-4 nav-links">
+              <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
+              <li className="nav-item"><a className="nav-link" href="#orientador">Orientador</a></li>
+              <li className="nav-item"><a className="nav-link" href="#sobrenos">Sobre nós</a></li>
+              <li className="nav-item"><a className="nav-link" href="#ensino">Ensino</a></li>
+              <li className="nav-item"><a className="nav-link" href="#pesquisa">Pesquisa</a></li>
+              <li className="nav-item"><a className="nav-link" href="#extensão">Extensão</a></li>
+            </ul>
+          </div>
+
         </div>
       </nav>
 
-      {/* Menu como Seção */}
+      {/* Menu mobile personalizado */}
       {menuOpen && (
         <div className="menu-overlay open">
           <ul className="overlay-links">
             <li><a href="#home" onClick={closeMenu}>Início</a></li>
-            <li><a href="#sobre" onClick={closeMenu}>Sobre nós</a></li>
-            <li><a href="#capacitação" onClick={closeMenu}>Capacitação</a></li>
-            <li><a href="#contatos" onClick={closeMenu}>Contatos</a></li>
-            <li><a href="#contribuidores" onClick={closeMenu}>Contribuidores</a></li>
+            <li><a href="#orientador" onClick={closeMenu}>Orientador</a></li>
+            <li><a href="#sobrenos" onClick={closeMenu}>Sobre nós</a></li>
+            <li><a href="#ensino" onClick={closeMenu}>Ensino</a></li>
+            <li><a href="#pesquisa" onClick={closeMenu}>Pesquisa</a></li>
+            <li><a href="#extensao" onClick={closeMenu}>Extensão</a></li>
+
           </ul>
 
           <div className="overlay-socials">
