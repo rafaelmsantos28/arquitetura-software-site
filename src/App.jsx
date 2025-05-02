@@ -10,27 +10,41 @@ import './style/App.css';
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
-      <main>
-        <BannerCarousel />
+    <main className='App'>
+      <header>
+        <Header />
+      </header>
 
-        <div className="content-layout">
-          <div className="main-column">
+      <figure className='mb-0'>
+        <BannerCarousel />
+      </figure>
+
+      
+        <div className="row gx-4">
+          {/* Coluna principal */}
+          <div className="col-lg-9 mb-4">
             <VerticalCardSection />
             <Team />
           </div>
 
-          <div className="side-column">
-            <SideInfoColumn />
-          </div>
+          {/* Coluna lateral */}
+          <div className="col-lg-3">
 
+              <SideInfoColumn />
+
+          </div>
         </div>
-        <BannerYoutube />
-        <Footer />
-      </main>
       
-    </div>
+
+      <figure className='mb-0'>
+        <BannerYoutube />
+      </figure>
+
+      <footer>
+        <Footer />
+      </footer>
+
+    </main>
   );
 }
 

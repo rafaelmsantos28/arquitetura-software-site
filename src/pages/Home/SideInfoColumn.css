@@ -1,42 +1,73 @@
 .side-info {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  .info-section {
-    margin-bottom: 2rem;
-  }
-  
-  .info-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .info-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .info-section ul li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .info-section ul li a {
-    color: #0077ff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .info-section ul li a:hover {
-    color: #005ccc;
-  }
-  
-  .info-section p {
-    margin: 0.5rem 0;
-    color: #555;
-  }
-  
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.info-section {
+  margin-bottom: 2rem;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.news-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.news-text {
+  flex: 1;
+}
+
+.news-text h4 {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+}
+
+.news-date {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.75rem;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #555;
+}
+
+.side-info-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
