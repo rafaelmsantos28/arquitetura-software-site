@@ -1,0 +1,27 @@
+/* Footer.css */
+footer ul li a {
+  color: #1b1b1b;
+  text-decoration: none;
+  
+  padding: 0.2rem 0; /* Opcional: adiciona um pequeno padding vertical para facilitar o toque */
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  color: #0077ff;
+}
+
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  footer ul li a {
+
+    display: block; /* Opcional: torna o link um bloco para facilitar o clique em telas menores */
+
+  }
+
+}

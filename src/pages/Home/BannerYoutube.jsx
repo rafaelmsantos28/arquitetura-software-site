@@ -34,7 +34,7 @@ function BannerYoutube() {
       >
         <h2>Conheça nosso canal no Youtube</h2>
         <p>Inscreva-se e fique atualizado sobre eventos, palestras, cursos e muito mais</p>
-        <button>Saiba mais</button>
+        <button className='btn btn-primary mt-auto'>Saiba mais</button>
       </div>
     </section>
   );

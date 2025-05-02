@@ -7,7 +7,7 @@ import instagramIcon from '../assets/redes-sociais/instagram.svg'
 import youtubeIcon from '../assets/redes-sociais/youtube.svg'
 import linkedinIcon from '../assets/redes-sociais/linkedin.svg'
 
-import menuIcon from "../assets/icons/menu.png";
+import menuIcon from "../assets/icons/menu.svg";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,53 +21,56 @@ function Header() {
   };
 
   return (
-    <header className="header">
-      <nav className="navbar navbar-expand-lg bg-white">
-        <div className="container">
-          <a className="navbar-brand logo" href="#home">
-            <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
-          </a>
+    <>
+      <header className="header">
+        <nav className="navbar navbar-expand-lg bg-white">
+          <div className="container">
+            <a className="navbar-brand logo" href="#home">
+              <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
+            </a>
 
-          {/* Botão menu mobile */}
-          <button
-            className={`navbar-toggler ${menuOpen ? 'collapsed' : ''}`}
-            type="button"
-            onClick={toggleMenu}
-            aria-controls="navbarNav"
-            aria-expanded={menuOpen}
-            aria-label="Toggle navigation"
-          >
-            <img src={menuIcon} alt="Menu" style={{ height: '32px' }} />
-          </button>
+            {/* Botão menu mobile */}
+            <button
+              className={`navbar-toggler menu-toggle ${menuOpen ? 'open' : ''}`}
+              type="button"
+              onClick={toggleMenu}
+              aria-controls="navbarNav"
+              aria-expanded={menuOpen}
+              aria-label="Toggle navigation"
+            >
+              <img src={menuIcon} alt="Menu" style={{ height: '32px' }} />
+            </button>
 
-          {/* Itens do menu desktop */}
-          <div className="collapse navbar-collapse justify-content-end d-none d-lg-flex flex-column align-items-end">
-            {/* Ícones sociais no topo */}
-            <div className="d-flex gap-3 mb-2 pe-3 social-icons">
-              <a href="https://www.linkedin.com" target="_blank">
-                <img src={linkedinIcon} alt="Linkedin" />
-              </a>
-              <a href="https://www.instagram.com/acadarqsoftware/" target="_blank">
-                <img src={instagramIcon} alt="Instagram" />
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
-                <img src={youtubeIcon} alt="Youtube" />
-              </a>
+            {/* Itens do menu desktop */}
+            <div className="collapse navbar-collapse justify-content-end d-none d-lg-flex flex-column align-items-end">
+              {/* Ícones sociais no topo */}
+              <div className="d-flex gap-3 mb-2 pe-3 social-icons">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <img src={linkedinIcon} alt="Linkedin" />
+                </a>
+                <a href="https://www.instagram.com/acadarqsoftware/" target="_blank" rel="noopener noreferrer">
+                  <img src={instagramIcon} alt="Instagram" />
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                  <img src={youtubeIcon} alt="Youtube" />
+                </a>
+              </div>
+
+              {/* Itens de navegação abaixo */}
+              <ul className="navbar-nav me-3 gap-4 nav-links">
+                <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
+                <li className="nav-item"><a className="nav-link" href="#orientador">Orientador</a></li>
+                <li className="nav-item"><a className="nav-link" href="#sobrenos">Sobre nós</a></li>
+                <li className="nav-item"><a className="nav-link" href="#ensino">Ensino</a></li>
+                <li className="nav-item"><a className="nav-link" href="#pesquisa">Pesquisa</a></li>
+                <li className="nav-item"><a className="nav-link" href="#extensão">Extensão</a></li>
+              </ul>
             </div>
-
-            {/* Itens de navegação abaixo */}
-            <ul className="navbar-nav me-3 gap-4 nav-links">
-              <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="#orientador">Orientador</a></li>
-              <li className="nav-item"><a className="nav-link" href="#sobrenos">Sobre nós</a></li>
-              <li className="nav-item"><a className="nav-link" href="#ensino">Ensino</a></li>
-              <li className="nav-item"><a className="nav-link" href="#pesquisa">Pesquisa</a></li>
-              <li className="nav-item"><a className="nav-link" href="#extensão">Extensão</a></li>
-            </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
 
+
+      </header>
       {/* Menu mobile personalizado */}
       {menuOpen && (
         <div className="menu-overlay open">
@@ -81,19 +84,19 @@ function Header() {
           </ul>
 
           <div className="overlay-socials social-icons">
-            <a href="https://www.linkedin.com" target="_blank">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               <img src={linkedinIcon} alt="Linkedin" />
             </a>
-            <a href="https://www.instagram.com/acadarqsoftware/" target="_blank">
+            <a href="https://www.instagram.com/acadarqsoftware/" target="_blank" rel="noopener noreferrer">
               <img src={instagramIcon} alt="Instagram" />
             </a>
-            <a href="https://www.youtube.com/" target="_blank">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
               <img src={youtubeIcon} alt="Youtube" />
             </a>
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
 

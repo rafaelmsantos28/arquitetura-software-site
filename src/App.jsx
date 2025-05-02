@@ -4,6 +4,7 @@ import VerticalCardSection from './pages/Home/VerticalCardSection.jsx';
 import SideInfoColumn from './pages/Home/SideInfoColumn.jsx';
 import Team from './pages/Home/Team.jsx';
 import BannerYoutube from './pages/Home/BannerYoutube.jsx';
+import Footer from './components/Footer.jsx';
 import './style/App.css';
 
 
@@ -26,9 +27,11 @@ function App() {
 
         </div>
         <BannerYoutube />
+        <Footer />
       </main>
+      
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

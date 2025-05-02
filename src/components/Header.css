@@ -45,8 +45,10 @@ body {
 
 /* MENU MOBILE */
 
+
+
 .menu-toggle {
-  display: none;
+
   cursor: pointer;
 }
 
@@ -55,6 +57,8 @@ body {
   width: 32px;
   transition: transform 0.3s ease;
 }
+
+
 
 .menu-toggle.open img {
   transform: rotate(90deg);
@@ -117,7 +121,7 @@ body {
 }
 
 /* Impede o menu mobile de aparecer no desktop */
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .menu-overlay {
     display: none;
   }

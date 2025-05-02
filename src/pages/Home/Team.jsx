@@ -117,7 +117,7 @@ function Team() {
             <div className="row">
                 {teamMembers.map((member, index) => (
                     <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
-                        <div className="team-card text-center p-3">
+                        <div className="team-card text-center p-5">
                             <img src={member.photo} alt={member.name} className="member-photo mb-3" />
                             <h5 className="mb-1">{member.name}</h5>
                             <p className="text-muted">{member.role}</p>
