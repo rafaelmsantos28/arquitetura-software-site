@@ -1,19 +1,13 @@
-// Aqui é um componente reutilizável
 import { useState } from "react";
-import '../style/Header.css'
+import './Header.css'
 import logo from '../assets/logo.png'
 
-// Redes sociais + Componente
-import SocialIcon from './SocialIcon'
-import instagramIcon from '../assets/redes-sociais/instagram-black.png'
-import instagramIconBlue from '../assets/redes-sociais/instagram-blue.png'
-import youtubeIcon from '../assets/redes-sociais/youtube-black.png'
-import youtubeIconBlue from '../assets/redes-sociais/youtube-blue.png'
-import linkedinIcon from '../assets/redes-sociais/linkedin-black.png'
-import linkedinIconBlue from '../assets/redes-sociais/linkedin-blue.png'
+// Redes sociais (SVG)
+import instagramIcon from '../assets/redes-sociais/instagram.svg'
+import youtubeIcon from '../assets/redes-sociais/youtube.svg'
+import linkedinIcon from '../assets/redes-sociais/linkedin.svg'
 
 import menuIcon from "../assets/icons/menu.png";
-
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +24,7 @@ function Header() {
     <header className="header">
       <nav className="navbar navbar-expand-lg bg-white">
         <div className="container">
-          <a className="navbar-brand" href="#home">
+          <a className="navbar-brand logo" href="#home">
             <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
           </a>
 
@@ -49,15 +43,15 @@ function Header() {
           {/* Itens do menu desktop */}
           <div className="collapse navbar-collapse justify-content-end d-none d-lg-flex flex-column align-items-end">
             {/* Ícones sociais no topo */}
-            <div className="d-flex gap-3 mb-2 pe-3">
+            <div className="d-flex gap-3 mb-2 pe-3 social-icons">
               <a href="https://www.linkedin.com" target="_blank">
-                <SocialIcon defaultIcon={linkedinIcon} hoverIcon={linkedinIconBlue} alt="Linkedin" />
+                <img src={linkedinIcon} alt="Linkedin" />
               </a>
               <a href="https://www.instagram.com/acadarqsoftware/" target="_blank">
-                <SocialIcon defaultIcon={instagramIcon} hoverIcon={instagramIconBlue} alt="Instagram" />
+                <img src={instagramIcon} alt="Instagram" />
               </a>
               <a href="https://www.youtube.com/" target="_blank">
-                <SocialIcon defaultIcon={youtubeIcon} hoverIcon={youtubeIconBlue} alt="Youtube" />
+                <img src={youtubeIcon} alt="Youtube" />
               </a>
             </div>
 
@@ -71,7 +65,6 @@ function Header() {
               <li className="nav-item"><a className="nav-link" href="#extensão">Extensão</a></li>
             </ul>
           </div>
-
         </div>
       </nav>
 
@@ -85,13 +78,18 @@ function Header() {
             <li><a href="#ensino" onClick={closeMenu}>Ensino</a></li>
             <li><a href="#pesquisa" onClick={closeMenu}>Pesquisa</a></li>
             <li><a href="#extensao" onClick={closeMenu}>Extensão</a></li>
-
           </ul>
 
-          <div className="overlay-socials">
-            <a href="https://www.linkedin.com" target="_blank"><SocialIcon defaultIcon={linkedinIcon} hoverIcon={linkedinIconBlue} alt="Linkedin" /></a>
-            <a href="https://www.instagram.com/acadarqsoftware/" target="_blank"><SocialIcon defaultIcon={instagramIcon} hoverIcon={instagramIconBlue} alt="Instagram" /></a>
-            <a href="https://www.youtube.com/" target="_blank"><SocialIcon defaultIcon={youtubeIcon} hoverIcon={youtubeIconBlue} alt="Youtube" /></a>
+          <div className="overlay-socials social-icons">
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src={linkedinIcon} alt="Linkedin" />
+            </a>
+            <a href="https://www.instagram.com/acadarqsoftware/" target="_blank">
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src={youtubeIcon} alt="Youtube" />
+            </a>
           </div>
         </div>
       )}

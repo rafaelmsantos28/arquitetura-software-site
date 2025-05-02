@@ -2,11 +2,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '../style/BannerCarousel.css';
+import './BannerCarousel.css';
 
-import banner1 from '../assets/carrossel/banner1.png';
-import banner2 from '../assets/carrossel/banner2.png';
-import banner3 from '../assets/carrossel/banner3.png';
+
+import banner1 from '../../assets/carrossel/banner1.png';
+import banner2 from '../../assets/carrossel/banner2.png';
+import banner3 from '../../assets/carrossel/banner3.png';
 
 function BannerCarousel() {
   const banners = [

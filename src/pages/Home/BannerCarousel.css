@@ -1,6 +1,7 @@
 .hero-section {
   width: 100%;
-  height: calc(100vh - 80px); /* Ajuste para o tamanho real do header */
+  height: calc(100vh - 138px);
+  /* Ajuste para o tamanho real do header */
   overflow: hidden;
 }
 
@@ -26,6 +27,7 @@
 }
 
 .text-container h2 {
+  font-weight: 600;
   font-size: 3rem;
   margin-bottom: 1rem;
   line-height: 3.2rem;
@@ -36,20 +38,7 @@
   margin-bottom: 1.5rem;
 }
 
-.text-container button {
-  padding: 0.75rem 1.5rem;
-  background-color: #0077ff;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
 
-.text-container button:hover {
-  background-color: #005ccc;
-}
 
 /* Customização das bolinhas */
 .swiper-pagination-bullets {
@@ -65,25 +54,48 @@
   background: #0077ff;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVIDADE MOBILE */
 
 @media (max-width: 768px) {
   .text-container {
-    margin-left: 10%;
+    margin-left: 5%;
     max-width: 90%;
   }
 
   .text-container h2 {
-    font-size: 2rem;
-    line-height: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 
   .text-container p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .text-container button {
     padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Isso é pra celular bem bem pequeno */
+
+@media (max-width: 480px) {
+  .text-container {
+    margin-left: 5%;
+    max-width: 95%;
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .text-container p {
     font-size: 0.9rem;
+  }
+
+  .text-container button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 }

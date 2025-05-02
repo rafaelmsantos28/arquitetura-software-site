@@ -1,4 +1,4 @@
-import '../style/SideInfoColumn.css';
+import './SideInfoColumn.css';
 
 function SideInfoColumn() {
   return (

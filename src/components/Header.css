@@ -12,8 +12,6 @@ body {
 
 /* Logo */
 .logo {
-  height: 6em;
-  padding: 1.5em;
   transition: filter 300ms;
 }
 
@@ -22,15 +20,15 @@ body {
 }
 
 /* Ícones sociais no header */
-.social-icon {
+.social-icons img {
   height: 24px;
-  width: 24px;
-  transition: transform 0.3s ease;
+  transition: filter 0.3s ease;
 }
 
-.social-icon:hover {
-  transform: scale(1.2);
+.social-icons img:hover {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg) brightness(99%) contrast(101%);
 }
+
 
 .nav-links a {
   text-decoration: none;
