@@ -1,8 +1,13 @@
 import './SideInfoColumn.css';
-import mailIcon from '../../assets/redes-sociais/mail.svg';  // Importe os ícones SVG
+import mailIcon from '../../assets/redes-sociais/mail.svg';
 import phoneIcon from '../../assets/redes-sociais/phone.svg';
 import instagramIcon from '../../assets/redes-sociais/instagram.svg';
 import linkedinIcon from '../../assets/redes-sociais/linkedin.svg';
+
+import newsImg1 from '../../assets/noticias/news1.png';
+import newsImg2 from '../../assets/noticias/news2.png';
+import newsImg3 from '../../assets/noticias/news3.png';
+import newsImg4 from '../../assets/noticias/news4.png';
 
 function SideInfoColumn() {
   return (
@@ -10,29 +15,41 @@ function SideInfoColumn() {
       
       <div className="info-section">
         <h3 className="section-title">Novidades</h3>
-        <div className="news-item">
-          <img src="./assets/news1.jpg" alt="Nova oficina" className="news-image" />
+
+        <a href="#" target="_blank" rel="noopener noreferrer" className="news-item">
+          <img src={newsImg1} alt="Nova oficina" className="news-image" />
           <div className="news-text">
             <h4>O programa Academia do Arquiteto de Software terá 3 oficinas no primeiro semestre</h4>
             <p className="news-date">10/05/2025</p>
           </div>
-        </div>
+        </a>
         <hr />
-        <div className="news-item">
-          <img src="./assets/news2.jpg" alt="Evento inaugural" className="news-image" />
+
+        <a href="#" target="_blank" rel="noopener noreferrer" className="news-item">
+          <img src={newsImg2} alt="Evento inaugural" className="news-image" />
           <div className="news-text">
             <h4>Evento inaugural do programa acontece no dia 24/06</h4>
             <p className="news-date">05/05/2025</p>
           </div>
-        </div>
+        </a>
         <hr />
-        <div className="news-item">
-          <img src="./assets/news3.jpg" alt="Unesp entre as maiores faculdades" className="news-image" />
+
+        <a href="#" target="_blank" rel="noopener noreferrer" className="news-item">
+          <img src={newsImg3} alt="Unesp entre as maiores faculdades" className="news-image" />
           <div className="news-text">
             <h4>Unesp entre as maiores faculdades de pesquisa no país</h4>
             <p className="news-date">02/05/2025</p>
           </div>
-        </div>
+        </a>
+        <hr />
+
+        <a href="#" target="_blank" rel="noopener noreferrer" className="news-item">
+          <img src={newsImg4} alt="Veja as novas postagens no Instagram" className="news-image" />
+          <div className="news-text">
+            <h4>Veja as novas postagens no Instagram do programa, fique por dentro das novidades</h4>
+            <p className="news-date">02/05/2025</p>
+          </div>
+        </a>
         <hr />
       </div>
 

@@ -19,6 +19,14 @@
 .news-item {
   display: flex;
   margin-bottom: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-item:hover {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+
 }
 
 .news-image {

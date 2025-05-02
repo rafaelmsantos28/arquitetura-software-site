@@ -22,6 +22,8 @@
   min-height: 100vh;
 }
 
+
+/*
 div {
   border-style: dotted;
   border-width: thin;
@@ -29,6 +31,8 @@ div {
   padding: 0px;
   border-color: #cacaca;
 }
+
+*/
 
 body {
   margin: 0;
