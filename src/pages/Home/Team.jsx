@@ -102,7 +102,7 @@ function Team() {
         },
         {
             photo: member10,
-            name: 'Leticia Hiratsuka',
+            name: 'Letícia Hiratsuka',
             role: 'Social Media',
             socialLinks: {
                 linkedin: 'https://www.linkedin.com/in/let%C3%ADcia-hiratsuka-9a0b07332/',

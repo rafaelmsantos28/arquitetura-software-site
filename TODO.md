@@ -12,7 +12,10 @@ Responsividade Seção youtube
 
 ~~Responsividade Footer~~
 
-Decidir nos cards se o card do Frank fica no meio sozinho ou deixar do jeito que está
+Decidir nos cards se o card do Frank fica no meio sozinho ou deixar do jeito que está. Caso o Frank fique no meio:
+Desktop: Boa
+Mobile: Boa
+Tablet: Ruim
 
 ~~Reeorganizar componentes: a pasta components deveria armazenar apenas componentes gerais.~~
 

@@ -25,3 +25,12 @@ footer img {
   }
 
 }
+
+.social-icons-footer img {
+  height: 2rem;
+  transition: filter 0.3s ease;
+}
+
+.social-icons-footer img:hover {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg) brightness(99%) contrast(101%);
+}

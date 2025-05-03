@@ -15,7 +15,7 @@ function Footer() {
 
                     <div className="col-12 col-md-3 col-lg-3 text-center text-md-start"> {/* Ajuste para ocupar menos espaço em md e lg */}
                         <img src={logoFooter} alt="Logo" className="mb-3 img-fluid" style={{ maxWidth: '150px' }} />
-                        <div className="d-flex justify-content-center justify-content-md-start gap-3">
+                        <div className="d-flex justify-content-center justify-content-md-start gap-3 social-icons-footer">
                             <a href="#"><img src={instagramIcon} alt="Instagram" width="30" height="30" /></a>
                             <a href="#"><img src={youtubeIcon} alt="YouTube" width="30" height="30" /></a>
                             <a href="#"><img src={linkedinIcon} alt="LinkedIn" width="30" height="30" /></a>

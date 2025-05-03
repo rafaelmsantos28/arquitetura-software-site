@@ -9,48 +9,62 @@ import newsImg2 from '../../assets/noticias/news2.png';
 import newsImg3 from '../../assets/noticias/news3.png';
 import newsImg4 from '../../assets/noticias/news4.png';
 
+const newsList = [
+  {
+    id: 1,
+    image: newsImg1,
+    title: 'O programa Academia do Arquiteto de Software terá 3 oficinas no primeiro semestre',
+    date: '10/05/2025',
+    link: 'https://site-da-novidade1.com'
+  },
+  {
+    id: 2,
+    image: newsImg2,
+    title: 'Evento inaugural do programa acontece no dia 24/06',
+    date: '05/05/2025',
+    link: 'https://site-do-evento-inaugural.com'
+  },
+  {
+    id: 3,
+    image: newsImg3,
+    title: 'Unesp entre as maiores faculdades de pesquisa no país',
+    date: '02/05/2025',
+    link: 'https://site-da-unesp.com'
+  },
+  {
+    id: 4,
+    image: newsImg4,
+    title: 'Veja as novas postagens no Instagram do programa, fique por dentro das novidades',
+    date: '02/05/2025',
+    link: 'https://instagram.com/aa.softwareunesp'
+  },
+];
+
 function SideInfoColumn() {
   return (
     <aside className="side-info side-info-column">
-      
+
       <div className="info-section">
         <h3 className="section-title">Novidades</h3>
 
-        <a href="#" target="_blank" rel="noopener noreferrer" className="news-item">
-          <img src={newsImg1} alt="Nova oficina" className="news-image" />
-          <div className="news-text">
-            <h4>O programa Academia do Arquiteto de Software terá 3 oficinas no primeiro semestre</h4>
-            <p className="news-date">10/05/2025</p>
+        {newsList.map((news) => (
+          <div key={news.id}>
+            <a
+              href={news.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="news-item"
+            >
+              <img src={news.image} alt={news.title} className="news-image" />
+              <div className="news-text">
+                <h4>{news.title}</h4>
+                <p className="news-date">{news.date}</p>
+              </div>
+            </a>
+            <hr />
           </div>
-        </a>
-        <hr />
+        ))}
 
-        <a href="#" target="_blank" rel="noopener noreferrer" className="news-item">
-          <img src={newsImg2} alt="Evento inaugural" className="news-image" />
-          <div className="news-text">
-            <h4>Evento inaugural do programa acontece no dia 24/06</h4>
-            <p className="news-date">05/05/2025</p>
-          </div>
-        </a>
-        <hr />
-
-        <a href="#" target="_blank" rel="noopener noreferrer" className="news-item">
-          <img src={newsImg3} alt="Unesp entre as maiores faculdades" className="news-image" />
-          <div className="news-text">
-            <h4>Unesp entre as maiores faculdades de pesquisa no país</h4>
-            <p className="news-date">02/05/2025</p>
-          </div>
-        </a>
-        <hr />
-
-        <a href="#" target="_blank" rel="noopener noreferrer" className="news-item">
-          <img src={newsImg4} alt="Veja as novas postagens no Instagram" className="news-image" />
-          <div className="news-text">
-            <h4>Veja as novas postagens no Instagram do programa, fique por dentro das novidades</h4>
-            <p className="news-date">02/05/2025</p>
-          </div>
-        </a>
-        <hr />
       </div>
 
       <div className="info-section">
@@ -72,7 +86,7 @@ function SideInfoColumn() {
           <p>Linkedin</p>
         </div>
       </div>
-      
+
     </aside>
   );
 }
