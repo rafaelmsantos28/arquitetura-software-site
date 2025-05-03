@@ -1,8 +1,8 @@
-Checar e colocar todas as redes sociais nos membro
+~~Checar e colocar todas as redes sociais nos membro~~
 
 Diminuir tamanho dos objetos nos carrossel (casa, placas)
 
-Responsividade do carrossel
+~~Responsividade do carrossel~~
 
 ~~Seção youtube~~
 
