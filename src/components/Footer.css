@@ -29,6 +29,8 @@ footer img {
 .social-icons-footer img {
   height: 2rem;
   transition: filter 0.3s ease;
+  margin-left: 0.2rem;
+
 }
 
 .social-icons-footer img:hover {

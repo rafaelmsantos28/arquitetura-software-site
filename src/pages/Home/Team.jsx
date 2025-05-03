@@ -12,7 +12,7 @@ import member5 from '../../assets/team/brendo.jpg';
 import member6 from '../../assets/team/joelle.jpg';
 import member7 from '../../assets/team/rafael.jpg';
 import member8 from '../../assets/team/layna.jpg';
-import member9 from '../../assets/team/leticia-d.jpg';
+import member9 from '../../assets/team/leticia-d.jpeg';
 import member10 from '../../assets/team/leticia-h.jpg';
 
 
@@ -88,16 +88,16 @@ function Team() {
             role: 'Social Media',
             socialLinks: {
                 linkedin: 'https://www.linkedin.com/in/layna-dias-13b348362/',
-                github: 'https://github.com',
+                github: 'https://github.com/laynaDias',
             },
         },
         {
             photo: member9,
-            name: 'Leticia Dias',
+            name: 'Letícia Dias',
             role: 'Social Media',
             socialLinks: {
-                linkedin: 'https://linkedin.com',
-                github: 'https://github.com',
+                linkedin: 'https://www.linkedin.com/in/leticia-dias-84ba40358/',
+                github: 'https://github.com/leticiadias2608',
             },
         },
         {

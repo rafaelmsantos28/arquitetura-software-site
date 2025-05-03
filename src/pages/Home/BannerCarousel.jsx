@@ -53,6 +53,12 @@ function BannerCarousel() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 8000, disableOnInteraction: false }}
         loop={true}
+        centeredSlides={false}
+        slidesPerView={isMobile ? 1.1 : 1}
+        spaceBetween={isMobile ? 16 : 0}
+        initialSlide={0}
+
+
         className="banner-swiper"
       >
         {banners.map((banner, index) => (

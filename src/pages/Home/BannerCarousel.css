@@ -60,6 +60,8 @@
   .text-container {
     margin-left: 5%;
     max-width: 90%;
+    padding-top: 5rem;
+
   }
 
   .text-container h2 {
@@ -75,10 +77,27 @@
     padding: 0.6rem 1.2rem;
     font-size: 0.85rem;
   }
+
+  .slide-content {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: flex-start;
+    
+  }
+  
+  .banner-swiper {
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+  }
 }
 
 /* Isso é pra celular bem bem pequeno */
 
+/*
 @media (max-width: 480px) {
   .text-container {
     margin-left: 5%;
@@ -99,3 +118,5 @@
     font-size: 0.8rem;
   }
 }
+
+*/
