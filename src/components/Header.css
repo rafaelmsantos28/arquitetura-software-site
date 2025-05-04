@@ -48,7 +48,7 @@ body {
 
 
 .menu-toggle {
-
+  border: none;
   cursor: pointer;
 }
 
@@ -56,12 +56,15 @@ body {
   height: 32px;
   width: 32px;
   transition: transform 0.3s ease;
+  border: none;
+
 }
 
 
 
 .menu-toggle.open img {
   transform: rotate(90deg);
+
 }
 
 .menu-overlay {

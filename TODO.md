@@ -1,12 +1,12 @@
 ~~Checar e colocar todas as redes sociais nos membro~~
 
-Diminuir tamanho dos objetos nos carrossel (casa, placas)
+~~Diminuir tamanho dos objetos nos carrossel (casa, placas)~~
 
 ~~Responsividade do carrossel~~
 
 ~~Seção youtube~~
 
-Responsividade Seção youtube
+Criar seção youtube para mobile
 
 ~~Footer~~
 

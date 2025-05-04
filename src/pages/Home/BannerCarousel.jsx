@@ -6,9 +6,9 @@ import 'swiper/css/pagination';
 import './BannerCarousel.css';
 
 
-import banner1Desktop from '../../assets/carrossel/banner1.png';
-import banner2Desktop from '../../assets/carrossel/banner2.png';
-import banner3Desktop from '../../assets/carrossel/banner3.png';
+import banner1Desktop from '../../assets/carrossel/banner1.jpg';
+import banner2Desktop from '../../assets/carrossel/banner2.jpg';
+import banner3Desktop from '../../assets/carrossel/banner3.jpg';
 
 import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg';
 import banner2Mobile from '../../assets/carrossel/banner-mobile2.jpg';
