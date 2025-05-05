@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './BannerCarousel.css';
 
-
 import banner1Desktop from '../../assets/carrossel/banner1.jpg';
 import banner2Desktop from '../../assets/carrossel/banner2.jpg';
 import banner3Desktop from '../../assets/carrossel/banner3.jpg';
@@ -57,8 +56,6 @@ function BannerCarousel() {
         slidesPerView={isMobile ? 1.1 : 1}
         spaceBetween={isMobile ? 16 : 0}
         initialSlide={0}
-
-
         className="banner-swiper"
       >
         {banners.map((banner, index) => (

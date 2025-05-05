@@ -28,13 +28,10 @@ function BannerYoutube() {
 
   return (
     <section className="banner-section">
-      <div
-        ref={textRef}
-        className={`banner-text ${isVisible ? 'fade-in' : ''}`}
-      >
+      <div ref={textRef} className={`banner-text ${isVisible ? 'fade-in' : ''}`}>
         <h2>Conheça nosso canal no Youtube</h2>
         <p>Inscreva-se e fique atualizado sobre eventos, palestras, cursos e muito mais</p>
-        <button className='btn btn-primary mt-auto'>Saiba mais</button>
+        <button className="btn btn-primary mt-auto">Saiba mais</button>
       </div>
     </section>
   );

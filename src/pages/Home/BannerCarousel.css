@@ -21,7 +21,7 @@
 }
 
 .text-container {
-  color: #1B1B1B;
+  color: #1b1b1b;
   max-width: 500px;
   margin-left: 5%;
 }
@@ -37,8 +37,6 @@
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
-
-
 
 /* Customização das bolinhas */
 .swiper-pagination-bullets {
@@ -61,7 +59,6 @@
     margin-left: 5%;
     max-width: 90%;
     padding-top: 5rem;
-
   }
 
   .text-container h2 {
@@ -84,14 +81,12 @@
     margin: 0.5rem 0;
     display: flex;
     align-items: flex-start;
-    
   }
-  
+
   .banner-swiper {
     padding: 1rem 0;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    
   }
 }
 

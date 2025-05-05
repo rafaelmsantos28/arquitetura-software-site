@@ -6,7 +6,6 @@ body {
 }
 
 .header {
-
   padding: 1rem 0;
 }
 
@@ -26,9 +25,9 @@ body {
 }
 
 .social-icons img:hover {
-  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg) brightness(99%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg)
+    brightness(99%) contrast(101%);
 }
-
 
 .nav-links a {
   text-decoration: none;
@@ -38,14 +37,11 @@ body {
 }
 
 .nav-links a:hover {
-  color: #648EE1;
+  color: #648ee1;
   text-decoration: underline;
 }
 
-
 /* MENU MOBILE */
-
-
 
 .menu-toggle {
   border: none;
@@ -57,14 +53,10 @@ body {
   width: 32px;
   transition: transform 0.3s ease;
   border: none;
-
 }
-
-
 
 .menu-toggle.open img {
   transform: rotate(90deg);
-
 }
 
 .menu-overlay {
@@ -75,7 +67,9 @@ body {
   overflow: hidden;
   max-height: 0;
   padding: 0 2rem;
-  transition: max-height 0.5s ease, padding 0.3s ease;
+  transition:
+    max-height 0.5s ease,
+    padding 0.3s ease;
 }
 
 .menu-overlay.open {

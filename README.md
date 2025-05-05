@@ -5,6 +5,7 @@
 O projeto **Academia do Arquiteto de Software** busca disseminar conhecimento sobre arquitetura de software de forma acessível, promovendo um diálogo entre a universidade e a sociedade.
 
 ## Objetivos:
+
 - Realizar oficinas, workshops, palestras e atividades interativas para capacitação de estudantes, profissionais e público interessado.
 - Estimular o engajamento colaborativo, permitindo que os participantes adquiram e apliquem conhecimentos sobre práticas arquiteturais no desenvolvimento de software.
 

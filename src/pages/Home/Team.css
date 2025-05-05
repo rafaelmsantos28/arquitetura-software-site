@@ -1,32 +1,33 @@
 .team-card {
-    background-color: #f9f9f9;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
-
 .member-photo {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .section-title {
-    font-size: 2rem;
-    font-weight: 700;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .social-icon {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    object-fit: contain;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  object-fit: contain;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
 
-.social-icon:hover{
-    transform: scale(1.2);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+.social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }

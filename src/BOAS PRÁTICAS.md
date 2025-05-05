@@ -15,11 +15,12 @@ function MegaComponente() {
       <main>Conteúdo</main>
       <footer>Rodapé</footer>
     </div>
-  )
+  );
 }
-
 ```
+
 **Bom:**
+
 ```jsx
 function App() {
   return (
@@ -28,18 +29,16 @@ function App() {
       <MainContent />
       <Footer />
     </>
-  )
+  );
 }
-
 ```
 
 ### 2. Nome dos componentes em letra maiúscula
 
 ```jsx
 function Header() {
-  return <h1>Arquitetura de Software</h1>
+  return <h1>Arquitetura de Software</h1>;
 }
-
 ```
 
 ### 3. Usar fragment (<> </>) para evitar div desnecessária
@@ -55,11 +54,10 @@ function Card({ titulo, descricao }) {
       <h2>{titulo}</h2>
       <p>{descricao}</p>
     </div>
-  )
+  );
 }
 ```
 
 ```jsx
 <Card titulo="Clean Architecture" descricao="Um padrão de arquitetura..." />
-
 ```
