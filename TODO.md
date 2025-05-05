@@ -6,6 +6,8 @@
 
 ~~Seção youtube~~
 
+~~Menu mobile ocupando a tela junto do header~~
+
 Criar seção youtube para mobile
 
 ~~Footer~~

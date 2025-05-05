@@ -75,6 +75,10 @@ body {
 .menu-overlay.open {
   max-height: 1000px;
   padding: 2rem;
+  width: 100%;
+  height: calc(100vh - 138px);
+  /* Ajuste para o tamanho real do header */
+  overflow: hidden;
 }
 
 .overlay-links {
@@ -82,8 +86,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  margin-top: 4rem;
+  gap: 1rem; /* <<<<------- */
+
   padding: 0;
 }
 
@@ -97,7 +101,7 @@ body {
 .overlay-socials {
   display: flex;
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 1.4rem;
 }
 
 .overlay-socials img {

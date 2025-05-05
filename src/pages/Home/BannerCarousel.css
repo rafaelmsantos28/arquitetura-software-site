@@ -64,10 +64,12 @@
   .text-container h2 {
     font-size: 1.8rem;
     line-height: 2.2rem;
+    color: #f1f1f1;
   }
 
   .text-container p {
     font-size: 0.95rem;
+    color: #f1f1f1;
   }
 
   .text-container button {
