@@ -106,7 +106,7 @@ function Team() {
             role: 'Social Media',
             socialLinks: {
                 linkedin: 'https://www.linkedin.com/in/let%C3%ADcia-hiratsuka-9a0b07332/',
-                github: 'https://github.com',
+                github: 'https://github.com/hiraleticia',
             },
         },
     ];
