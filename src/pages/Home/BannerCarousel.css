@@ -78,17 +78,14 @@
   }
 
   .slide-content {
-    border-radius: 1rem;
     overflow: hidden;
-    margin: 0.5rem 0;
+    margin: 0; /* REMOVER MARGEM */
     display: flex;
     align-items: flex-start;
   }
 
   .banner-swiper {
-    padding: 1rem 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0;
   }
 }
 

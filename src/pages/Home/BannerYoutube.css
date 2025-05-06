@@ -1,61 +1,80 @@
 .banner-section {
   position: relative;
-  height: 100vh;
-  background: url('../../assets/banner-youtube.png') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0 5%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #648ee1, #f1f0fb);
+  padding: 3rem 0;
 }
 
-.banner-text {
-  color: #1b1b1b;
-  padding: 2rem;
-  max-width: 500px;
-  border-radius: 10px;
-  opacity: 0;
-  transform: translateY(20px);
+.circuito-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.08; /* bem suave */
+  z-index: 0;
+}
+
+.youtube-phone-img {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
   transition:
-    opacity 0.8s ease,
-    transform 1.2s ease;
+    transform 1.2s ease,
+    opacity 0.8s ease;
+  opacity: 0;
+  transform: translateX(-40px);
 }
 
-.banner-text.fade-in {
+.youtube-phone-img {
+  max-width: 80%;
+  transition:
+    transform 1.2s ease,
+    opacity 0.8s ease;
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.youtube-phone-img.fade-in {
   opacity: 1;
   transform: translateY(0);
 }
 
-.banner-text h2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  line-height: 3.2rem;
-  font-weight: 600;
+.banner-section h2 {
+  font-size: 3.5rem;
 }
 
-.banner-text p {
-  font-size: 1.7rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+.banner-section p {
+  font-size: 2rem;
 }
 
-/* Responsivo */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .banner-section {
-    justify-content: center;
-    padding: 0 2rem;
+    padding: 2rem 1rem;
     text-align: center;
   }
 
-  .banner-text {
-    max-width: 100%;
-    padding: 1.5rem;
+  .youtube-phone-img {
+    max-width: 60%;
   }
 
-  .banner-text h2 {
+  .banner-section h2 {
     font-size: 2rem;
   }
 
-  .banner-text p {
+  .banner-section p {
     font-size: 1rem;
   }
 }

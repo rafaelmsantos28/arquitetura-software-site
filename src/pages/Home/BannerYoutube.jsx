@@ -1,37 +1,99 @@
 import React, { useRef, useEffect, useState } from 'react';
+import youtubePhone from '../../assets/youtube-phone.png';
+import circuitBg from '../../assets/circuito.png';
 import './BannerYoutube.css';
 
 function BannerYoutube() {
-  const textRef = useRef(null);
+  const imgRef = useRef(null);
+  const contentRef = useRef(null);
+  const titleMobileRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [contentVisible, setContentVisible] = useState(false);
+  const [titleMobileVisible, setTitleMobileVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.3 } // 30% visível já ativa o efeito
+      { threshold: 0.3 }
     );
 
-    if (textRef.current) {
-      observer.observe(textRef.current);
-    }
+    if (imgRef.current) observer.observe(imgRef.current);
 
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
-      }
+      if (imgRef.current) observer.unobserve(imgRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setContentVisible(true);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (contentRef.current) observer.observe(contentRef.current);
+
+    return () => {
+      if (contentRef.current) observer.unobserve(contentRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setTitleMobileVisible(true);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (titleMobileRef.current) observer.observe(titleMobileRef.current);
+
+    return () => {
+      if (titleMobileRef.current) observer.unobserve(titleMobileRef.current);
     };
   }, []);
 
   return (
-    <section className="banner-section">
-      <div ref={textRef} className={`banner-text ${isVisible ? 'fade-in' : ''}`}>
-        <h2>Conheça nosso canal no Youtube</h2>
-        <p>Inscreva-se e fique atualizado sobre eventos, palestras, cursos e muito mais</p>
-        <button className="btn btn-primary mt-auto">Saiba mais</button>
+    <section className="banner-section d-flex align-items-center">
+      <div className="container">
+        <div className="row align-items-center">
+          {/* Título Mobile */}
+          <div
+            className={`col-12 text-center mb-4 d-lg-none fade-up ${titleMobileVisible ? 'show' : ''}`}
+            ref={titleMobileRef}
+          >
+            <h2 className="fw-bold">Conheça nosso canal no YouTube</h2>
+          </div>
+
+          <div className="col-lg-6 col-12 text-center order-lg-1 mb-4 mb-lg-0 position-relative overflow-hidden">
+            {/* Imagem de fundo */}
+            <img src={circuitBg} alt="Circuito" className="circuito-bg" />
+
+            {/* Imagem Principal */}
+            <img
+              ref={imgRef}
+              src={youtubePhone}
+              alt="Canal no YouTube"
+              className={`img-fluid youtube-phone-img ${isVisible ? 'fade-in' : ''}`}
+            />
+          </div>
+
+          {/* Conteúdo */}
+          <div
+            className={`col-lg-6 col-12 text-center text-lg-start order-lg-2 fade-up ${contentVisible ? 'show' : ''}`}
+            ref={contentRef}
+          >
+            {/* Título no desktop */}
+            <h2 className="fw-bold mb-3 d-none d-lg-block">Conheça nosso canal no YouTube</h2>
+            <p className="mb-4">
+              Inscreva-se e fique atualizado sobre eventos, palestras, cursos e muito mais.
+            </p>
+            <button className="btn btn-primary">Saiba mais</button>
+          </div>
+        </div>
       </div>
     </section>
   );
