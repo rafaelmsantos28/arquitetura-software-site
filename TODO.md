@@ -8,6 +8,12 @@
 
 ~~Menu mobile ocupando a tela junto do header~~
 
+Retirar espaços das margens laterais do header (Logo e ícones menu)
+
+Nova imagem da seção do youtube.
+
+Desampliar seção do youtube.
+
 Criar seção youtube para mobile
 
 ~~Footer~~

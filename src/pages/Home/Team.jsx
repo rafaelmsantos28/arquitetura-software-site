@@ -20,7 +20,7 @@ function Team() {
     {
       photo: member1,
       name: 'Frank Affonso',
-      role: 'Orientador',
+      role: 'Coordenador',
       socialLinks: {
         linkedin: 'https://linkedin.com/in/frank-josé-affonso-7260852a8/',
       },
@@ -38,7 +38,7 @@ function Team() {
     {
       photo: member3,
       name: 'Veronica Carvalho',
-      role: 'Participante',
+      role: 'Docente Participante',
       socialLinks: {
         linkedin: 'https://linkedin.com/in/veronica-carvalho-86370137/',
       },
@@ -46,7 +46,7 @@ function Team() {
     {
       photo: member4,
       name: 'Daniel Pedronette',
-      role: 'Participante',
+      role: 'Docente Participante',
       socialLinks: {
         linkedin: 'https://linkedin.com/in/daniel-pedronette-6525122a/',
       },
