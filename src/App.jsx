@@ -11,15 +11,15 @@ import Orientador from './pages/Orientador.jsx';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/arquitetura-software-site">
       <Header />
       <Routes>
-        <Route path="/arquitetura-software-site/home" element={<Home />} />
-        <Route path="/arquitetura-software-site/ensino" element={<Ensino />} />
-        <Route path="/arquitetura-software-site/pesquisa" element={<Pesquisa />} />
-        <Route path="/arquitetura-software-site/extensao" element={<Extensao />} />
-        <Route path="/arquitetura-software-site/sobrenos" element={<SobreNos />} />
-        <Route path="/arquitetura-software-site/orientador" element={<Orientador />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/ensino" element={<Ensino />} />
+        <Route path="/pesquisa" element={<Pesquisa />} />
+        <Route path="/extensao" element={<Extensao />} />
+        <Route path="/sobrenos" element={<SobreNos />} />
+        <Route path="/orientador" element={<Orientador />} />
         {/* outras rotas */}
       </Routes>
       <Footer />

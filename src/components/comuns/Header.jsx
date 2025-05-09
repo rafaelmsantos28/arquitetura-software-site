@@ -26,7 +26,7 @@ function Header() {
       <header className="header">
         <nav className="navbar navbar-expand-lg bg-white">
           <div className="container-fluid">
-            <Link className="navbar-brand logo" to="/arquitetura-software-site/home">
+            <Link className="navbar-brand logo" to="/">
               <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
             </Link>
 
@@ -64,32 +64,32 @@ function Header() {
               {/* Itens de navegação abaixo */}
               <ul className="navbar-nav me-3 gap-4 nav-links">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/arquitetura-software-site/home">
+                  <Link className="nav-link" to="/">
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/arquitetura-software-site/orientador">
+                  <Link className="nav-link" to="/orientador">
                     Orientador
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/arquitetura-software-site/sobrenos">
+                  <Link className="nav-link" to="/sobrenos">
                     Sobre nós
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/arquitetura-software-site/ensino">
+                  <Link className="nav-link" to="/ensino">
                     Ensino
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/arquitetura-software-site/pesquisa">
+                  <Link className="nav-link" to="/pesquisa">
                     Pesquisa
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/arquitetura-software-site/extensao">
+                  <Link className="nav-link" to="/extensao">
                     Extensão
                   </Link>
                 </li>
