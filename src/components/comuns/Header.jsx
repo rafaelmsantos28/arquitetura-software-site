@@ -1,13 +1,14 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 
 // Redes sociais (SVG)
-import instagramIcon from '../assets/redes-sociais/instagram.svg';
-import youtubeIcon from '../assets/redes-sociais/youtube.svg';
-import linkedinIcon from '../assets/redes-sociais/linkedin.svg';
+import instagramIcon from '../../assets/redes-sociais/instagram.svg';
+import youtubeIcon from '../../assets/redes-sociais/youtube.svg';
+import linkedinIcon from '../../assets/redes-sociais/linkedin.svg';
 
-import menuIcon from '../assets/icons/menu.svg';
+import menuIcon from '../../assets/icons/menu.svg';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,10 +25,10 @@ function Header() {
     <>
       <header className="header">
         <nav className="navbar navbar-expand-lg bg-white">
-          <div className="container">
-            <a className="navbar-brand logo" href="#home">
+          <div className="container-fluid">
+            <Link className="navbar-brand logo" to="/arquitetura-software-site/home">
               <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
-            </a>
+            </Link>
 
             {/* Botão menu mobile */}
             <button
@@ -63,34 +64,34 @@ function Header() {
               {/* Itens de navegação abaixo */}
               <ul className="navbar-nav me-3 gap-4 nav-links">
                 <li className="nav-item">
-                  <a className="nav-link" href="#home">
+                  <Link className="nav-link" to="/arquitetura-software-site/home">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#orientador">
+                  <Link className="nav-link" to="/arquitetura-software-site/orientador">
                     Orientador
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#sobrenos">
+                  <Link className="nav-link" to="/arquitetura-software-site/sobrenos">
                     Sobre nós
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#ensino">
+                  <Link className="nav-link" to="/arquitetura-software-site/ensino">
                     Ensino
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#pesquisa">
+                  <Link className="nav-link" to="/arquitetura-software-site/pesquisa">
                     Pesquisa
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#extensão">
+                  <Link className="nav-link" to="/arquitetura-software-site/extensao">
                     Extensão
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

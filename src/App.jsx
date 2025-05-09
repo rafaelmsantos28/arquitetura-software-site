@@ -1,44 +1,29 @@
-import Header from './components/Header.jsx';
-import BannerCarousel from './pages/Home/BannerCarousel.jsx';
-import VerticalCardSection from './pages/Home/VerticalCardSection.jsx';
-import SideInfoColumn from './pages/Home/SideInfoColumn.jsx';
-import Team from './pages/Home/Team.jsx';
-import BannerYoutube from './pages/Home/BannerYoutube.jsx';
-import Footer from './components/Footer.jsx';
-import './style/App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/comuns/Header';
+import Footer from './components/comuns/Footer';
+
+import Home from './pages/Home.jsx';
+import Ensino from './pages/Ensino.jsx';
+import Pesquisa from './pages/Pesquisa.jsx';
+import Extensao from './pages/Extensao.jsx';
+import SobreNos from './pages/SobreNos.jsx';
+import Orientador from './pages/Orientador.jsx';
 
 function App() {
   return (
-    <main className="App">
-      <header>
-        <Header />
-      </header>
-
-      <figure className="mb-0">
-        <BannerCarousel />
-      </figure>
-
-      <div className="row gx-4">
-        {/* Coluna principal */}
-        <div className="col-lg-9 mb-4">
-          <VerticalCardSection />
-          <Team />
-        </div>
-
-        {/* Coluna lateral */}
-        <div className="col-lg-3">
-          <SideInfoColumn />
-        </div>
-      </div>
-
-      <figure className="mb-0">
-        <BannerYoutube />
-      </figure>
-
-      <footer>
-        <Footer />
-      </footer>
-    </main>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/arquitetura-software-site/home" element={<Home />} />
+        <Route path="/arquitetura-software-site/ensino" element={<Ensino />} />
+        <Route path="/arquitetura-software-site/pesquisa" element={<Pesquisa />} />
+        <Route path="/arquitetura-software-site/extensao" element={<Extensao />} />
+        <Route path="/arquitetura-software-site/sobrenos" element={<SobreNos />} />
+        <Route path="/arquitetura-software-site/orientador" element={<Orientador />} />
+        {/* outras rotas */}
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

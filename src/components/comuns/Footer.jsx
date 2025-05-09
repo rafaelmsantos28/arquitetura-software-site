@@ -1,11 +1,11 @@
 import './Footer.css';
 
-import instagramIcon from '../assets/redes-sociais/instagram.svg';
-import linkedinIcon from '../assets/redes-sociais/linkedin.svg';
-import youtubeIcon from '../assets/redes-sociais/youtube.svg';
-import mailIcon from '../assets/redes-sociais/mail.svg';
-import phoneIcon from '../assets/redes-sociais/phone.svg';
-import logoFooter from '../assets/logo-footer.png';
+import instagramIcon from '../../assets/redes-sociais/instagram.svg';
+import linkedinIcon from '../../assets/redes-sociais/linkedin.svg';
+import youtubeIcon from '../../assets/redes-sociais/youtube.svg';
+import mailIcon from '../../assets/redes-sociais/mail.svg';
+import phoneIcon from '../../assets/redes-sociais/phone.svg';
+import logoFooter from '../../assets/logo-footer.png';
 
 function Footer() {
   return (
