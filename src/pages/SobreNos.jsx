@@ -1,8 +1,13 @@
+import BannerSobreNos from "../components/sobrenos/BannerSobreNos";
+
 function SobreNos() {
   return (
-    <>
-      <h1>Teste do Sobre Nós</h1>
-    </>
+    <main className="sobrenos">
+      <figure>
+        <BannerSobreNos />
+      </figure>
+
+    </main> 
   );
 }
 
