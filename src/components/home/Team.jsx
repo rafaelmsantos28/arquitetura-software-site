@@ -25,6 +25,7 @@ function Team() {
         linkedin: 'https://linkedin.com/in/frank-josé-affonso-7260852a8/',
       },
     },
+    // demais membros
     {
       photo: member2,
       name: 'Orlando Saraiva',
@@ -107,11 +108,53 @@ function Team() {
     },
   ];
 
+  const coordinator = teamMembers[0];
+  const others = teamMembers.slice(1);
+
   return (
     <section className="team-section container my-5">
       <h2 className="section-title text-center mb-4">Nossa Equipe</h2>
+
+      {/* Coordenador sozinho */}
+      <div className="row justify-content-center mb-5">
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="team-card text-center p-5">
+            <img src={coordinator.photo} alt={coordinator.name} className="member-photo mb-3" />
+            <h5 className="mb-1">{coordinator.name}</h5>
+            <p className="text-muted">{coordinator.role}</p>
+            <div className="d-flex justify-content-center gap-3">
+              {coordinator.socialLinks.mail && (
+                <a
+                  href={`https://mail.google.com/mail/?view=cm&to=${coordinator.socialLinks.mail}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={mailIcon} alt="E-mail" className="social-icon" />
+                </a>
+              )}
+              {coordinator.socialLinks.linkedin && (
+                <a href={coordinator.socialLinks.linkedin} target="_blank" rel="noreferrer">
+                  <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+                </a>
+              )}
+              {coordinator.socialLinks.github && (
+                <a href={coordinator.socialLinks.github} target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="GitHub" className="social-icon" />
+                </a>
+              )}
+              {coordinator.socialLinks.x && (
+                <a href={coordinator.socialLinks.x} target="_blank" rel="noreferrer">
+                  <img src={xIcon} alt="X" className="social-icon" />
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Outros membros */}
       <div className="row">
-        {teamMembers.map((member, index) => (
+        {others.map((member, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="team-card text-center p-5">
               <img src={member.photo} alt={member.name} className="member-photo mb-3" />

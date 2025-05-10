@@ -22,13 +22,21 @@ function Footer() {
               style={{ maxWidth: '150px' }}
             />
             <div className="d-flex justify-content-center justify-content-md-start gap-3 social-icons-footer">
-              <a href="#">
+              <a
+                href="https://www.instagram.com/acadarqsoftware/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={instagramIcon} alt="Instagram" width="30" height="30" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.youtube.com/@acadarqsoftware?sub_confirmation=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={youtubeIcon} alt="YouTube" width="30" height="30" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                 <img src={linkedinIcon} alt="LinkedIn" width="30" height="30" />
               </a>
             </div>

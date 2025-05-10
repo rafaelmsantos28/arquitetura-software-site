@@ -25,7 +25,7 @@ function Header() {
     <>
       <header className="header">
         <nav className="navbar navbar-expand-lg bg-white">
-          <div className="container-fluid">
+          <div className="container">
             <Link className="navbar-brand logo" to="/">
               <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
             </Link>
@@ -56,7 +56,11 @@ function Header() {
                 >
                   <img src={instagramIcon} alt="Instagram" />
                 </a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.youtube.com/@acadarqsoftware?sub_confirmation=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={youtubeIcon} alt="Youtube" />
                 </a>
               </div>
@@ -69,8 +73,8 @@ function Header() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/orientador">
-                    Orientador
+                  <Link className="nav-link" to="/quemsoueu">
+                    Quem sou eu
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -108,8 +112,8 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to="/orientador" onClick={closeMenu}>
-                Orientador
+              <Link className="nav-link" to="/quemsoueu" onClick={closeMenu}>
+                Quem sou eu
               </Link>
             </li>
             <li>
@@ -145,7 +149,11 @@ function Header() {
             >
               <img src={instagramIcon} alt="Instagram" />
             </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.youtube.com/@acadarqsoftware?sub_confirmation=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={youtubeIcon} alt="Youtube" />
             </a>
           </div>
