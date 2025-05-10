@@ -9,6 +9,12 @@ body {
   padding: 1rem 0;
 }
 
+.header .container {
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 /* Logo */
 .logo {
   transition: filter 300ms;

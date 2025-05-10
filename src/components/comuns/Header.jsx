@@ -25,7 +25,7 @@ function Header() {
     <>
       <header className="header">
         <nav className="navbar navbar-expand-lg bg-white">
-          <div className="container-fluid">
+          <div className="container">
             <Link className="navbar-brand logo" to="/">
               <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
             </Link>
