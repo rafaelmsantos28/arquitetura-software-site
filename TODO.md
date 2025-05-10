@@ -30,3 +30,5 @@ Tablet: Ruim
 ~~Botão de hamburguer ficando azul (erro no hover)~~
 
 Deixar cards de equipe mais próximos da versão figma << muitos problemas
+
+Arrumar o estilo do título do banner da página sobre nós
