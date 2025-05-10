@@ -103,34 +103,34 @@ function Header() {
         <div className="menu-overlay open">
           <ul className="overlay-links">
             <li>
-              <a href="#home" onClick={closeMenu}>
-                Início
-              </a>
+              <Link className="nav-link" to="/" onClick={closeMenu}>
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#orientador" onClick={closeMenu}>
+              <Link className="nav-link" to="/orientador" onClick={closeMenu}>
                 Orientador
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#sobrenos" onClick={closeMenu}>
+              <Link className="nav-link" to="/sobrenos" onClick={closeMenu}>
                 Sobre nós
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#ensino" onClick={closeMenu}>
+              <Link className="nav-link" to="/ensino" onClick={closeMenu}>
                 Ensino
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#pesquisa" onClick={closeMenu}>
+              <Link className="nav-link" to="/pesquisa" onClick={closeMenu}>
                 Pesquisa
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#extensao" onClick={closeMenu}>
+              <Link className="nav-link" to="/extensao" onClick={closeMenu}>
                 Extensão
-              </a>
+              </Link>
             </li>
           </ul>
 
