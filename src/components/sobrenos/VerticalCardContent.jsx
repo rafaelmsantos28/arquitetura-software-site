@@ -110,7 +110,7 @@ function VerticalCardSection() {
                 {features.map((item, index) => (
                     <div
                         key={index}
-                        className="d-flex flex-column align-items-center"
+                        className="menu-item d-flex flex-column align-items-center"
                         style={{ cursor: 'pointer', width: '200px' }}
                         onClick={() => scrollToSection(item.id)}
                     >
@@ -128,7 +128,7 @@ function VerticalCardSection() {
             <div className="row g-4">
                 {features.map((item, index) => (
                     <div key={index} className="col-12" id={item.id}>
-                        <div className="card h-100 shadow-sm border-0 card-hover">
+                        <div className="card h-100 shadow-sm border-0">
                             <div className="card-body">
                                 <div className="d-flex flex-column align-items-center text-center mb-3">
                                     <img

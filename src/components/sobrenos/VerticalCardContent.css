@@ -12,3 +12,11 @@
 .card-text{
     text-decoration: #1b1b1b;
 }
+
+.menu-item {
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
