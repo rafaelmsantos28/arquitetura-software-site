@@ -28,7 +28,7 @@ function BannerSobreNos() {
         <section className='hero-section'>
             <div className="slide-content" style={{ backgroundImage: `url(${banner.image})` }}>
                 <div className="text-container">
-                    <h2>{banner.title}</h2>
+                    <h2 className='fw-bold'>{banner.title}</h2>
                     <p>{banner.text}</p>
                 </div>
             </div>
