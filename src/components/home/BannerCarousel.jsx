@@ -62,7 +62,7 @@ function BannerCarousel() {
           <SwiperSlide key={index}>
             <div className="slide-content" style={{ backgroundImage: `url(${banner.image})` }}>
               <div className="text-container">
-                <h2>{banner.title}</h2>
+                <h2 className="fw-bold">{banner.title}</h2>
                 <p>{banner.text}</p>
                 <button className="btn btn-primary mt-auto">Saiba mais</button>
               </div>
