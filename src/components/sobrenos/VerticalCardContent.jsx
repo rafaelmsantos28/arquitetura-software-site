@@ -2,6 +2,7 @@ import './VerticalCardContent.css';
 import overviewIcon from "../../assets/icons/overview.png";
 import objetivoIcon from "../../assets/icons/objetivo.png";
 import publicoIcon from "../../assets/icons/publico.png";
+import resultadosIcon from "../../assets/icons/resultado.png"
 
 function VerticalCardSection() {
     const features = [
@@ -53,6 +54,29 @@ function VerticalCardSection() {
                         <li><strong>Artigos e Publicações</strong> atualizados sobre o tema.</li>
                         <li><strong>Eventos, Lives e Workshops</strong> com especialistas.</li>
                         <li><strong>Comunidade de Aprendizagem</strong> colaborativa.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            icon: resultadosIcon,
+            title: 'Resultados esperados',
+            text: (
+                <>
+                    O projeto busca alcançar resultados significativos na formação e engajamento do público com temas de Arquitetura de Software.<br /><br />
+                    <ul>
+                        <li>
+                            <strong>Disseminação do conhecimento:</strong> Compartilhar saberes universitários por meio de abordagens interativas e acessíveis.
+                        </li>
+                        <li>
+                            <strong>Capacitação colaborativa:</strong> Promover a aprendizagem conjunta entre participantes com diferentes níveis de conhecimento.
+                        </li>
+                        <li>
+                            <strong>Recursos educacionais:</strong> Produzir materiais que estimulem a autonomia e a construção coletiva do conhecimento.
+                        </li>
+                        <li>
+                            <strong>Eventos interativos:</strong> Realizar palestras e cursos que incentivem o diálogo entre academia e mercado.
+                        </li>
                     </ul>
                 </>
             )
