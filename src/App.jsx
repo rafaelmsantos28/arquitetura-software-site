@@ -7,7 +7,7 @@ import Ensino from './pages/Ensino.jsx';
 import Pesquisa from './pages/Pesquisa.jsx';
 import Extensao from './pages/Extensao.jsx';
 import SobreNos from './pages/SobreNos.jsx';
-import Orientador from './pages/Orientador.jsx';
+import QuemSouEu from './pages/QuemSouEu.jsx';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="/pesquisa" element={<Pesquisa />} />
         <Route path="/extensao" element={<Extensao />} />
         <Route path="/sobrenos" element={<SobreNos />} />
-        <Route path="/orientador" element={<Orientador />} />
+        <Route path="/quemsoueu" element={<QuemSouEu />} />
         {/* outras rotas */}
       </Routes>
       <Footer />

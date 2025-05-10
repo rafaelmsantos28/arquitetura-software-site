@@ -69,8 +69,8 @@ function Header() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/orientador">
-                    Orientador
+                  <Link className="nav-link" to="/quemsoueu">
+                    Quem sou eu
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -108,8 +108,8 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to="/orientador" onClick={closeMenu}>
-                Orientador
+              <Link className="nav-link" to="/quemsoueu" onClick={closeMenu}>
+                Quem sou eu
               </Link>
             </li>
             <li>
