@@ -30,7 +30,6 @@ function BannerSobreNos() {
                 <div className="text-container">
                     <h2>{banner.title}</h2>
                     <p>{banner.text}</p>
-                    <button className="btn btn-primary mt-auto">Saiba mais</button>
                 </div>
             </div>
         </section>

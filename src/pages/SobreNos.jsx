@@ -1,13 +1,26 @@
-import BannerSobreNos from "../components/sobrenos/BannerSobreNos";
+import BannerSobreNos from "../components/sobrenos/BannerSobreNos.jsx";
+import VerticalCardContent from "../components/sobrenos/VerticalCardContent.jsx";
+import SideInfoColumn from "../components/home/SideInfoColumn.jsx";
 
 function SobreNos() {
   return (
-    <main className="sobrenos">
-      <figure>
+    <main className="SobreNos">
+      <figure className="mb-0">
         <BannerSobreNos />
       </figure>
 
-    </main> 
+      <div className="row gx-4">
+        {/* Coluna principal */}
+        <div className="col-lg-9 mb-4">
+          <VerticalCardContent />
+        </div>
+
+        {/* Coluna lateral */}
+        <div className="col-lg-3">
+          <SideInfoColumn />
+        </div>
+      </div>
+    </main>
   );
 }
 
