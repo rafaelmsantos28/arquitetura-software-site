@@ -91,7 +91,13 @@ function BannerYoutube() {
             <p className="mb-4">
               Inscreva-se e fique atualizado sobre eventos, palestras, cursos e muito mais.
             </p>
-            <button className="btn btn-primary">Saiba mais</button>
+            <a
+              href="https://www.youtube.com/@acadarqsoftware?sub_confirmation=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-primary">Saiba mais</button>
+            </a>
           </div>
         </div>
       </div>

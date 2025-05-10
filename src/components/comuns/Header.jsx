@@ -56,7 +56,11 @@ function Header() {
                 >
                   <img src={instagramIcon} alt="Instagram" />
                 </a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.youtube.com/@acadarqsoftware?sub_confirmation=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={youtubeIcon} alt="Youtube" />
                 </a>
               </div>
@@ -145,7 +149,11 @@ function Header() {
             >
               <img src={instagramIcon} alt="Instagram" />
             </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.youtube.com/@acadarqsoftware?sub_confirmation=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={youtubeIcon} alt="Youtube" />
             </a>
           </div>
