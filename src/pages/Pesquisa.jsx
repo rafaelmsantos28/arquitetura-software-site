@@ -1,8 +1,25 @@
+import BannerPesquisa from "../components/pesquisa/BannerPesquisa";
+import SideInfoColumn from "../components/home/SideInfoColumn";
+
 function Pesquisa() {
   return (
-    <>
-      <h1>Teste do Pesquisa</h1>
-    </>
+    <main className="Pesquisa">
+      <figure className="mb-0">
+        <BannerPesquisa />
+      </figure>
+
+      <div className="row gx-4">
+        {/* Coluna principal */}
+        <div className="col-lg-9 mb-4">
+
+        </div>
+
+        {/* Coluna lateral */}
+        <div className="col-lg-3">
+          <SideInfoColumn />
+        </div>
+      </div>
+    </main>
   );
 }
 
