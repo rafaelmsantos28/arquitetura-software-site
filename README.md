@@ -30,23 +30,26 @@ Estamos elaborando o site oficial do projeto, que em breve estará disponível p
 # 👨‍💻 Tutorial para contribuição no site!
 
 Aqui vamos aprender como contribuir e preparar um ambiente para desenvolvimento e atualização do site. Para isso, será necessário instalar:
+
 1. Nodejs
 2. Git
 
 Antes de tudo, no seu terminar verifique se você já não tem essas ferramentas instaladas:
 
 Verificar Nodejs:
+
 ```bash
 node -v
 npm -v
 ```
+
 Verifique também se você tem Git:
+
 ```bash
 git --version
 ```
 
 Caso não tenha alguma ou nenhuma das ferramentas, siga o tutorial abaixo.
-
 
 ## ⚙️ Instalação do Git
 
@@ -61,13 +64,13 @@ Caso não tenha alguma ou nenhuma das ferramentas, siga o tutorial abaixo.
 Será necessário sincronizar o git com sua conta do Github
 
 1. No terminal, use o comando abaixo para configurar seu nome de usuário:
-	```bash
-	git config --global user.name "nome_do_Github"
-	```
+   ```bash
+   git config --global user.name "nome_do_Github"
+   ```
 2. Ainda no terminal, use o comando:
-	```bash
-	git config --global user.email "seu_endereço_de_email_Github"
-	```
+   ```bash
+   git config --global user.email "seu_endereço_de_email_Github"
+   ```
 3. Feito isso, agora seu git está configurado corretamente.
 
 Vamos agora instalar o node.
@@ -85,29 +88,31 @@ Vamos agora instalar o node.
 Agora vamos ver como podemos baixar o repositório na nossa máquina e contribuir no projeto.
 
 1. Copie a url do projeto:
-	```
-	https://github.com/rafaelmsantos28/arquitetura-software-site.git
-	```
+
+   ```
+   https://github.com/rafaelmsantos28/arquitetura-software-site.git
+   ```
 
 2. Vá até a pasta do seu computador onde você quer que o projeto fique
 3. Abra o terminal nessa pasta
 4. No terminal, use o seguinte comando:
-	```bash
-	git clone https://github.com/rafaelmsantos28/arquitetura-software-site.git
-	```
+   ```bash
+   git clone https://github.com/rafaelmsantos28/arquitetura-software-site.git
+   ```
 5. Acesse a pasta do projeto
-	```bash
-	cd arquitetura-software-site
-	```
+   ```bash
+   cd arquitetura-software-site
+   ```
 6. Instale as dependências do projeto usando o comando:
-	```bash
+   `bash
 	npm install
-	```
-> Observações: O diretório node_modules não é versionado e não precisa ser enviado pro GitHub, pois suas dependências estão listadas no arquivo package.json. O comando npm install baixa as dependências automaticamente com base nesse arquivo.
- 
+	`
+   > Observações: O diretório node_modules não é versionado e não precisa ser enviado pro GitHub, pois suas dependências estão listadas no arquivo package.json. O comando npm install baixa as dependências automaticamente com base nesse arquivo.
+
 ## 🚀 Rodando o projeto localmente
 
 1. No terminal da pasta projeto (ou até no terminal do Vscode do projeto), execute:
+
 ```
 npm run dev
 ```
@@ -122,30 +127,31 @@ Ao realizar alterações no site, é necessárias que elas sejam enviadas para o
 
 1. Crie uma branch nova para cada funcionalidade ou correção:
 
-	```bash
-	git checkout -b nome-da-sua-branch
-	```
+   ```bash
+   git checkout -b nome-da-sua-branch
+   ```
+
 2. Faça suas alterações no código.
 3. Adicione os arquivos modificados:
-	```bash
-	git add .
-	```
+
+   ```bash
+   git add .
+   ```
 
 4. Faça um commit com uma mensagem descritiva:
-	```bash
-	git commit -m "feat: ajuste no carrossel para responsividade"
-	```
+   ```bash
+   git commit -m "feat: ajuste no carrossel para responsividade"
+   ```
 5. Envie a branch para o repositório:
-	```bash
+   `bash
 	git push origin nome-da-sua-branch
-	```
-No GitHub, abra um **Pull Request** da sua branch para a `main`.
+	`
+   No GitHub, abra um **Pull Request** da sua branch para a `main`.
 
 6. Fim :)
 
 ## 🖥️ Outras Dicas
 
-* ### Usando Prettier
-O projeto vem com a dependência Prettier, que faz como que todos os códigos fiquem formatados corretamente (identação, espaços, etc).
-Antes de usar `git add .`, use `npm run format`. Ele verifica todos os arquivos do projeto e deixa todos na identação correta.
-
+- ### Usando Prettier
+  O projeto vem com a dependência Prettier, que faz como que todos os códigos fiquem formatados corretamente (identação, espaços, etc).
+  Antes de usar `git add .`, use `npm run format`. Ele verifica todos os arquivos do projeto e deixa todos na identação correta.
