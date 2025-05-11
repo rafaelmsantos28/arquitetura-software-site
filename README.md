@@ -66,7 +66,7 @@ Será necessário sincronizar o git com sua conta do Github
 	```
 2. Ainda no terminal, use o comando:
 	```bash
-	git config --global user.mail "seu_endereço_de_email_Github"
+	git config --global user.email "seu_endereço_de_email_Github"
 	```
 3. Feito isso, agora seu git está configurado corretamente.
 
@@ -103,6 +103,8 @@ Agora vamos ver como podemos baixar o repositório na nossa máquina e contribui
 	```bash
 	npm install
 	```
+> Observações: O diretório node_modules não é versionado e não precisa ser enviado pro GitHub, pois suas dependências estão listadas no arquivo package.json. O comando npm install baixa as dependências automaticamente com base nesse arquivo.
+ 
 ## 🚀 Rodando o projeto localmente
 
 1. No terminal da pasta projeto (ou até no terminal do Vscode do projeto), execute:
