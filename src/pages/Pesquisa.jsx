@@ -1,5 +1,6 @@
 import BannerPesquisa from "../components/pesquisa/BannerPesquisa";
 import SideInfoColumn from "../components/home/SideInfoColumn";
+import ContentPesquisa from "../components/pesquisa/ContentPesquisa";
 
 function Pesquisa() {
   return (
@@ -11,7 +12,7 @@ function Pesquisa() {
       <div className="row gx-4">
         {/* Coluna principal */}
         <div className="col-lg-9 mb-4">
-
+          <ContentPesquisa />
         </div>
 
         {/* Coluna lateral */}
