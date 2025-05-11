@@ -19,7 +19,7 @@ function ContentPesquisa() {
     },
     {
       title: ' A multi-agent approach to monitor and manage container-based distributed systems',
-      data: '09/08/1021',
+      data: '09/08/2021',
       autores: 'Pfeifer, V., Passini, W. F., Dorante, W. F. ., Guilherme, I. R., & Affonso, F. J',
       publicacao: 'IEEE Latin America Transactions, v. 20, p. 82-91',
       url: 'https://latamt.ieeer9.org/index.php/transactions/article/view/5076',
