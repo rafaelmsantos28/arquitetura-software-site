@@ -1,7 +1,11 @@
+import BannerQuemSouEu from '../components/orientador/BannerQuemSouEu';
+import InformacoesCoordenador from '../components/orientador/InformacoesCoordenador';
+
 function QuemSouEu() {
   return (
     <>
-      <h1>Teste do Quem sou eu</h1>
+      <BannerQuemSouEu />
+      <InformacoesCoordenador />
     </>
   );
 }
