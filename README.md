@@ -34,7 +34,7 @@ Aqui vamos aprender como contribuir e preparar um ambiente para desenvolvimento 
 1. Nodejs
 2. Git
 
-Antes de tudo, no seu terminar verifique se você já não tem essas ferramentas instaladas:
+Antes de tudo, no seu terminal verifique se você já não tem essas ferramentas instaladas:
 
 Verificar Nodejs:
 
