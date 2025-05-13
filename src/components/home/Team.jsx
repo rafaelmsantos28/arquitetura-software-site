@@ -29,7 +29,7 @@ function Team() {
     {
       photo: member2,
       name: 'Orlando Saraiva',
-      role: 'Técnico',
+      role: 'Assistente de Suporte Acadêmico',
       socialLinks: {
         linkedin: 'https://linkedin.com/in/orlando-saraiva-júnior-83707022/',
         github: 'https://github.com/orlandosaraivajr',
@@ -156,7 +156,7 @@ function Team() {
       <div className="row">
         {others.map((member, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
-            <div className="team-card text-center p-5">
+            <div className="team-card text-center">
               <img src={member.photo} alt={member.name} className="member-photo mb-3" />
               <h5 className="mb-1">{member.name}</h5>
               <p className="text-muted">{member.role}</p>
