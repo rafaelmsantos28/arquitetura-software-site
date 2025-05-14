@@ -104,7 +104,7 @@ Agora vamos ver como podemos baixar o repositório na nossa máquina e contribui
    cd arquitetura-software-site
    ```
 6. Instale as dependências do projeto usando o comando:
-   `bash
+   `
 	npm install
 	`
    > Observações: O diretório node_modules não é versionado e não precisa ser enviado pro GitHub, pois suas dependências estão listadas no arquivo package.json. O comando npm install baixa as dependências automaticamente com base nesse arquivo.
