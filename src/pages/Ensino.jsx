@@ -1,7 +1,7 @@
 function Ensino() {
   return (
     <>
-      <h1>Teste do Ensino</h1>
+      <h1>OIIII</h1>
     </>
   );
 }

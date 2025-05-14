@@ -1,7 +1,7 @@
 function Extensao() {
   return (
     <>
-      <h1>Teste do Extensão</h1>
+      <h1>Hello World!!!</h1>
     </>
   );
 }
