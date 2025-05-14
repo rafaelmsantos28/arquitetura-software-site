@@ -4,7 +4,6 @@ import InformacoesCoordenador from '../components/orientador/InformacoesCoordena
 function QuemSouEu() {
   return (
     <>
-      <BannerQuemSouEu />
       <InformacoesCoordenador />
     </>
   );

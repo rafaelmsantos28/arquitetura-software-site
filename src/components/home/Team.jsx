@@ -20,12 +20,20 @@ function Team() {
     {
       photo: member1,
       name: 'Frank Affonso',
-      role: 'Coordenador',
+      role: 'Docente Coordenador',
       socialLinks: {
         linkedin: 'https://linkedin.com/in/frank-josé-affonso-7260852a8/',
       },
     },
     // demais membros
+    {
+      photo: member4,
+      name: 'Daniel Pedronette',
+      role: 'Docente Participante',
+      socialLinks: {
+        linkedin: 'https://linkedin.com/in/daniel-pedronette-6525122a/',
+      },
+    },
     {
       photo: member2,
       name: 'Orlando Saraiva',
@@ -44,14 +52,7 @@ function Team() {
         linkedin: 'https://linkedin.com/in/veronica-carvalho-86370137/',
       },
     },
-    {
-      photo: member4,
-      name: 'Daniel Pedronette',
-      role: 'Docente Participante',
-      socialLinks: {
-        linkedin: 'https://linkedin.com/in/daniel-pedronette-6525122a/',
-      },
-    },
+
     {
       photo: member5,
       name: 'Brendo Custódio',

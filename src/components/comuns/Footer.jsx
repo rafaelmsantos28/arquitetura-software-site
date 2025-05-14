@@ -51,7 +51,7 @@ function Footer() {
                 <a href="#">Home</a>
               </li>
               <li className="mb-2">
-                <a href="#">Orientador</a>
+                <a href="#">Quem sou eu</a>
               </li>
               <li className="mb-2">
                 <a href="#">Sobre nós</a>
