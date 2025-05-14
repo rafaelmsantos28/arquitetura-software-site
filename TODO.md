@@ -8,27 +8,27 @@
 
 ~~Menu mobile ocupando a tela junto do header~~
 
-Retirar espaços das margens laterais do header (Logo e ícones menu)
+~~Retirar espaços das margens laterais do header (Logo e ícones menu)~~
 
-Nova imagem da seção do youtube.
+~~Nova imagem da seção do youtube.~~
 
-Desampliar seção do youtube.
+~~Desampliar seção do youtube.~~
 
-Criar seção youtube para mobile
+~~Criar seção youtube para mobile~~
 
 ~~Footer~~
 
 ~~Responsividade Footer~~
 
-Decidir nos cards se o card do Frank fica no meio sozinho ou deixar do jeito que está. Caso o Frank fique no meio:
+~~Decidir nos cards se o card do Frank fica no meio sozinho ou deixar do jeito que está. Caso o Frank fique no meio:
 Desktop: Boa
 Mobile: Boa
-Tablet: Ruim
+Tablet: Ruim~~
 
 ~~Reeorganizar componentes: a pasta components deveria armazenar apenas componentes gerais.~~
 
 ~~Botão de hamburguer ficando azul (erro no hover)~~
 
-Deixar cards de equipe mais próximos da versão figma << muitos problemas
+~~Deixar cards de equipe mais próximos da versão figma~~
 
-Arrumar o estilo do título do banner da página sobre nós
+~~Arrumar o estilo do título do banner da página sobre nós~~
