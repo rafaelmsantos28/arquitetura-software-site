@@ -67,7 +67,6 @@ const EnsinoDados = () => {
     <div className="ensino">
       <h1 className="title">Ensino no Projeto Academia do Arquiteto de Software</h1>
 
-
       {/* NOVOS botões estilo extensão com ícones */}
       <div className="icon-buttons" style={{ marginBottom: '40px' }}>
         <button onClick={() => scrollToSection('promovemos')}>
@@ -80,7 +79,7 @@ const EnsinoDados = () => {
         </button>
         <button onClick={() => scrollToSection('acoes')}>
           <FaListAlt />
-          O que já fizemos
+          O que<br />já fizemos
         </button>
       </div>
 
