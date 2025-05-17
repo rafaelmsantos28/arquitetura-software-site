@@ -1,5 +1,12 @@
 import React from 'react';
-import { FaLightbulb, FaBullseye, FaCogs, FaChartLine, FaCalendarAlt, FaUserGraduate } from 'react-icons/fa';
+import {
+  FaLightbulb,
+  FaBullseye,
+  FaCogs,
+  FaChartLine,
+  FaCalendarAlt,
+  FaUserGraduate,
+} from 'react-icons/fa';
 import './ExtensaoDados.css';
 
 const Section = ({ icon: Icon, title, children }) => (
@@ -19,25 +26,43 @@ const scrollToSection = (title) => {
 
 const ExtensaoDados = () => {
   return (
-    <div className="container">
+    <div className="container-dados">
       <h1 className="title">Projeto de Extensão: Academia do Arquiteto de Software</h1>
       <div className="icon-buttons">
-        <button onClick={() => scrollToSection('Introdução')}><FaLightbulb /> Introdução</button>
-        <button onClick={() => scrollToSection('Objetivos')}><FaBullseye /> Objetivos</button>
-        <button onClick={() => scrollToSection('Metodologia')}><FaCogs /> Metodologia</button>
-        <button onClick={() => scrollToSection('Resultados Esperados')}><FaChartLine /> Resultados</button>
-        <button onClick={() => scrollToSection('Cronograma')}><FaCalendarAlt /> Cronograma</button>
-        <button onClick={() => scrollToSection('Participação Estudantil')}><FaUserGraduate /> Participação</button>
+        <button onClick={() => scrollToSection('Introdução')}>
+          <FaLightbulb /> Introdução
+        </button>
+        <button onClick={() => scrollToSection('Objetivos')}>
+          <FaBullseye /> Objetivos
+        </button>
+        <button onClick={() => scrollToSection('Metodologia')}>
+          <FaCogs /> Metodologia
+        </button>
+        <button onClick={() => scrollToSection('Resultados Esperados')}>
+          <FaChartLine /> Resultados
+        </button>
+        <button onClick={() => scrollToSection('Cronograma')}>
+          <FaCalendarAlt /> Cronograma
+        </button>
+        <button onClick={() => scrollToSection('Participação Estudantil')}>
+          <FaUserGraduate /> Participação
+        </button>
       </div>
 
       <Section icon={FaLightbulb} title="Introdução">
         <p>
-          O projeto “Academia do Arquiteto de Software” tem como objetivo disseminar de forma acessível o conhecimento sobre arquitetura de software, promovendo um diálogo entre a universidade e a sociedade por meio de atividades interativas como oficinas, workshops, cursos e palestras.
+          O projeto “Academia do Arquiteto de Software” tem como objetivo disseminar de forma
+          acessível o conhecimento sobre arquitetura de software, promovendo um diálogo entre a
+          universidade e a sociedade por meio de atividades interativas como oficinas, workshops,
+          cursos e palestras.
         </p>
       </Section>
 
       <Section icon={FaBullseye} title="Objetivos">
-        <p><strong>Objetivo Geral:</strong> Disseminar e aprofundar o conhecimento em arquitetura de software.</p>
+        <p>
+          <strong>Objetivo Geral:</strong> Disseminar e aprofundar o conhecimento em arquitetura de
+          software.
+        </p>
         <ul>
           <li>Explorar padrões e estilos arquiteturais.</li>
           <li>Disponibilizar recursos práticos online.</li>
@@ -63,13 +88,15 @@ const ExtensaoDados = () => {
 
       <Section icon={FaCalendarAlt} title="Cronograma">
         <p>
-          O projeto será desenvolvido de Janeiro de 2025 a Dezembro de 2026 com atividades contínuas em duas fases principais: preparação e execução das ações educativas.
+          O projeto será desenvolvido de Janeiro de 2025 a Dezembro de 2026 com atividades contínuas
+          em duas fases principais: preparação e execução das ações educativas.
         </p>
       </Section>
 
       <Section icon={FaUserGraduate} title="Participação Estudantil">
         <p>
-          Os estudantes envolvidos irão apoiar na produção de conteúdo, divulgação, organização dos eventos, e no desenvolvimento e manutenção do site do projeto.
+          Os estudantes envolvidos irão apoiar na produção de conteúdo, divulgação, organização dos
+          eventos, e no desenvolvimento e manutenção do site do projeto.
         </p>
       </Section>
     </div>

@@ -1,6 +1,6 @@
 /* src/pages/Extensao.css */
 
-.container {
+.container-dados {
   max-width: 960px;
   margin: 0 auto;
   padding: 60px 30px; /* aumentei o espaçamento interno */
@@ -18,7 +18,7 @@
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 28px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 40px; /* aumentei o padding */
   margin-bottom: 60px; /* mais espaço entre os blocos */
   transition: box-shadow 0.3s ease;
@@ -55,22 +55,11 @@
 }
 
 .section h2 svg {
-  background-color: #ffffff;   /* Azul forte */
+  background-color: #ffffff; /* Azul forte */
   color: #0055ff; /* Branco */
   width: 64px;
   height: 64px;
   margin-right: 16px;
-  
-}
-
-.section-title {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 20px;
 }
 
 .section-icon {
@@ -114,13 +103,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.1rem;      
+  font-size: 1.1rem;
   color: #333;
   transition: transform 0.3s ease;
-  min-width: 110px;       
+  min-width: 110px;
   flex: 1 1 110px;
-  max-width: 160px;       
-  padding: 10px 0;        
+  max-width: 160px;
+  padding: 10px 0;
 }
 
 .icon-buttons button:hover {
