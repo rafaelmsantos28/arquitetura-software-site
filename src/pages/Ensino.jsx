@@ -1,7 +1,9 @@
+import EnsinoDados from '../components/ensino/EnsinoDados';
+
 function Ensino() {
   return (
     <>
-      <h1>OIIII</h1>
+      <EnsinoDados/>
     </>
   );
 }

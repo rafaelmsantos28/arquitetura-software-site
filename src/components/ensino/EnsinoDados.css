@@ -1,0 +1,149 @@
+/* Wrapper geral do EnsinoDados */
+.ensino {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  /* Fundo, borda e sombra removidos daqui para deixar nas seções */
+}
+
+/* Título principal */
+.ensino .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Seções - fundo, borda, sombra e arredondamento */
+.ensino .section {
+  background: #f9f9fb;
+  border-radius: 28px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 1.6rem 2rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid #ddd;
+}
+
+/* Cabeçalho das seções */
+.ensino .section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+}
+
+/* Ícone da seção */
+.ensino .section-icon {
+  font-size: 48px;
+  color: #0055ff;
+}
+
+/* Título das seções */
+.ensino .section-header h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #34495e;
+  margin: 0;
+}
+
+/* Parágrafos dentro da seção */
+.ensino .section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.3rem;
+}
+
+/* Listas dentro da seção */
+.ensino .section ul {
+  padding-left: 1.4rem;
+}
+
+.ensino .section ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+/* Links dentro das seções */
+.ensino .section a {
+  color: #0055ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.ensino .section a:hover {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+/* Pessoas envolvidas - bloco individual (mesmo estilo de section) */
+.ensino .section .person {
+  background: #f9f9fb;
+  padding: 1.6rem 2rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 28px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Último bloco pessoa sem margem inferior */
+.ensino .section .person:last-child {
+  margin-bottom: 0;
+}
+
+/* Nome da pessoa */
+.ensino .section .person h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #0055ff;
+  font-weight: 700;
+}
+
+/* Papel da pessoa */
+.ensino .section .person p em {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .ensino {
+    margin: 1rem 10px 3rem;
+    padding: 0 15px;
+  }
+
+  .ensino .title {
+    font-size: 2.2rem;
+  }
+
+  .ensino .section-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Botões de tópicos (como na extensão) */
+.ensino .topico-btn {
+  display: inline-block;
+  background-color: #0055ff;
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem 0.5rem 1rem 0;
+}
+
+.ensino .topico-btn:hover {
+  background-color: #003ecc;
+}

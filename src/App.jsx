@@ -8,6 +8,7 @@ import Pesquisa from './pages/Pesquisa.jsx';
 import Extensao from './pages/Extensao.jsx';
 import SobreNos from './pages/SobreNos.jsx';
 import QuemSouEu from './pages/QuemSouEu.jsx';
+import Extensaopage from './pages/Extensao.jsx';
 
 function App() {
   return (

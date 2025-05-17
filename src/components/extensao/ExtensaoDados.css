@@ -1,0 +1,133 @@
+/* src/pages/Extensao.css */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 30px; /* aumentei o espaçamento interno */
+}
+
+.title {
+  font-size: 3rem; /* aumentei o tamanho da fonte */
+  text-align: center;
+  margin-bottom: 80px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.section {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  padding: 40px; /* aumentei o padding */
+  margin-bottom: 60px; /* mais espaço entre os blocos */
+  transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.section h2 {
+  font-size: 2rem; /* aumentei o tamanho do subtítulo */
+  color: #0055ff;
+  margin-bottom: 20px;
+}
+
+.section p,
+.section ul {
+  font-size: 1.25rem; /* aumentei o texto dos parágrafos e listas */
+  line-height: 1.8;
+  color: #333;
+}
+
+.section ul {
+  padding-left: 24px;
+}
+
+.section li {
+  margin-bottom: 10px;
+}
+
+.section h2 {
+  display: flex;
+  align-items: center;
+}
+
+.section h2 svg {
+  background-color: #ffffff;   /* Azul forte */
+  color: #0055ff; /* Branco */
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+  
+}
+
+.section-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.section-icon {
+  font-size: 64px;
+  color: #0055ff; /* cor do ícone */
+  margin-bottom: 12px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-icon {
+  font-size: 64px;
+  color: #0055ff;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-top: 12px;
+}
+
+.icon-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.icon-buttons button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1rem;      
+  color: #333;
+  transition: transform 0.3s ease;
+  min-width: 110px;       
+  flex: 1 1 110px;
+  max-width: 160px;       
+  padding: 10px 0;        
+}
+
+.icon-buttons button:hover {
+  transform: translateY(-5px);
+}
+
+.icon-buttons button svg {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
