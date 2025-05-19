@@ -1,10 +1,20 @@
-import BannerQuemSouEu from '../components/orientador/BannerQuemSouEu';
 import InformacoesCoordenador from '../components/orientador/InformacoesCoordenador';
+import SideInfoColumn from '../components/home/SideInfoColumn';
 
 function QuemSouEu() {
   return (
     <>
-      <InformacoesCoordenador />
+      <div className="row gx-4">
+        {/* Coluna principal */}
+        <div className="col-lg-9 mb-4">
+          <InformacoesCoordenador />
+        </div>
+
+        {/* Coluna lateral */}
+        <div className="col-lg-3 pl-5">
+          <SideInfoColumn />
+        </div>
+      </div>
     </>
   );
 }
