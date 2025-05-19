@@ -2,9 +2,11 @@ import frank from '../../assets/team/frank.jpg';
 import phone from '../../assets/redes-sociais/phone.svg';
 import mail from '../../assets/redes-sociais/mail.svg';
 
+import './InformacoesCoordenador.css';
+
 function InformacoesCoordenador() {
   return (
-    <div className="container my-5">
+    <div className="container my-5 titulo-coordenador">
       <h1 className="mb-5 fw-bold text-center text-md-start">Prof. Dr. Frank José Affonso</h1>
 
       <div className="row align-items-start">
@@ -29,7 +31,7 @@ function InformacoesCoordenador() {
           </div>
         </div>
 
-        <div className="col-md-8">
+        <div className="col-md-8 pb-4">
           <p>
             É professor assistente doutor do Departamento de Estatística, Matemática Aplicação e
             Computação do Instituto de Geociências e Ciências Exatas (DEMAC/IGCE/UNESP) em Regime
