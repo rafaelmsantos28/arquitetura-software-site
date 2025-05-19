@@ -1,13 +1,16 @@
 /* src/pages/Extensao.css */
 
-.container {
-  max-width: 960px;
+.page-layout {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 30px; /* aumentei o espaçamento interno */
+  padding: 60px 30px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 .title {
-  font-size: 3rem; /* aumentei o tamanho da fonte */
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 80px;
   color: #2c3e50;
@@ -19,8 +22,8 @@
   border: 1px solid #dcdcdc;
   border-radius: 28px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
-  padding: 40px; /* aumentei o padding */
-  margin-bottom: 60px; /* mais espaço entre os blocos */
+  padding: 40px;
+  margin-bottom: 60px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -29,14 +32,14 @@
 }
 
 .section h2 {
-  font-size: 2rem; /* aumentei o tamanho do subtítulo */
+  font-size: 2rem;
   color: #0055ff;
   margin-bottom: 20px;
 }
 
 .section p,
 .section ul {
-  font-size: 1.25rem; /* aumentei o texto dos parágrafos e listas */
+  font-size: 1.25rem;
   line-height: 1.8;
   color: #333;
 }
@@ -55,12 +58,11 @@
 }
 
 .section h2 svg {
-  background-color: #ffffff;   /* Azul forte */
-  color: #0055ff; /* Branco */
+  background-color: #ffffff;
+  color: #0055ff;
   width: 64px;
   height: 64px;
   margin-right: 16px;
-  
 }
 
 .section-title {
@@ -75,7 +77,7 @@
 
 .section-icon {
   font-size: 64px;
-  color: #0055ff; /* cor do ícone */
+  color: #0055ff;
   margin-bottom: 12px;
 }
 
@@ -114,13 +116,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.1rem;      
+  font-size: 1.1rem;
   color: #333;
   transition: transform 0.3s ease;
-  min-width: 110px;       
+  min-width: 110px;
   flex: 1 1 110px;
-  max-width: 160px;       
-  padding: 10px 0;        
+  max-width: 160px;
+  padding: 10px 0;
 }
 
 .icon-buttons button:hover {
@@ -131,3 +133,5 @@
   font-size: 2rem;
   margin-bottom: 5px;
 }
+
+

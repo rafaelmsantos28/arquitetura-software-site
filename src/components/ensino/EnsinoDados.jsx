@@ -2,6 +2,8 @@ import React from 'react';
 import { FaBook, FaUsers, FaListAlt } from 'react-icons/fa';
 import './EnsinoDados.css';
 
+
+
 const Section = ({ id, icon: Icon, title, children }) => (
   <section className="section" id={id} data-title={title}>
     <div className="section-header">

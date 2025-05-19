@@ -147,3 +147,20 @@
 .ensino .topico-btn:hover {
   background-color: #003ecc;
 }
+
+.extensao-page-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.extensao-main-content {
+  flex: 3;
+}
+
+.extensao-sidebar {
+  flex: 1;
+}
+
+/* Coloque aqui todo o restante do seu CSS que você já definiu anteriormente */
