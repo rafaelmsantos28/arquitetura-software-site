@@ -2,32 +2,49 @@ import dissertacoesIcon from '../../assets/icons/iconDisser.png';
 import './ContentDissertacoes.css';
 
 function ContentDissertacoes() {
-  const artigos = [
+  const dissertacoes = [
     {
-      title: 'RA4Self-CPS: A Reference Architecture for Self-adaptive Cyber-Physical Systems',
-      data: '16/01/2024',
-      autores: 'M. P. de O. Camargo, G. dos S. Pereira, D. Almeida, L. A. Bento, W. F. Dorante, F. J. Affonso',
-      publicacao: 'IEEE Latin America Transactions, v. 22, p. 113-125',
-      url: 'https://latamt.ieeer9.org/index.php/transactions/article/view/8354',
+      title: 'Desenvolvimento de serviços compostos autoadaptativos: um framework baseado em implantação dinâmica, métricas de QoS e informação semântica',
+      data: '01/01/2020',
+      autores: 'Passini, William Filisbino',
+      nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
+      escola: 'Universidade Estadual Paulista (UNESP), Instituto de Biociências, Letras e Ciências Exatas (Ibilce), São José do Rio Preto',
+      tipo: 'Dissertação de mestrado',
+      url: 'https://repositorio.unesp.br/entities/publication/dd7c0302-d968-4f3f-85f3-5af1a210de29',
     },
     {
-      title: 'A Reference Architecture Based on Reflection for Self-Adaptive Software: A Second Release',
-      data: '01/01/2024',
-      autores: 'F. J. Affonso, G. Nagassaki Campos and G. Guiguer Menaldo',
-      publicacao: 'IEEE ACCESS, v. 12, p.',
-      url: 'https://ieeexplore.ieee.org/document/10597388?denied=',
+      title: 'Autoproteção para a camada de aplicação: uma abordagem baseada em técnicas de aprendizado e no laço de controle MAPE-K',
+      data: '01/01/2022',
+      autores: 'Martins, Ronaldo Rodrigues',
+      nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
+      escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
+      tipo: 'Dissertação de mestrado',
+      url: 'https://repositorio.unesp.br/entities/publication/a8cd4b1e-1562-4290-84f9-ce1ee7d12e46',
     },
     {
-      title: ' A multi-agent approach to monitor and manage container-based distributed systems',
-      data: '09/08/2021',
-      autores: 'Pfeifer, V., Passini, W. F., Dorante, W. F. ., Guilherme, I. R., & Affonso, F. J',
-      publicacao: 'IEEE Latin America Transactions, v. 20, p. 82-91',
-      url: 'https://latamt.ieeer9.org/index.php/transactions/article/view/5076',
+      title: 'Estabelecimento de uma Arquitetura de Referência para Sistemas Ciber-Físicos Autoadaptativos',
+      data: '01/01/2023',
+      autores: 'Camargo, Marcos Paulo de Oliveira',
+      nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
+      escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
+      tipo: 'Dissertação de mestrado',
+      url: 'https://repositorio.unesp.br/items/6dac1693-a043-4f2e-a084-2e6540e2200a',
+    },
+    {
+      title: 'DynaSchema: uma biblioteca para evolução de banco de dados relacional para o domínio de software autoadaptativo',
+      data: '01/01/2023',
+      autores: 'Campos, Gabriel Nagassaki',
+      nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
+      escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
+      tipo: 'Dissertação de mestrado',
+      url: 'https://repositorio.unesp.br/items/407d5610-09e1-404e-94b3-0ac8b42db807',
     },
   ];
 
+
+
   // Ordena os artigos por data (mais recente primeiro)
-  const artigosOrdenados = [...artigos].sort((a, b) => {
+  const dissertacoesOrdenados = [...dissertacoes].sort((a, b) => {
     const dataA = new Date(a.data.split('/').reverse().join('-'));
     const dataB = new Date(b.data.split('/').reverse().join('-'));
     return dataB - dataA;
@@ -37,7 +54,7 @@ function ContentDissertacoes() {
     <section id="dissertacoes" className="container my-5">
       <h2 className="section-title text-center mb-4">Dissertações Defendidas</h2>
       <div className="row g-4">
-        {artigosOrdenados.map((item, index) => (
+        {dissertacoesOrdenados.map((item, index) => (
           <div key={index} className="col-12">
             <a
               href={item.url}
@@ -56,7 +73,9 @@ function ContentDissertacoes() {
                   <h5 className="mb-1">{item.title}</h5>
                   <p className="mb-1 text-muted"><strong>Data:</strong> {item.data}</p>
                   <p className="mb-1 text-muted"><strong>Autores:</strong> {item.autores}</p>
-                  <p className="mb-0 text-muted"><strong>Publicação:</strong> {item.publicacao}</p>
+                  <p className="mb-0 text-muted"><strong>Nota:</strong> {item.nota}</p>
+                  <p className="mb-0 text-muted"><strong>Escola:</strong> {item.escola}</p>
+                  <p className="mb-0 text-muted"><strong>Tipo:</strong> {item.tipo}</p>
                 </div>
               </div>
             </a>
