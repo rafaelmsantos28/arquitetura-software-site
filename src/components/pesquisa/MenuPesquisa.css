@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-icon {
+  max-width: 64px;
+  max-height: 64px;
+  transition: transform 0.3s ease;
+  margin: 8px;
+}
+
+.menu-icon:hover {
+  transform: translateY(-5px);
+}

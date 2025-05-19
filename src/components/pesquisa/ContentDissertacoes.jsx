@@ -1,7 +1,7 @@
-import artigoIcon from '../../assets/icons/iconArtigo.png';
-import './ContentPesquisa.css';
+import dissertacoesIcon from '../../assets/icons/iconDisser.png';
+import './ContentDissertacoes.css';
 
-function ContentPesquisa() {
+function ContentDissertacoes() {
   const artigos = [
     {
       title: 'RA4Self-CPS: A Reference Architecture for Self-adaptive Cyber-Physical Systems',
@@ -34,8 +34,8 @@ function ContentPesquisa() {
   });
 
   return (
-    <section id="artigos" className="container my-5">
-      <h2 className="section-title text-center mb-4">Artigos</h2>
+    <section id="dissertacoes" className="container my-5">
+      <h2 className="section-title text-center mb-4">Dissertações Defendidas</h2>
       <div className="row g-4">
         {artigosOrdenados.map((item, index) => (
           <div key={index} className="col-12">
@@ -47,7 +47,7 @@ function ContentPesquisa() {
             >
               <div className="card-body d-flex align-items-center">
                 <img
-                  src={artigoIcon}
+                  src={dissertacoesIcon}
                   alt="Ícone do artigo"
                   style={{ height: '84px', width: '84px' }}
                   className="me-4"
@@ -67,4 +67,4 @@ function ContentPesquisa() {
   );
 }
 
-export default ContentPesquisa;
+export default ContentDissertacoes;
