@@ -5,9 +5,9 @@ import mail from '../../assets/redes-sociais/mail.svg';
 function InformacoesCoordenador() {
   return (
     <div className="container my-5">
-      <h1 className="mb-4 text-center fw-bold">Prof. Dr. Frank José Affonso</h1>
+      <h1 className="mb-5 fw-bold text-center text-md-start">Prof. Dr. Frank José Affonso</h1>
 
-      <div className="row align-items-center">
+      <div className="row align-items-start">
         <div className="col-md-4 text-center mb-4 mb-md-0">
           <img
             src={frank}
@@ -15,8 +15,7 @@ function InformacoesCoordenador() {
             className="img-fluid rounded-circle border border-secondary"
             style={{ maxWidth: '250px' }}
           />
-          {/*<h3 className="mt-3">Prof. Dr. Frank José Affonso</h3>*/}
-          <div className="mt-4">
+          <div className="mt-2">
             <ul className="list-unstyled d-flex flex-column align-items-center">
               <li className="mb-2 d-flex align-items-center">
                 <img src={phone} alt="Telefone" style={{ width: '20px', marginRight: '8px' }} />
@@ -37,40 +36,23 @@ function InformacoesCoordenador() {
             (RDIDP) - Efetivo da PP-QDUNESP.
           </p>
 
-          <p>
-            Tem realizado revisão de artigos em várias conferências, workshops e jornais, como:
-            Adaptive and Reconfigurable Service-oriented and Component-based Applications and
-            Architectures, Conferência Ibérica de Sistemas e Tecnologias de Informação, Congresso
-            Brasileiro de Informática na Educação, Simpósio Brasileiro de Componentes, Arquiteturas
-            e Reuso de Software, Congresso Brasileiro de Software: Teoria e Prática (CBSoft), entre
-            outros.
-          </p>
+          <h4 className="fw-bold mt-4">Formação acadêmica</h4>
+          <ul>
+            <li>Pós-Doutorado no Instituto de Ciências Matemáticas e de Computação da USP.</li>
+            <li>Doutorado em Programa de Pós-Graduação em Engenharia Elétrica.</li>
+            <li>Mestrado em Programa de Pós-Graduação em Ciência da Computação.</li>
+            <li>Graduação em Ciência da Computação.</li>
+          </ul>
 
-          <p>
-            Possui pós-doutorado (2013-2014) no ICMC/USP - São Carlos; doutorado em Engenharia
-            Elétrica pela Escola de Engenharia de São Carlos - Universidade de São Paulo; e mestrado
-            em Ciência da Computação pela Universidade Federal de São Carlos.
-          </p>
-
-          <p>
-            Atuou como professor, coordenador de curso e coordenador de laboratórios no Centro
-            Universitário Central Paulista (2002-2010). Atualmente, é professor efetivo da UNESP,
-            onde desempenha funções administrativas e acadêmicas, incluindo vice-chefia de
-            departamento e coordenação de laboratórios.
-          </p>
-
-          <p>
-            Sua experiência está focada em Engenharia de Software, com ênfase em arquitetura de
-            software, ambientes de engenharia de software e sistemas autoadaptativos em tempo de
-            execução.
-          </p>
-
-          <p>
-            Atua também como pesquisador colaborador no Laboratório de Inteligência Artificial
-            Aplicada a Petróleo (LIAAP) no UNESPETRO e é docente credenciado no Programa de
-            Pós-Graduação em Ciência da Computação da UNESP desde 2018. Além disso, é o
-            representante institucional da SBC na UNESP - Câmpus Rio Claro.
-          </p>
+          <h4 className="fw-bold mt-4">Áreas de Interesse</h4>
+          <ul>
+            <li>Engenharia de Software</li>
+            <li>Arquitetura de Software</li>
+            <li>Sistemas de Software Autoapdatativos.</li>
+            <li>Programação Distribuída</li>
+            <li>Desenvolvimento de software orientado a modelos</li>
+            <li>Metodologia e técnicas de computação</li>
+          </ul>
         </div>
       </div>
     </div>

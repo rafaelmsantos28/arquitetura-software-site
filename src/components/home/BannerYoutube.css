@@ -28,15 +28,7 @@
     opacity 0.8s ease;
   opacity: 0;
   transform: translateX(-40px);
-}
-
-.youtube-phone-img {
-  max-width: 80%;
-  transition:
-    transform 1.2s ease,
-    opacity 0.8s ease;
-  opacity: 0;
-  transform: translateX(-40px);
+  padding-top: 3rem;
 }
 
 .youtube-phone-img.fade-in {
