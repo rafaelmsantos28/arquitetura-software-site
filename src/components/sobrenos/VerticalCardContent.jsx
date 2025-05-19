@@ -145,7 +145,7 @@ function VerticalCardSection() {
             <img
               src={item.menuIcon}
               alt={item.title}
-              style={{ height: '100px', marginBottom: '8px' }}
+              style={{ height: '40px', marginBottom: '8px' }}
             />
             <span className="text-center fw-medium">{item.title}</span>
           </div>
@@ -163,7 +163,7 @@ function VerticalCardSection() {
                     src={item.icon}
                     alt={item.title}
                     className="mb-3"
-                    style={{ height: '128px' }}
+                    style={{ height: '80px' }}
                   />
                   <h5 className="card-title mb-2">{item.title}</h5>
                 </div>
