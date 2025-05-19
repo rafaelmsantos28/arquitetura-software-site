@@ -110,7 +110,7 @@ function ContentOrientacoes() {
                   <h5 className="mb-1">{item.title}</h5>
                   <p className="mb-1 text-muted"><strong>Data de início:</strong> {item.data}</p>
                   <p className="mb-1 text-muted"><strong>Autores:</strong> {item.autores}</p>
-                  <p className="mb-0 text-muted"><strong>Publicação:</strong> {item.publicacao}</p>
+                  <p className="mb-0 text-muted"><strong>Sobre:</strong> {item.publicacao}</p>
                 </div>
               </div>
             </a>
@@ -140,7 +140,7 @@ function ContentOrientacoes() {
                   <h5 className="mb-1">{item.title}</h5>
                   <p className="mb-1 text-muted"><strong>Data de início:</strong> {item.data}</p>
                   <p className="mb-1 text-muted"><strong>Autores:</strong> {item.autores}</p>
-                  <p className="mb-0 text-muted"><strong>Publicação:</strong> {item.publicacao}</p>
+                  <p className="mb-0 text-muted"><strong>Sobre:</strong> {item.publicacao}</p>
                 </div>
               </div>
             </a>
@@ -170,7 +170,7 @@ function ContentOrientacoes() {
                   <h5 className="mb-1">{item.title}</h5>
                   <p className="mb-1 text-muted"><strong>Data de início:</strong> {item.data}</p>
                   <p className="mb-1 text-muted"><strong>Autores:</strong> {item.autores}</p>
-                  <p className="mb-0 text-muted"><strong>Publicação:</strong> {item.publicacao}</p>
+                  <p className="mb-0 text-muted"><strong>Sobre:</strong> {item.publicacao}</p>
                 </div>
               </div>
             </a>
