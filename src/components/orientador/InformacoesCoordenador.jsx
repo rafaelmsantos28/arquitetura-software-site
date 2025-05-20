@@ -6,8 +6,10 @@ import './InformacoesCoordenador.css';
 
 function InformacoesCoordenador() {
   return (
-    <div className="container my-5 titulo-coordenador">
-      <h1 className="mb-5 fw-bold text-center text-md-start">Prof. Dr. Frank José Affonso</h1>
+    <div className="container my-5">
+      <h1 className="titulo-coordenador mb-5 fw-bold text-center text-md-start">
+        Prof. Dr. Frank José Affonso
+      </h1>
 
       <div className="row align-items-start">
         <div className="col-md-4 text-center mb-4 mb-md-0">
@@ -31,7 +33,7 @@ function InformacoesCoordenador() {
           </div>
         </div>
 
-        <div className="col-md-8 pb-4">
+        <div className="col-md-8">
           <p>
             É professor assistente doutor do Departamento de Estatística, Matemática Aplicação e
             Computação do Instituto de Geociências e Ciências Exatas (DEMAC/IGCE/UNESP) em Regime
@@ -48,12 +50,12 @@ function InformacoesCoordenador() {
 
           <h4 className="fw-bold mt-4">Áreas de Interesse</h4>
           <ul>
-            <li>Engenharia de Software</li>
             <li>Arquitetura de Software</li>
-            <li>Sistemas de Software Autoapdatativos.</li>
-            <li>Programação Distribuída</li>
-            <li>Desenvolvimento de software orientado a modelos</li>
-            <li>Metodologia e técnicas de computação</li>
+            <li>Computação Móvel</li>
+            <li>Computação Orientada a Serviços</li>
+            <li>Engenharia de Software</li>
+            <li>Ferramentas CASE</li>
+            <li>Sistemas de Software Autoadaptativos</li>
           </ul>
         </div>
       </div>

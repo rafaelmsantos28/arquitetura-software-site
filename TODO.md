@@ -1,34 +1,41 @@
-~~Checar e colocar todas as redes sociais nos membro~~
+## FAZER:
 
-~~Diminuir tamanho dos objetos nos carrossel (casa, placas)~~
+### TODAS AS PÁGINAS:
 
-~~Responsividade do carrossel~~
+- Colocar Banner em todas as páginas
 
-~~Seção youtube~~
+### PÁGINA ENSINO:
 
-~~Menu mobile ocupando a tela junto do header~~
+- Transformar Página Ensino em Cursos. (desculpa Joelle)
 
-~~Retirar espaços das margens laterais do header (Logo e ícones menu)~~
+### PÁGINA QUEM SOU EU:
 
-~~Nova imagem da seção do youtube.~~
+- Colocar, além das informações do coordenador, as informações textuais que foram atualizadas de Ensino (documento do word) na página Quem sou eu. [Timestamp: 18:46]
 
-~~Desampliar seção do youtube.~~
+### PÁGINA HOME:
 
-~~Criar seção youtube para mobile~~
+- Usar a página principal (Home) mais como divulgação das atividades que vamos fazer
 
-~~Footer~~
+  > Adicionar na Home Ensino, Pesquisa, Extensão e Sobre Nós?
 
-~~Responsividade Footer~~
+- Seguir Estrutura do Header: Home - Ensino - Pesquisa - Extensão - Sobre Nós
+- VerticalCardSection: Fazer o Link dos botões quando surgirem eventos
+- Banner: Fazer o link
 
-~~Decidir nos cards se o card do Frank fica no meio sozinho ou deixar do jeito que está. Caso o Frank fique no meio:
-Desktop: Boa
-Mobile: Boa
-Tablet: Ruim~~
+### PÁGINA SOBRE NÓS:
 
-~~Reeorganizar componentes: a pasta components deveria armazenar apenas componentes gerais.~~
+- Sobre Nós com Team.jsx e sem o conteúdo atual (os cards).
 
-~~Botão de hamburguer ficando azul (erro no hover)~~
+  > Basicamente Tirar o que está dentro de Sobre Nós e colocar Team.jsx.
 
-~~Deixar cards de equipe mais próximos da versão figma~~
+### PÁGINA EXTENSÃO:
 
-~~Arrumar o estilo do título do banner da página sobre nós~~
+- O conteúdo da página Sobre Nós entra em Extensão, porém deve manter o mesmo estilo que está na extensão atual, pois o professor gostou. Retirar Teams.jsx de Extensão.
+
+  > Assim, Página Extensão fica sem Teams.jsx. Página de Extensão ficou bacana, só colocar o Banner. O conteúdo de Sobre Nós vai para Extensão
+
+## FEITO
+
+~~Alterar Texto do Quem sou eu~~
+
+~~Colocar Teams.jsx dentro de Extensão junto com o conteúdo já incluso~~
