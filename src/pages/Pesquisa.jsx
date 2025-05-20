@@ -1,6 +1,9 @@
 import BannerPesquisa from "../components/pesquisa/BannerPesquisa";
 import SideInfoColumn from "../components/home/SideInfoColumn";
 import ContentPesquisa from "../components/pesquisa/ContentPesquisa";
+import ContentOrientacoes from "../components/pesquisa/ContentOrientacoes";
+import ContentDissertacoes from "../components/pesquisa/ContentDissertacoes";
+import MenuPesquisa from "../components/pesquisa/MenuPesquisa";
 
 function Pesquisa() {
   return (
@@ -12,6 +15,9 @@ function Pesquisa() {
       <div className="row gx-4">
         {/* Coluna principal */}
         <div className="col-lg-9 mb-4">
+          <MenuPesquisa />
+          <ContentDissertacoes />
+          <ContentOrientacoes />
           <ContentPesquisa />
         </div>
 
