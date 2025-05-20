@@ -4,6 +4,27 @@
 
 - Colocar Banner em todas as páginas
 
+### PÁGINA PESQUISA:
+
+- Ver se todos os links dos cards estão funcionando corretamente
+
+- Retirar Iniciação Científica (muito curta)
+
+- Mudar os ícones dos cards. No lugar do ícone, colocar uma letra. Por exemplo:
+  - D - Dissertações
+  - T - Teses de Doutorado
+  - etc etc
+
+Mudar mini-menu para: Artigos Publicados - Orientações em Andamento - Orientações Concluídas
+
+Seguir divisão do Lattes:
+
+- Artigos Publicados
+- Orientações em Andamento
+  - Indicar se é de Mestrado ou Doutorado (subtítulo)
+- Orientações Concluídas
+  - Indicar se é de Mestrado ou Doutorado (subtítulo)
+
 ### PÁGINA ENSINO:
 
 - Transformar Página Ensino em Cursos. (desculpa Joelle)
@@ -16,9 +37,10 @@
 
 - Usar a página principal (Home) mais como divulgação das atividades que vamos fazer
 
-  > Adicionar na Home Ensino, Pesquisa, Extensão e Sobre Nós?
+  > Adicionar na Home seções sobre Ensino, Pesquisa, Extensão e Sobre Nós?
 
 - Seguir Estrutura do Header: Home - Ensino - Pesquisa - Extensão - Sobre Nós
+- Menu do Header: Fazer faixa de itens com fundo destacado (cinza), centralizada e "abaixo" do Header original (ou dentro mesmo)
 - VerticalCardSection: Fazer o Link dos botões quando surgirem eventos
 - Banner: Fazer o link
 
