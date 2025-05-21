@@ -99,7 +99,7 @@ function ContentPesquisa() {
 
   return (
     <section id="artigos" className="container my-5">
-      <h2 className="section-title text-center mb-4">Artigos</h2>
+      <h2 className="section-title text-center mb-4">Artigos Publicados</h2>
       <div className="row g-4">
         {artigosOrdenados.map((item, index) => (
           <div key={index} className="col-12">

@@ -9,7 +9,6 @@ function ContentDissertacoes() {
       autores: 'Passini, William Filisbino',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola: 'Universidade Estadual Paulista (UNESP), Instituto de Biociências, Letras e Ciências Exatas (Ibilce), São José do Rio Preto',
-      tipo: 'Dissertação de mestrado',
       url: 'https://repositorio.unesp.br/entities/publication/dd7c0302-d968-4f3f-85f3-5af1a210de29',
     },
     {
@@ -18,7 +17,6 @@ function ContentDissertacoes() {
       autores: 'Martins, Ronaldo Rodrigues',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
-      tipo: 'Dissertação de mestrado',
       url: 'https://repositorio.unesp.br/entities/publication/a8cd4b1e-1562-4290-84f9-ce1ee7d12e46',
     },
     {
@@ -27,7 +25,6 @@ function ContentDissertacoes() {
       autores: 'Camargo, Marcos Paulo de Oliveira',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
-      tipo: 'Dissertação de mestrado',
       url: 'https://repositorio.unesp.br/items/6dac1693-a043-4f2e-a084-2e6540e2200a',
     },
     {
@@ -36,7 +33,6 @@ function ContentDissertacoes() {
       autores: 'Campos, Gabriel Nagassaki',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
-      tipo: 'Dissertação de mestrado',
       url: 'https://repositorio.unesp.br/items/407d5610-09e1-404e-94b3-0ac8b42db807',
     },
   ];
@@ -52,7 +48,8 @@ function ContentDissertacoes() {
 
   return (
     <section id="dissertacoes" className="container my-5">
-      <h2 className="section-title text-center mb-4">Dissertações Defendidas</h2>
+      <h2 className="section-title text-center mb-4">Orientações Concluídas</h2>
+      <h3 className="subsection-title mt-4 mb-3">Dissertações de Mestrado</h3>
       <div className="row g-4">
         {dissertacoesOrdenados.map((item, index) => (
           <div key={index} className="col-12">
@@ -75,7 +72,6 @@ function ContentDissertacoes() {
                   <p className="mb-1 text-muted"><strong>Autores:</strong> {item.autores}</p>
                   <p className="mb-0 text-muted"><strong>Nota:</strong> {item.nota}</p>
                   <p className="mb-0 text-muted"><strong>Escola:</strong> {item.escola}</p>
-                  <p className="mb-0 text-muted"><strong>Tipo:</strong> {item.tipo}</p>
                 </div>
               </div>
             </a>

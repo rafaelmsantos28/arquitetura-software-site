@@ -10,22 +10,22 @@ _O que tiver envolta de dois tios (~~~~) significa que já foi feito_
 
 - Ver se todos os links dos cards estão funcionando corretamente
 
-- Retirar Iniciação Científica (muito curta)
+~~- Retirar Iniciação Científica (muito curta)~~
 
-- Mudar os ícones dos cards. No lugar do ícone, colocar uma letra. Por exemplo:
-  - D - Dissertações
-  - T - Teses de Doutorado
-  - etc etc
+~~- Mudar os ícones dos cards. No lugar do ícone, colocar uma letra. Por exemplo:~~
+  ~~- D - Dissertações~~
+  ~~- T - Teses de Doutorado~~
+  ~~- etc etc~~
 
-Mudar mini-menu para: Artigos Publicados - Orientações em Andamento - Orientações Concluídas
+~~Mudar mini-menu para: Artigos Publicados - Orientações em Andamento - Orientações Concluídas~~
 
-Seguir divisão do Lattes:
+~~Seguir divisão do Lattes:~~
 
-- Artigos Publicados
-- Orientações em Andamento
-  - Indicar se é de Mestrado ou Doutorado (subtítulo)
-- Orientações Concluídas
-  - Indicar se é de Mestrado ou Doutorado (subtítulo)
+~~- Artigos Publicados~~
+~~- Orientações em Andamento~~
+  ~~- Indicar se é de Mestrado ou Doutorado (subtítulo)~~
+~~- Orientações Concluídas~~
+  ~~- Indicar se é de Mestrado ou Doutorado (subtítulo)~~
 
 ### PÁGINA ENSINO:
 

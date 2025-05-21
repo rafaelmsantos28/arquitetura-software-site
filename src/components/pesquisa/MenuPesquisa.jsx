@@ -5,9 +5,9 @@ import dissertacoesIcon from '../../assets/icons/iconDisser.png';
 import './MenuPesquisa.css';
 
 const items = [
-  { id: 'dissertacoes', icon: dissertacoesIcon, label: 'Dissertações' },
-  { id: 'orientacoes', icon: orientacoesIcon, label: 'Orientações' },
-  { id: 'artigos',    icon: artigoIcon,        label: 'Artigos' },
+  { id: 'artigos',    icon: artigoIcon,        label: 'Artigos Publicados' },
+  { id: 'orientacoes', icon: orientacoesIcon, label: 'Orientações em Andamento' },
+  { id: 'dissertacoes', icon: dissertacoesIcon, label: 'Orientações Defendidas' },
 ];
 
 export default function MenuPesquisa() {
@@ -20,12 +20,12 @@ export default function MenuPesquisa() {
               href={`#${id}`}
               className="d-block text-decoration-none text-dark"
             >
+              <div className="menu-label">{label}</div>
               <img
                 src={icon}
                 alt={label}
                 className="menu-icon img-fluid mb-2"
               />
-              <div className="menu-label">{label}</div>
             </a>
           </div>
         ))}

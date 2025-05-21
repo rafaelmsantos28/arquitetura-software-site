@@ -16,9 +16,9 @@ function Pesquisa() {
         {/* Coluna principal */}
         <div className="col-lg-9 mb-4">
           <MenuPesquisa />
-          <ContentDissertacoes />
-          <ContentOrientacoes />
           <ContentPesquisa />
+          <ContentOrientacoes />
+          <ContentDissertacoes />
         </div>
 
         {/* Coluna lateral */}
