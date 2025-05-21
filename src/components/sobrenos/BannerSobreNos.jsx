@@ -21,7 +21,7 @@ function BannerSobreNos() {
   const banner = {
     image: isMobile ? banner1Mobile : banner1Desktop,
     title: 'Sobre nós',
-    text: 'Conheça o projeto Academia do Arquiteto de Software, nossos objetivos, missões e muito mais',
+    text: 'Conheça a equipe que deu vida ao projeto, transformando ideias em realidade.',
   };
 
   return (

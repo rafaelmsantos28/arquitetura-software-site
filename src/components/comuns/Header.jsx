@@ -78,13 +78,8 @@ function Header() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/sobrenos">
-                    Sobre nós
-                  </Link>
-                </li>
-                <li className="nav-item">
                   <Link className="nav-link" to="/ensino">
-                    Ensino
+                    Cursos
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -95,6 +90,11 @@ function Header() {
                 <li className="nav-item">
                   <Link className="nav-link" to="/extensao">
                     Extensão
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/sobrenos">
+                    Sobre nós
                   </Link>
                 </li>
               </ul>
@@ -117,11 +117,6 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to="/sobrenos" onClick={closeMenu}>
-                Sobre nós
-              </Link>
-            </li>
-            <li>
               <Link className="nav-link" to="/ensino" onClick={closeMenu}>
                 Ensino
               </Link>
@@ -134,6 +129,11 @@ function Header() {
             <li>
               <Link className="nav-link" to="/extensao" onClick={closeMenu}>
                 Extensão
+              </Link>
+            </li>
+            <li>
+              <Link className="nav-link" to="/sobrenos" onClick={closeMenu}>
+                Sobre nós
               </Link>
             </li>
           </ul>

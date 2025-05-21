@@ -114,7 +114,7 @@ function Team() {
 
   return (
     <section className="team-section container my-5">
-      <h2 className="section-title text-center mb-4">Nossa Equipe</h2>
+      <h1 className="fw-bold text-center mb-5">Nossa Equipe</h1>
 
       {/* Coordenador sozinho */}
       <div className="row justify-content-center mb-5">

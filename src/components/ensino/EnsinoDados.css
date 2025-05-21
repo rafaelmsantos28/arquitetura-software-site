@@ -1,8 +1,6 @@
 /* Wrapper geral do EnsinoDados */
 .ensino {
   max-width: 900px;
-  margin: 2rem auto 4rem;
-  padding: 0 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   /* Fundo, borda e sombra removidos daqui para deixar nas seções */
@@ -10,12 +8,16 @@
 
 /* Título principal */
 .ensino .title {
-  text-align: center;
   font-weight: 700;
   font-size: 2.8rem;
   margin-bottom: 2rem;
   color: #2c3e50;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* Seções - fundo, borda, sombra e arredondamento */
@@ -25,6 +27,7 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   padding: 1.6rem 2rem;
   margin-bottom: 2.5rem;
+
   border: 1px solid #ddd;
 }
 

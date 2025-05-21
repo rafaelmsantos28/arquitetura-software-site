@@ -26,7 +26,7 @@ const scrollToSection = (title) => {
 
 const ExtensaoDados = () => {
   return (
-    <div className="container-dados">
+    <div className="container my-5 container-margin">
       <h1 className="title">Projeto de Extensão: Academia do Arquiteto de Software</h1>
       <div className="icon-buttons">
         <button onClick={() => scrollToSection('Introdução')}>

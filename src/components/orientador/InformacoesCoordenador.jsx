@@ -7,9 +7,9 @@ import './InformacoesCoordenador.css';
 function InformacoesCoordenador() {
   return (
     <div className="container my-5">
-      <h1 className="titulo-coordenador mb-5 fw-bold text-center text-md-start">
+      {/*<h1 className="titulo-coordenador mb-5 fw-bold text-center text-md-start">
         Prof. Dr. Frank José Affonso
-      </h1>
+      </h1>*/}
 
       <div className="row align-items-start">
         <div className="col-md-4 text-center mb-4 mb-md-0">

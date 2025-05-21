@@ -1,8 +1,6 @@
 import React from 'react';
-import { FaBook, FaUsers, FaListAlt } from 'react-icons/fa';
+import { FaBook, FaChalkboardTeacher, FaListAlt } from 'react-icons/fa';
 import './EnsinoDados.css';
-
-
 
 const Section = ({ id, icon: Icon, title, children }) => (
   <section className="section" id={id} data-title={title}>
@@ -20,32 +18,10 @@ const pessoas = [
     papel: 'Coordenador / Professor',
     instituicoes: ['Graduação', 'Pós-graduação'],
     disciplinas: [
-      { nome: 'Disciplina 1 (Graduação)', link: 'https://link-curso-graduacao.com' },
-      { nome: 'Disciplina 2 (Pós)', link: 'https://link-curso-pos.com' },
-    ],
-  },
-  {
-    nome: 'Veronica Carvalho',
-    papel: 'Professora',
-    instituicoes: ['Graduação', 'Pós-graduação'],
-    disciplinas: [
-      { nome: 'Disciplina Verônica 1', link: 'https://link-curso-veronica.com' },
-    ],
-  },
-  {
-    nome: 'Daniel Pedronette',
-    papel: 'Professor',
-    instituicoes: ['Graduação', 'Pós-graduação'],
-    disciplinas: [
-      { nome: 'Disciplina Daniel 1', link: 'https://link-curso-daniel.com' },
-    ],
-  },
-  {
-    nome: 'Orlando Saraiva',
-    papel: 'Servidor UNESP e Engajado na Comunidade',
-    instituicoes: ['UNESP', 'Comunidade'],
-    disciplinas: [
-      { nome: 'Disciplina Orlando 1', link: 'https://link-curso-orlando.com' },
+      { nome: 'Engenharia de Software I' },
+      { nome: 'Engenharia de Software II' },
+      { nome: 'Programação Orientada a Objetos' },
+      { nome: 'Arquitetura de Software: Teoria e Prática' },
     ],
   },
 ];
@@ -66,43 +42,30 @@ const EnsinoDados = () => {
   };
 
   return (
-    <div className="ensino">
-      <h1 className="title">Ensino no Projeto Academia do Arquiteto de Software</h1>
-
-      {/* NOVOS botões estilo extensão com ícones */}
-      <div className="icon-buttons" style={{ marginBottom: '40px' }}>
-        <button onClick={() => scrollToSection('promovemos')}>
-          <FaBook />
-          O que promovemos
-        </button>
-        <button onClick={() => scrollToSection('pessoas')}>
-          <FaUsers />
-          Pessoas envolvidas
-        </button>
-        <button onClick={() => scrollToSection('acoes')}>
-          <FaListAlt />
-          O que<br />já fizemos
-        </button>
-      </div>
+    <div className="container my-5 ">
+      <h1 className="titulo-coordenador mb-5 fw-bold text-center text-md-start">Sobre o Ensino</h1>
 
       <Section id="promovemos" icon={FaBook} title="O que promovemos no ensino">
         <p>
-          Promovemos ensino de qualidade tanto na graduação quanto na pós-graduação, com disciplinas focadas em arquitetura de software, metodologias ágeis e práticas de engenharia de software. Nosso objetivo é formar profissionais preparados para os desafios do mercado e da pesquisa.
+          Promovemos ensino de qualidade tanto na graduação quanto na pós-graduação, com disciplinas
+          focadas em arquitetura de software, metodologias ágeis e práticas de engenharia de
+          software. Nosso objetivo é formar profissionais preparados para os desafios do mercado e
+          da pesquisa.
         </p>
       </Section>
 
-      <Section id="pessoas" icon={FaUsers} title="Pessoas envolvidas">
+      <Section id="pessoas" icon={FaChalkboardTeacher} title="Disciplinas">
         {pessoas.map(({ nome, papel, instituicoes, disciplinas }) => (
           <div key={nome} className="person">
-            <h3>{nome}</h3>
-            <p><em>{papel}</em></p>
-            <p><strong>Instituições / Áreas:</strong> {instituicoes.join(', ')}</p>
-            <p><strong>Disciplinas ministradas:</strong></p>
+            <p>
+              <strong>Instituições / Áreas:</strong> {instituicoes.join(', ')}
+            </p>
+            <p>
+              <strong>Disciplinas ministradas:</strong>
+            </p>
             <ul>
-              {disciplinas.map(({ nome, link }) => (
-                <li key={nome}>
-                  <a href={link} target="_blank" rel="noopener noreferrer">{nome}</a>
-                </li>
+              {disciplinas.map(({ nome }) => (
+                <li key={nome}>{nome}</li>
               ))}
             </ul>
           </div>

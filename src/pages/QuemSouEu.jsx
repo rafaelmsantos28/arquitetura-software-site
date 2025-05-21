@@ -1,13 +1,17 @@
 import InformacoesCoordenador from '../components/orientador/InformacoesCoordenador';
 import SideInfoColumn from '../components/home/SideInfoColumn';
+import EnsinoDados from '../components/ensino/EnsinoDados';
+import BannerQuemSouEu from '../components/orientador/BannerQuemSouEu';
 
 function QuemSouEu() {
   return (
     <>
       <div className="row gx-4">
+        <BannerQuemSouEu />
         {/* Coluna principal */}
         <div className="col-lg-9 mb-4">
           <InformacoesCoordenador />
+          <EnsinoDados />
         </div>
 
         {/* Coluna lateral */}

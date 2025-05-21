@@ -1,8 +1,10 @@
+_O que tiver envolta de dois tios (~~~~) significa que já foi feito_
+
 ## FAZER:
 
 ### TODAS AS PÁGINAS:
 
-- Colocar Banner em todas as páginas
+~~- Colocar Banner em todas as páginas~~
 
 ### PÁGINA PESQUISA:
 

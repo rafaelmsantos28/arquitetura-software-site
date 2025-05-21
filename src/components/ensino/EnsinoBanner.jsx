@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
-import banner2Mobile from '../../assets/carrossel/banner-mobile2.jpg'; // <------ ALTERAR
-import bannerQuemSouEuDesktop from '../../assets/banners/bannerQuemSouEu.png';
+/* import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg'; */
+import bannerEnsino from '../../assets/banners/bannerEnsino.png';
 
-function BannerQuemSouEu() {
+function BannerSobreNos() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -18,9 +18,9 @@ function BannerQuemSouEu() {
   }, []);
 
   const banner = {
-    image: isMobile ? banner2Mobile : bannerQuemSouEuDesktop,
-    title: 'Prof. Dr. Frank José Affonso',
-    text: 'Conheça a trajetória acadêmica, profissional e áreas de atuação do coordenador do projeto.',
+    image: isMobile ? banner1Mobile : bannerEnsino,
+    title: 'Cursos do Projeto',
+    text: 'Participe de cursos e workshops focado em desafios do mercado.',
   };
 
   return (
@@ -35,4 +35,4 @@ function BannerQuemSouEu() {
   );
 }
 
-export default BannerQuemSouEu;
+export default BannerSobreNos;

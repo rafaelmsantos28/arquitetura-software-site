@@ -12,7 +12,7 @@
 .title {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 3rem;
   color: #2c3e50;
   font-weight: bold;
 }
@@ -21,7 +21,7 @@
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 28px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 40px;
   margin-bottom: 60px;
   transition: box-shadow 0.3s ease;
@@ -133,5 +133,3 @@
   font-size: 2rem;
   margin-bottom: 5px;
 }
-
-
