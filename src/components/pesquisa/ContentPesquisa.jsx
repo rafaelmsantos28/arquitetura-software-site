@@ -8,21 +8,21 @@ function ContentPesquisa() {
       data: '2011',
       autores: 'Affonso, Frank José; Rodrigues, Evandro Luis Linhari',
       publicacao: 'Revista de Sistemas de Informação da FSMA, v. 7, n. 2, p. 22–31',
-      url: '#'
+      url: 'https://oaji.net/articles/2015/601-1433785163.pdf'
     },
     {
       title: 'ReflectTools: Uma ferramenta de apoio ao desenvolvimento de software reconfigurável',
       data: '2011',
       autores: 'Affonso, Frank José; Rodrigues, Evandro Luis Linhari',
       publicacao: 'Revista Brasileira de Computação Aplicada, v. 3, n. 2, p. 73–90',
-      url: 'https://doi.org/10.5335/rbca.2013.1804'
+      url: 'https://seer.upf.br/index.php/rbca/article/view/1804'
     },
     {
       title: 'Adaptive Software Development supported by an Automated Process: a Reference Model',
       data: '2013',
       autores: 'Affonso, Frank José; Vecchiato Saenz Carneiro, Maria Cecilia; Rodrigues, Evandro Luis Linhari; Nakagawa, Elisa Yumi',
       publicacao: 'Salesian Journal on Information Systems, v. 12, p. 8–20',
-      url: 'http://www.doaj.org/openurl?genre=journal&issn=19835604'
+      url: 'https://oaji.net/articles/2015/601-1433776680.pdf'
     },
     {
       title: 'A Reference Model as Automated Process for Software Adaptation at Runtime',
