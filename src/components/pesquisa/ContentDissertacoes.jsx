@@ -5,7 +5,7 @@ function ContentDissertacoes() {
   const dissertacoes = [
     {
       title: 'Desenvolvimento de serviços compostos autoadaptativos: um framework baseado em implantação dinâmica, métricas de QoS e informação semântica',
-      data: '01/01/2020',
+      data: '2020',
       autores: 'Passini, William Filisbino',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola: 'Universidade Estadual Paulista (UNESP), Instituto de Biociências, Letras e Ciências Exatas (Ibilce), São José do Rio Preto',
@@ -13,7 +13,7 @@ function ContentDissertacoes() {
     },
     {
       title: 'Autoproteção para a camada de aplicação: uma abordagem baseada em técnicas de aprendizado e no laço de controle MAPE-K',
-      data: '01/01/2022',
+      data: '2022',
       autores: 'Martins, Ronaldo Rodrigues',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
@@ -21,7 +21,7 @@ function ContentDissertacoes() {
     },
     {
       title: 'Estabelecimento de uma Arquitetura de Referência para Sistemas Ciber-Físicos Autoadaptativos',
-      data: '01/01/2023',
+      data: '2023',
       autores: 'Camargo, Marcos Paulo de Oliveira',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
@@ -29,7 +29,7 @@ function ContentDissertacoes() {
     },
     {
       title: 'DynaSchema: uma biblioteca para evolução de banco de dados relacional para o domínio de software autoadaptativo',
-      data: '01/01/2023',
+      data: '2023',
       autores: 'Campos, Gabriel Nagassaki',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola: 'Universidade Estadual Paulista (UNESP), Instituto de Geociências e Ciências Exatas (IGCE), Rio Claro',
