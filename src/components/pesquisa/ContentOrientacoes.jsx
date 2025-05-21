@@ -17,7 +17,7 @@ function ContentOrientacoes() {
       data: '2025',
       autores: 'João Pedro Vieira Brodt',
       publicacao: 'Dissertação (Mestrado em Ciência da Computação) - Universidade Estadual Paulista Júlio de Mesquita Filho',
-      url: '#',
+      url: 'https://br.linkedin.com/in/jo%C3%A3o-pedro-vieira-brodt-656544169?original_referer=https%3A%2F%2Fwww.google.com%2F',
     },
     {
       title: 'Tema da dissertação: A definir',

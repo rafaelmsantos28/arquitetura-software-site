@@ -8,7 +8,7 @@ _O que tiver envolta de dois tios (~~~~) significa que já foi feito_
 
 ### PÁGINA PESQUISA:
 
-- Ver se todos os links dos cards estão funcionando corretamente
+~~- Ver se todos os links dos cards estão funcionando corretamente~~
 
 ~~- Retirar Iniciação Científica (muito curta)~~
 
