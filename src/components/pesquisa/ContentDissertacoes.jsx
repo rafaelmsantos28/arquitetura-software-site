@@ -1,4 +1,4 @@
-import dissertacoesIcon from '../../assets/icons/iconDisser.png';
+import dissertacoesIcon from '../../assets/icons/iconM.png';
 import './ContentDissertacoes.css';
 
 function ContentDissertacoes() {

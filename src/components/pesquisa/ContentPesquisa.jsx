@@ -1,4 +1,4 @@
-import artigoIcon from '../../assets/icons/iconArtigo.png';
+import artigoIcon from '../../assets/icons/iconA.png';
 import './ContentPesquisa.css';
 
 function ContentPesquisa() {

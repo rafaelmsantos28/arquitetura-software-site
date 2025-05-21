@@ -1,4 +1,5 @@
-import orientacoesIcon from '../../assets/icons/iconOrient.png';
+import orientacoesMestrado from '../../assets/icons/iconM.png';
+import orientacoesDoutorado from '../../assets/icons/iconD.png';
 import './ContentOrientacoes.css';
 
 function ContentOrientacoes() {
@@ -82,7 +83,7 @@ function ContentOrientacoes() {
             >
               <div className="card-body d-flex align-items-center">
                 <img
-                  src={orientacoesIcon}
+                  src={orientacoesMestrado}
                   alt="Ícone de orientação"
                   style={{ height: '84px', width: '84px' }}
                   className="me-4"
@@ -112,7 +113,7 @@ function ContentOrientacoes() {
             >
               <div className="card-body d-flex align-items-center">
                 <img
-                  src={orientacoesIcon}
+                  src={orientacoesDoutorado}
                   alt="Ícone de orientação"
                   style={{ height: '84px', width: '84px' }}
                   className="me-4"
