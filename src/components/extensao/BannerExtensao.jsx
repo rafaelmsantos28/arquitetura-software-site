@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg';
 import bannerExtensao from '../../assets/banners/bannerExtensao.png';
+import './BannerExtensao.css';
 
 function BannerSobreNos() {
   const [isMobile, setIsMobile] = useState(false);
@@ -24,9 +25,12 @@ function BannerSobreNos() {
   };
 
   return (
-    <section className="hero-section">
-      <div className="slide-content" style={{ backgroundImage: `url(${banner.image})` }}>
-        <div className="text-container">
+    <section className="hero-section-bannerextensao">
+      <div
+        className="slide-content-bannerextensao"
+        style={{ backgroundImage: `url(${banner.image})` }}
+      >
+        <div className="text-container-bannerextensao">
           <h2 className="fw-bold">{banner.title}</h2>
           <p>{banner.text}</p>
         </div>

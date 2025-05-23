@@ -1,11 +1,12 @@
 import './Footer.css';
 
+import logoFooter from '../../assets/logo-footer.png';
 import instagramIcon from '../../assets/redes-sociais/instagram.svg';
 import linkedinIcon from '../../assets/redes-sociais/linkedin.svg';
-import youtubeIcon from '../../assets/redes-sociais/youtube.svg';
 import mailIcon from '../../assets/redes-sociais/mail.svg';
 import phoneIcon from '../../assets/redes-sociais/phone.svg';
-import logoFooter from '../../assets/logo-footer.png';
+import youtubeIcon from '../../assets/redes-sociais/youtube.svg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -48,13 +49,13 @@ function Footer() {
             <h4 className="fw-bold mb-4">Institucional</h4>
             <ul className="list-unstyled lead">
               <li className="mb-2">
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Quem sou eu</a>
+                <Link to="/quemsoueu">Quem sou eu</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Sobre nós</a>
+                <Link to="/sobrenos">Sobre nós</Link>
               </li>
             </ul>
           </div>
@@ -65,13 +66,13 @@ function Footer() {
             <h4 className="fw-bold mb-4">Acadêmico</h4>
             <ul className="list-unstyled lead">
               <li className="mb-2">
-                <a href="#">Ensino</a>
+                <Link to="/atividades">Atividades</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Pesquisa</a>
+                <Link to="/pesquisa">Pesquisa</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Extensão</a>
+                <Link to="/extensao">Extensão</Link>
               </li>
             </ul>
           </div>
@@ -104,10 +105,17 @@ function Footer() {
 
       <div className="bg-primary text-light text-center py-3 mt-4">
         <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
-          <span>Academia do Arquiteto de Software Copyright © Todos os Direitos Reservados</span>
-          <a href="#" className="text-light text-decoration-none fw-bold">
-            Políticas de Privacidade
-          </a>
+          <span>
+            © Todos os Direitos Reservados.{' '}
+            <a
+              className="proec-unesp-footer"
+              href="https://www2.unesp.br/portal#!/proec"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              ProEC Unesp
+            </a>
+          </span>
         </div>
       </div>
     </footer>

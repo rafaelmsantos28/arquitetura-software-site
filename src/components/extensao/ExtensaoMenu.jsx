@@ -26,7 +26,7 @@ const scrollToSection = (title) => {
 
 const ExtensaoMenu = () => {
   return (
-    <div className="icon-buttons">
+    <div className="icon-buttons-extensaomenu">
       {menuItems.map(({ icon: Icon, label }) => (
         <button key={label} onClick={() => scrollToSection(label)}>
           <Icon /> {label}

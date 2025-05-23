@@ -57,7 +57,7 @@ function BannerYoutube() {
   }, []);
 
   return (
-    <section className="banner-section d-flex align-items-center">
+    <section className="banner-section-banneryoutube d-flex align-items-center">
       <div className="container">
         <div className="row align-items-center">
           {/* Título Mobile */}
@@ -70,7 +70,7 @@ function BannerYoutube() {
 
           <div className="col-lg-6 col-12 text-center order-lg-1 mb-4 mb-lg-0 position-relative overflow-hidden">
             {/* Imagem de fundo */}
-            <img src={circuitBg} alt="Circuito" className="circuito-bg" />
+            <img src={circuitBg} alt="Circuito" className="circuito-bg-banneryoutube" />
 
             {/* Imagem Principal */}
             <img

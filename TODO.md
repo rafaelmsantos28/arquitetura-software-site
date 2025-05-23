@@ -6,6 +6,7 @@ _O que tiver envolta de dois tios (~~~~) significa que já foi feito_
 
 ~~- Colocar Banner em todas as páginas~~
 ~~- Tirar Fale Conosco da seção lateral ~~
+~~- Total de cinco noticias no SideInfoColumn~~
 
 ### PÁGINA PESQUISA:
 

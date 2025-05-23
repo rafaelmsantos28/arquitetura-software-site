@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import banner2Mobile from '../../assets/carrossel/banner-mobile2.jpg'; // <------ ALTERAR
 import bannerQuemSouEuDesktop from '../../assets/banners/bannerQuemSouEu.png';
 
+import './BannerQuemSouEu.css';
+
 function BannerQuemSouEu() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -24,9 +26,12 @@ function BannerQuemSouEu() {
   };
 
   return (
-    <section className="hero-section">
-      <div className="slide-content" style={{ backgroundImage: `url(${banner.image})` }}>
-        <div className="text-container">
+    <section className="hero-section-bannerquemsoueu">
+      <div
+        className="slide-content-bannerquemsoueu"
+        style={{ backgroundImage: `url(${banner.image})` }}
+      >
+        <div className="text-container-bannerquemsoueu">
           <h2 className="fw-bold">{banner.title}</h2>
           <p>{banner.text}</p>
         </div>

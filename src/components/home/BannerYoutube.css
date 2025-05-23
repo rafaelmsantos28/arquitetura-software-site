@@ -1,4 +1,4 @@
-.banner-section {
+.banner-section-banneryoutube {
   position: relative;
   height: calc(100vh - 138px);
   width: 100%;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.circuito-bg {
+.circuito-bg-banneryoutube {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,12 +36,12 @@
   transform: translateY(0);
 }
 
-.banner-section h2 {
+.banner-section-banneryoutube h2 {
   font-size: 3rem;
   color: #1b1b1b;
 }
 
-.banner-section p {
+.banner-section-banneryoutube p {
   font-size: 1.2rem;
   color: #1b1b1b;
 }
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 768px) {
-  .banner-section {
+  .banner-section-banneryoutube {
     padding: 2rem 1rem;
     text-align: center;
   }
@@ -67,11 +67,11 @@
     max-width: 60%;
   }
 
-  .banner-section h2 {
+  .banner-section-banneryoutube h2 {
     font-size: 2rem;
   }
 
-  .banner-section p {
+  .banner-section-banneryoutube p {
     font-size: 1rem;
   }
 }

@@ -3,10 +3,10 @@ import { FaBook, FaChalkboardTeacher, FaListAlt } from 'react-icons/fa';
 import './EnsinoDados.css';
 
 const SectionCard = ({ id, icon: Icon, title, children }) => (
-  <section id={id} className="card mb-5 p-4 shadow-sm section-card-quemsoueu">
+  <section id={id} className="card-ensinodados mb-5 p-4 shadow-sm section-card-ensinodados">
     <div className="card-body">
       <div className="text-center mb-3">
-        {Icon && <Icon className="section-icon mb-2" />}
+        {Icon && <Icon className="section-icon-ensinodados mb-2" />}
         <h2 className="text-center">{title}</h2>
       </div>
       <div className="card-text text-start">{children}</div>

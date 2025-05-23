@@ -1,4 +1,4 @@
-import SideInfoColumn from '../components/home/SideInfoColumn';
+import SideInfoColumn from '../components/comuns/SideInfoColumn';
 import BannerEnsino from '../components/atividades/EnsinoBanner';
 
 function Atividades() {

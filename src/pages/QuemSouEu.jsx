@@ -1,5 +1,5 @@
 import InformacoesCoordenador from '../components/orientador/InformacoesCoordenador';
-import SideInfoColumn from '../components/home/SideInfoColumn';
+import SideInfoColumn from '../components/comuns/SideInfoColumn';
 import EnsinoDados from '../components/orientador/EnsinoDados';
 import BannerQuemSouEu from '../components/orientador/BannerQuemSouEu';
 

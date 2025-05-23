@@ -12,8 +12,8 @@ function BannerPesquisa() {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    checkScreenSize(); // checa na primeira renderização
-    window.addEventListener('resize', checkScreenSize); // escuta mudanças de tamanho
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
 
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
@@ -25,9 +25,12 @@ function BannerPesquisa() {
   };
 
   return (
-    <section className="hero-section">
-      <div className="slide-content" style={{ backgroundImage: `url(${banner.image})` }}>
-        <div className="text-container">
+    <section className="hero-section-bannerpesquisa">
+      <div
+        className="slide-content-bannerpesquisa"
+        style={{ backgroundImage: `url(${banner.image})` }}
+      >
+        <div className="text-container-bannerpesquisa">
           <h2 className="fw-bold">{banner.title}</h2>
           <p>{banner.text}</p>
         </div>

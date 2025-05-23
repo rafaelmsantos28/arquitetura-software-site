@@ -25,9 +25,12 @@ function BannerSobreNos() {
   };
 
   return (
-    <section className="hero-section">
-      <div className="slide-content" style={{ backgroundImage: `url(${banner.image})` }}>
-        <div className="text-container">
+    <section className="hero-section-bannersobrenos">
+      <div
+        className="slide-content-bannersobrenos"
+        style={{ backgroundImage: `url(${banner.image})` }}
+      >
+        <div className="text-container-bannersobrenos">
           <h2 className="fw-bold">{banner.title}</h2>
           <p>{banner.text}</p>
         </div>

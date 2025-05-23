@@ -11,10 +11,10 @@ import {
 import './ExtensaoDados.css';
 
 const Section = ({ icon: Icon, title, children }) => (
-  <section className="card mb-5 p-4 shadow-sm section-card-extensao" data-title={title}>
+  <section className="card mb-5 p-4 shadow-sm section-card-extensaodados" data-title={title}>
     <div className="card-body">
       <div className="text-center mb-3">
-        {Icon && <Icon className="section-icon mb-2" />}
+        {Icon && <Icon className="section-icon-extensaodados mb-2" />}
         <h2 className="text-center">{title}</h2>
       </div>
       <div className="card-text text-start">{children}</div>
@@ -25,7 +25,7 @@ const Section = ({ icon: Icon, title, children }) => (
 const ExtensaoDados = () => {
   return (
     <div className="container my-5 container-margin">
-      <h1 className="title mb-4">Academia do Arquiteto de Software</h1>
+      <h1 className="title-extensaodados mb-4">Academia do Arquiteto de Software</h1>
 
       {/* Menu de Ícones */}
       <ExtensaoMenu />

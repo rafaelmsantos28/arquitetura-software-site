@@ -1,6 +1,6 @@
 import BannerSobreNos from '../components/sobrenos/BannerSobreNos.jsx';
-import VerticalCardContent from '../components/sobrenos/VerticalCardContent.jsx';
-import SideInfoColumn from '../components/home/SideInfoColumn.jsx';
+
+import SideInfoColumn from '../components/comuns/SideInfoColumn.jsx';
 import Team from '../components/home/Team.jsx';
 
 function SobreNos() {

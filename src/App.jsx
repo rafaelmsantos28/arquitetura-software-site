@@ -8,11 +8,12 @@ import Pesquisa from './pages/Pesquisa.jsx';
 import Extensao from './pages/Extensao.jsx';
 import SobreNos from './pages/SobreNos.jsx';
 import QuemSouEu from './pages/QuemSouEu.jsx';
-import Extensaopage from './pages/Extensao.jsx';
+import ScrollToTop from './components/comuns/ScrollToTop.jsx';
 
 function App() {
   return (
     <Router basename="/arquitetura-software-site">
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,6 +22,7 @@ function App() {
         <Route path="/extensao" element={<Extensao />} />
         <Route path="/sobrenos" element={<SobreNos />} />
         <Route path="/quemsoueu" element={<QuemSouEu />} />
+
         {/* outras rotas */}
       </Routes>
       <Footer />

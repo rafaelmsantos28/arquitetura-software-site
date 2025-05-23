@@ -1,43 +1,34 @@
 /* Apenas para ícones maiores e responsivos */
-.section-icon {
+.section-icon-ensinodados {
   font-size: 48px;
+  color: #0055ff;
 }
 
-.card {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  /* garantir que a posição não quebre layout fixo */
-  will-change: transform, box-shadow;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-.section-card-quemsoueu p,
-.section-card-quemsoueu ul {
+.section-card-ensinodados p,
+.section-card-ensinodados ul {
   font-size: 1.25rem;
   line-height: 1.8;
   color: #333;
 }
 
-.section-card-quemsoueu h2 {
+.section-card-ensinodados h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-.section-card-quemsoueu {
+.section-card-ensinodados {
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 28px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 40px;
   margin-bottom: 60px;
-  transition: box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* unificado aqui */
 }
 
-.section-card-quemsoueu:hover {
+.section-card-ensinodados:hover {
+  transform: translateY(-5px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }

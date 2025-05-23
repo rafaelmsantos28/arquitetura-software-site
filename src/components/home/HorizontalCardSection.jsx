@@ -23,11 +23,11 @@ function HorizontalCardSection() {
   ];
 
   return (
-    <section className="info-section">
+    <section className="info-section-horizontalcardsection">
       {infos.map((item, index) => (
-        <div className="info-card" key={index}>
+        <div className="info-card-horizontalcardsection" key={index}>
           <img src={item.icon} alt={item.title} />
-          <div className="info-content">
+          <div className="info-content-horizontalcardsection">
             <h3>{item.title}</h3>
             <p>{item.text}</p>
           </div>

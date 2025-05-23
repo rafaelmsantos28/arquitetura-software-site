@@ -1,4 +1,4 @@
-.icon-buttons {
+.icon-buttons-extensaomenu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6,7 +6,7 @@
   margin-bottom: 20px;
 }
 
-.icon-buttons button {
+.icon-buttons-extensaomenu button {
   background: transparent;
   border: none;
   outline: none;
@@ -23,11 +23,11 @@
   padding: 10px 0;
 }
 
-.icon-buttons button:hover {
+.icon-buttons-extensaomenu button:hover {
   transform: translateY(-5px);
 }
 
-.icon-buttons button svg {
+.icon-buttons-extensaomenu button svg {
   font-size: 2rem;
   margin-bottom: 5px;
 }

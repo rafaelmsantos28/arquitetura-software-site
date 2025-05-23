@@ -1,9 +1,9 @@
-import BannerPesquisa from "../components/pesquisa/BannerPesquisa";
-import SideInfoColumn from "../components/home/SideInfoColumn";
-import ContentPesquisa from "../components/pesquisa/ContentPesquisa";
-import ContentOrientacoes from "../components/pesquisa/ContentOrientacoes";
-import ContentDissertacoes from "../components/pesquisa/ContentDissertacoes";
-import MenuPesquisa from "../components/pesquisa/MenuPesquisa";
+import BannerPesquisa from '../components/pesquisa/BannerPesquisa';
+import SideInfoColumn from '../components/comuns/SideInfoColumn';
+import ContentPesquisa from '../components/pesquisa/ContentPesquisa';
+import ContentOrientacoes from '../components/pesquisa/ContentOrientacoes';
+import ContentDissertacoes from '../components/pesquisa/ContentDissertacoes';
+import MenuPesquisa from '../components/pesquisa/MenuPesquisa';
 
 function Pesquisa() {
   return (

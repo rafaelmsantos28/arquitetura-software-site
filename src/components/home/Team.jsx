@@ -113,14 +113,17 @@ function Team() {
   const others = teamMembers.slice(1);
 
   return (
-    <section className="team-section container my-5">
+    <section className="container my-5">
       <h1 className="fw-bold text-center mb-5">Nossa Equipe</h1>
 
-      {/* Coordenador sozinho */}
       <div className="row justify-content-center mb-5">
         <div className="col-12 col-md-6 col-lg-4">
-          <div className="team-card text-center p-5">
-            <img src={coordinator.photo} alt={coordinator.name} className="member-photo mb-3" />
+          <div className="team-card-team text-center p-5">
+            <img
+              src={coordinator.photo}
+              alt={coordinator.name}
+              className="member-photo-team mb-3"
+            />
             <h5 className="mb-1">{coordinator.name}</h5>
             <p className="text-muted">{coordinator.role}</p>
             <div className="d-flex justify-content-center gap-3">
@@ -130,22 +133,22 @@ function Team() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={mailIcon} alt="E-mail" className="social-icon" />
+                  <img src={mailIcon} alt="E-mail" className="social-icon-team" />
                 </a>
               )}
               {coordinator.socialLinks.linkedin && (
                 <a href={coordinator.socialLinks.linkedin} target="_blank" rel="noreferrer">
-                  <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+                  <img src={linkedinIcon} alt="LinkedIn" className="social-icon-team" />
                 </a>
               )}
               {coordinator.socialLinks.github && (
                 <a href={coordinator.socialLinks.github} target="_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="GitHub" className="social-icon" />
+                  <img src={githubIcon} alt="GitHub" className="social-icon-team" />
                 </a>
               )}
               {coordinator.socialLinks.x && (
                 <a href={coordinator.socialLinks.x} target="_blank" rel="noreferrer">
-                  <img src={xIcon} alt="X" className="social-icon" />
+                  <img src={xIcon} alt="X" className="social-icon-team" />
                 </a>
               )}
             </div>
@@ -153,12 +156,11 @@ function Team() {
         </div>
       </div>
 
-      {/* Outros membros */}
       <div className="row">
         {others.map((member, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
-            <div className="team-card text-center">
-              <img src={member.photo} alt={member.name} className="member-photo mb-3" />
+            <div className="team-card-team text-center">
+              <img src={member.photo} alt={member.name} className="member-photo-team mb-3" />
               <h5 className="mb-1">{member.name}</h5>
               <p className="text-muted">{member.role}</p>
               <div className="d-flex justify-content-center gap-3">
@@ -168,22 +170,22 @@ function Team() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={mailIcon} alt="E-mail" className="social-icon" />
+                    <img src={mailIcon} alt="E-mail" className="social-icon-team" />
                   </a>
                 )}
                 {member.socialLinks.linkedin && (
                   <a href={member.socialLinks.linkedin} target="_blank" rel="noreferrer">
-                    <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+                    <img src={linkedinIcon} alt="LinkedIn" className="social-icon-team" />
                   </a>
                 )}
                 {member.socialLinks.github && (
                   <a href={member.socialLinks.github} target="_blank" rel="noreferrer">
-                    <img src={githubIcon} alt="GitHub" className="social-icon" />
+                    <img src={githubIcon} alt="GitHub" className="social-icon-team" />
                   </a>
                 )}
                 {member.socialLinks.x && (
                   <a href={member.socialLinks.x} target="_blank" rel="noreferrer">
-                    <img src={xIcon} alt="X" className="social-icon" />
+                    <img src={xIcon} alt="X" className="social-icon-team" />
                   </a>
                 )}
               </div>

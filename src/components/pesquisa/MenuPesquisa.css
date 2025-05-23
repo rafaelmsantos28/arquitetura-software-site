@@ -1,14 +1,10 @@
-html {
-  scroll-behavior: smooth;
-}
-
-.menu-icon {
+.menu-icon-menupesquisa {
   max-width: 64px;
   max-height: 64px;
   transition: transform 0.3s ease;
   margin: 8px;
 }
 
-.menu-icon:hover {
+.menu-icon-menupesquisa:hover {
   transform: translateY(-5px);
 }

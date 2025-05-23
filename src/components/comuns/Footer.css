@@ -6,6 +6,15 @@ footer ul li a {
   padding: 0.2rem 0; /* Opcional: adiciona um pequeno padding vertical para facilitar o toque */
 }
 
+.proec-unesp-footer {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.proec-unesp-footer:hover {
+  color: #b2d1f4;
+}
+
 footer ul li a:hover {
   text-decoration: underline;
   color: #0077ff;

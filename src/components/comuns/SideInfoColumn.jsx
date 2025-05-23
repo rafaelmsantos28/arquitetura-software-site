@@ -38,21 +38,33 @@ const newsList = [
     date: '02/05/2025',
     link: 'https://instagram.com/aa.softwareunesp',
   },
+  {
+    id: 5,
+    image: newsImg4,
+    title: 'Veja as novas postagens no Instagram do programa, fique por dentro das novidades',
+    date: '03/05/2025',
+    link: 'https://instagram.com/aa.softwareunesp',
+  },
 ];
 
 function SideInfoColumn() {
   return (
-    <aside className="side-info side-info-column">
-      <div className="info-section">
-        <h3 className="section-title">Novidades</h3>
+    <aside className="side-info-sideinfocolumn side-info-column-sideinfocolumn">
+      <div className="info-section-sideinfocolumn">
+        <h3 className="section-title-sideinfocolumn">Novidades</h3>
 
         {newsList.map((news) => (
           <div key={news.id}>
-            <a href={news.link} target="_blank" rel="noopener noreferrer" className="news-item">
-              <img src={news.image} alt={news.title} className="news-image" />
-              <div className="news-text">
+            <a
+              href={news.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="news-item-sideinfocolumn"
+            >
+              <img src={news.image} alt={news.title} className="news-image-sideinfocolumn" />
+              <div className="news-text-sideinfocolumn">
                 <h4>{news.title}</h4>
-                <p className="news-date">{news.date}</p>
+                <p className="news-date-sideinfocolumn">{news.date}</p>
               </div>
             </a>
             <hr />

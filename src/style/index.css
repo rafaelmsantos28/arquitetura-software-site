@@ -22,6 +22,14 @@
   min-height: 100vh;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 /* 
 div {
   border-style: dotted;

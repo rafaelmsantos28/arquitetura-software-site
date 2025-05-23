@@ -1,6 +1,6 @@
 import BannerCarousel from '../components/home/BannerCarousel.jsx';
 import VerticalCardSection from '../components/home/VerticalCardSection.jsx';
-import SideInfoColumn from '../components/home/SideInfoColumn.jsx';
+import SideInfoColumn from '../components/comuns/SideInfoColumn.jsx';
 import BannerYoutube from '../components/home/BannerYoutube.jsx';
 
 function Home() {

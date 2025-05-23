@@ -1,6 +1,6 @@
 /* src/pages/Extensao.css */
 
-.title {
+.title-extensaodados {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 3rem;
@@ -8,7 +8,7 @@
   font-weight: bold;
 }
 
-.section-card-extensao {
+.section-card-extensaodados {
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 28px;
@@ -18,35 +18,24 @@
   transition: box-shadow 0.3s ease;
 }
 
-.section-card-extensao:hover {
+.section-card-extensaodados:hover {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
-.section-card-extensao h2 {
+.section-card-extensaodados h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-.section-card-extensao p,
-.section-card-extensao ul {
+.section-card-extensaodados p,
+.section-card-extensaodados ul {
   font-size: 1.25rem;
   line-height: 1.8;
   color: #333;
 }
 
-.section-icon {
+.section-icon-extensaodados {
   font-size: 64px;
   color: #0055ff;
   margin-bottom: 12px;
-}
-
-.section-icon {
-  font-size: 64px;
-  color: #0055ff;
-}
-
-.section-header h2 {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin-top: 12px;
 }
