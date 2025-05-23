@@ -11,7 +11,6 @@ function Extensao() {
         {/* Coluna principal */}
         <div className="col-lg-9 mb-4">
           <ExtensaoDados />
-          <Team />
         </div>
 
         {/* Coluna lateral */}

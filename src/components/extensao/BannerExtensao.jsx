@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-/* import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg'; */
+import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg';
 import bannerExtensao from '../../assets/banners/bannerExtensao.png';
 
 function BannerSobreNos() {

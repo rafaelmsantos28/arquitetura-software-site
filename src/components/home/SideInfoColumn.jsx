@@ -59,26 +59,6 @@ function SideInfoColumn() {
           </div>
         ))}
       </div>
-
-      <div className="info-section">
-        <h3 className="section-title">Fale Conosco</h3>
-        <div className="contact-item">
-          <img src={mailIcon} alt="Email" className="contact-icon" />
-          <p>a.software-unesp@gmail.com</p>
-        </div>
-        <div className="contact-item">
-          <img src={phoneIcon} alt="Telefone" className="contact-icon" />
-          <p>(99) 99999-9999</p>
-        </div>
-        <div className="contact-item">
-          <img src={instagramIcon} alt="Instagram" className="contact-icon" />
-          <p>@aa.softwareunesp</p>
-        </div>
-        <div className="contact-item">
-          <img src={linkedinIcon} alt="LinkedIn" className="contact-icon" />
-          <p>Linkedin</p>
-        </div>
-      </div>
     </aside>
   );
 }

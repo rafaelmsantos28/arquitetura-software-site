@@ -1,6 +1,6 @@
 import InformacoesCoordenador from '../components/orientador/InformacoesCoordenador';
 import SideInfoColumn from '../components/home/SideInfoColumn';
-import EnsinoDados from '../components/ensino/EnsinoDados';
+import EnsinoDados from '../components/orientador/EnsinoDados';
 import BannerQuemSouEu from '../components/orientador/BannerQuemSouEu';
 
 function QuemSouEu() {
@@ -9,7 +9,7 @@ function QuemSouEu() {
       <div className="row gx-4">
         <BannerQuemSouEu />
         {/* Coluna principal */}
-        <div className="col-lg-9 mb-4">
+        <div className="col-lg-9 mb-4 ">
           <InformacoesCoordenador />
           <EnsinoDados />
         </div>

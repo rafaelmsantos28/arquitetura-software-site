@@ -5,6 +5,7 @@ _O que tiver envolta de dois tios (~~~~) significa que já foi feito_
 ### TODAS AS PÁGINAS:
 
 ~~- Colocar Banner em todas as páginas~~
+~~- Tirar Fale Conosco da seção lateral ~~
 
 ### PÁGINA PESQUISA:
 
@@ -13,9 +14,9 @@ _O que tiver envolta de dois tios (~~~~) significa que já foi feito_
 ~~- Retirar Iniciação Científica (muito curta)~~
 
 ~~- Mudar os ícones dos cards. No lugar do ícone, colocar uma letra. Por exemplo:~~
-  ~~- D - Dissertações~~
-  ~~- T - Teses de Doutorado~~
-  ~~- etc etc~~
+~~- D - Dissertações~~
+~~- T - Teses de Doutorado~~
+~~- etc etc~~
 
 ~~Mudar mini-menu para: Artigos Publicados - Orientações em Andamento - Orientações Concluídas~~
 
@@ -23,9 +24,9 @@ _O que tiver envolta de dois tios (~~~~) significa que já foi feito_
 
 ~~- Artigos Publicados~~
 ~~- Orientações em Andamento~~
-  ~~- Indicar se é de Mestrado ou Doutorado (subtítulo)~~
+~~- Indicar se é de Mestrado ou Doutorado (subtítulo)~~
 ~~- Orientações Concluídas~~
-  ~~- Indicar se é de Mestrado ou Doutorado (subtítulo)~~
+~~- Indicar se é de Mestrado ou Doutorado (subtítulo)~~
 
 ### PÁGINA ENSINO:
 
@@ -55,6 +56,7 @@ _O que tiver envolta de dois tios (~~~~) significa que já foi feito_
 ### PÁGINA EXTENSÃO:
 
 - O conteúdo da página Sobre Nós entra em Extensão, porém deve manter o mesmo estilo que está na extensão atual, pois o professor gostou. Retirar Teams.jsx de Extensão.
+- Alterar "Projeto de Extensão: Academia do Arquiteto de Software" para "Academia do Arquiteto de Software"
 
   > Assim, Página Extensão fica sem Teams.jsx. Página de Extensão ficou bacana, só colocar o Banner. O conteúdo de Sobre Nós vai para Extensão
 

@@ -78,8 +78,8 @@ function Header() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/ensino">
-                    Cursos
+                  <Link className="nav-link" to="/atividades">
+                    Atividades
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -117,8 +117,8 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to="/ensino" onClick={closeMenu}>
-                Ensino
+              <Link className="nav-link" to="/atividades" onClick={closeMenu}>
+                Atividades
               </Link>
             </li>
             <li>

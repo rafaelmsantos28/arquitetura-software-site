@@ -33,7 +33,7 @@ function InformacoesCoordenador() {
           </div>
         </div>
 
-        <div className="col-md-8">
+        <div className="col-md-8 ">
           <p>
             É professor assistente doutor do Departamento de Estatística, Matemática Aplicação e
             Computação do Instituto de Geociências e Ciências Exatas (DEMAC/IGCE/UNESP) em Regime

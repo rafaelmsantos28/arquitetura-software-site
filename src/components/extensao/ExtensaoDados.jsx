@@ -1,4 +1,5 @@
 import React from 'react';
+import ExtensaoMenu from './ExtensaoMenu';
 import {
   FaLightbulb,
   FaBullseye,
@@ -10,45 +11,26 @@ import {
 import './ExtensaoDados.css';
 
 const Section = ({ icon: Icon, title, children }) => (
-  <section className="section" data-title={title}>
-    <div className="section-header">
-      {Icon && <Icon className="section-icon" />}
-      <h2>{title}</h2>
+  <section className="card mb-5 p-4 shadow-sm section-card-extensao" data-title={title}>
+    <div className="card-body">
+      <div className="text-center mb-3">
+        {Icon && <Icon className="section-icon mb-2" />}
+        <h2 className="text-center">{title}</h2>
+      </div>
+      <div className="card-text text-start">{children}</div>
     </div>
-    <div>{children}</div>
   </section>
 );
-
-const scrollToSection = (title) => {
-  const section = document.querySelector(`[data-title="${title}"]`);
-  if (section) section.scrollIntoView({ behavior: 'smooth' });
-};
 
 const ExtensaoDados = () => {
   return (
     <div className="container my-5 container-margin">
-      <h1 className="title">Projeto de Extensão: Academia do Arquiteto de Software</h1>
-      <div className="icon-buttons">
-        <button onClick={() => scrollToSection('Introdução')}>
-          <FaLightbulb /> Introdução
-        </button>
-        <button onClick={() => scrollToSection('Objetivos')}>
-          <FaBullseye /> Objetivos
-        </button>
-        <button onClick={() => scrollToSection('Metodologia')}>
-          <FaCogs /> Metodologia
-        </button>
-        <button onClick={() => scrollToSection('Resultados Esperados')}>
-          <FaChartLine /> Resultados
-        </button>
-        <button onClick={() => scrollToSection('Cronograma')}>
-          <FaCalendarAlt /> Cronograma
-        </button>
-        <button onClick={() => scrollToSection('Participação Estudantil')}>
-          <FaUserGraduate /> Participação
-        </button>
-      </div>
+      <h1 className="title mb-4">Academia do Arquiteto de Software</h1>
 
+      {/* Menu de Ícones */}
+      <ExtensaoMenu />
+
+      {/* Seções */}
       <Section icon={FaLightbulb} title="Introdução">
         <p>
           O projeto “Academia do Arquiteto de Software” tem como objetivo disseminar de forma

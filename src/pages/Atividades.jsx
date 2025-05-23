@@ -1,8 +1,7 @@
-import EnsinoDados from '../components/ensino/EnsinoDados';
 import SideInfoColumn from '../components/home/SideInfoColumn';
-import BannerEnsino from '../components/ensino/EnsinoBanner';
+import BannerEnsino from '../components/atividades/EnsinoBanner';
 
-function Ensino() {
+function Atividades() {
   return (
     <>
       <div className="row gx-4">
@@ -23,4 +22,4 @@ function Ensino() {
   );
 }
 
-export default Ensino;
+export default Atividades;
