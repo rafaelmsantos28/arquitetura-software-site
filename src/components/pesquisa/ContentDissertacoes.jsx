@@ -54,7 +54,7 @@ function ContentDissertacoes() {
 
   return (
     <section id="dissertacoes" className="container my-5">
-      <h2 className="section-title text-center mb-4">Orientações Concluídas</h2>
+      <h2 className="fw-bold section-title text-center mb-4">Orientações Concluídas</h2>
       <h3 className="subsection-title mt-4 mb-3">Dissertações de Mestrado</h3>
       <div className="row g-4">
         {dissertacoesOrdenados.map((item, index) => (
@@ -65,11 +65,11 @@ function ContentDissertacoes() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="card-body d-flex align-items-center">
+              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row">
                 <img
                   src={dissertacoesIcon}
                   alt="Ícone do artigo"
-                  style={{ height: '84px', width: '84px' }}
+                  style={{ height: '84px', width: '84px', margin: '12px' }}
                   className="me-4"
                 />
                 <div>

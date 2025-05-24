@@ -74,7 +74,7 @@ function ContentOrientacoes() {
 
   return (
     <section id="orientacoes" className="container my-5">
-      <h2 className="section-title text-center mb-4">Orientações em Andamento</h2>
+      <h2 className="fw-bold section-title text-center mb-4">Orientações em Andamento</h2>
 
       {/* Mestrados */}
       <h3 className="subsection-title mt-4 mb-3">Dissertações de Mestrado</h3>
@@ -87,11 +87,11 @@ function ContentOrientacoes() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="card-body d-flex align-items-center">
+              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row">
                 <img
                   src={orientacoesMestrado}
                   alt="Ícone de orientação"
-                  style={{ height: '84px', width: '84px' }}
+                  style={{ height: '84px', width: '84px', margin: '12px' }}
                   className="me-4"
                 />
                 <div>
@@ -123,11 +123,11 @@ function ContentOrientacoes() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="card-body d-flex align-items-center">
+              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row">
                 <img
                   src={orientacoesDoutorado}
                   alt="Ícone de orientação"
-                  style={{ height: '84px', width: '84px' }}
+                  style={{ height: '84px', width: '84px', margin: '12px' }}
                   className="me-4"
                 />
                 <div>
