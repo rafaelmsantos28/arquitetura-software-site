@@ -114,7 +114,7 @@ function Team() {
 
   return (
     <section className="container my-5">
-      <h1 className="fw-bold text-center mb-5">Nossa Equipe</h1>
+      <h2 className="section-title fw-bold mb-5 text-center">Nossa Equipe</h2>
 
       <div className="row justify-content-center mb-5">
         <div className="col-12 col-md-6 col-lg-4">
