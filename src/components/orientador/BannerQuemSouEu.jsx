@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import banner2Mobile from '../../assets/carrossel/banner-mobile2.jpg'; // <------ ALTERAR
-import bannerQuemSouEuDesktop from '../../assets/banners/bannerQuemSouEu.png';
+import bannerQuemSouEuDesktop from '../../assets/banners/BannerQuemSouEu.jpg';
 
 import './BannerQuemSouEu.css';
 

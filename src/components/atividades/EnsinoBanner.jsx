@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 /* import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg'; */
-import bannerEnsino from '../../assets/banners/bannerEnsino.png';
+import bannerEnsino from '../../assets/banners/BannerEnsino.jpg';
 import './EnsinoBanner.css';
 
 function BannerSobreNos() {
