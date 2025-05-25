@@ -1,0 +1,30 @@
+.event-card {
+  border-radius: 12px;
+  padding: 24px;
+  color: #1d4493;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 12px;
+}
+
+.event-card .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+.event-card-icon {
+  display: flex;
+  align-items: center;
+  transform: scale(2);
+}

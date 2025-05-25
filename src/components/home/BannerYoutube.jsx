@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
-import youtubePhone from '../../assets/youtube-phone.png';
-import circuitBg from '../../assets/circuito.png';
+import youtubePhone from '../../assets/youtube/youtube-phone.png';
+import circuitBg from '../../assets/youtube/circuito.png';
 import './BannerYoutube.css';
 
 function BannerYoutube() {

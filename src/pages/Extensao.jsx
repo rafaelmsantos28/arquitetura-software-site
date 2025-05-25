@@ -1,6 +1,6 @@
 import ExtensaoDados from '../components/extensao/extensaodados';
 import SideInfoColumn from '../components/comuns/SideInfoColumn.jsx';
-import Team from '../components/home/Team.jsx';
+
 import BannerExtensao from '../components/extensao/BannerExtensao.jsx';
 
 function Extensao() {

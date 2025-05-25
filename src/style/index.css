@@ -1,3 +1,6 @@
+/* Exemplo: no seu src/style/index.css */
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
 :root {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;

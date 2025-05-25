@@ -1,0 +1,14 @@
+.course-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.course-card .card-body {
+  color: #ffffff;
+  backdrop-filter: brightness(0.9);
+}
+
+.course-card .btn {
+  border-radius: 50px;
+  padding: 10px 20px;
+}

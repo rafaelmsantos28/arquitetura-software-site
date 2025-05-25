@@ -1,7 +1,7 @@
 import BannerSobreNos from '../components/sobrenos/BannerSobreNos.jsx';
 
 import SideInfoColumn from '../components/comuns/SideInfoColumn.jsx';
-import Team from '../components/home/Team.jsx';
+import Team from '../components/sobrenos/Team.jsx';
 
 function SobreNos() {
   return (

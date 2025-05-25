@@ -20,8 +20,8 @@ function BannerSobreNos() {
 
   const banner = {
     image: isMobile ? banner1Mobile : bannerEnsino,
-    title: 'Cursos do Projeto',
-    text: 'Participe de cursos e workshops focado em desafios do mercado.',
+    title: 'Atividades do Projeto',
+    text: 'Participe de cursos, workshops e palestras focadas em desafios atuais.',
   };
 
   return (
