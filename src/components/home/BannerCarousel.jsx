@@ -61,7 +61,7 @@ function BannerCarousel() {
               }}
             >
               <div
-                className={`text-start ${isMobile ? 'text-white p-4 pt-5' : 'text-dark p-5'} w-100`}
+                className={`text-start ${isMobile ? 'text-white p-4 pt-5' : 'text-dark '} w-100 content-bannercarousel`}
                 style={{ maxWidth: isUltraWide ? '1300px' : '700px' }}
               >
                 <h2

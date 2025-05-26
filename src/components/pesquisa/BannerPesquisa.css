@@ -68,3 +68,18 @@
     padding: 0;
   }
 }
+
+@media (min-width: 1921px) {
+  .text-container-bannerpesquisa {
+    max-width: 1000px;
+  }
+
+  .text-container-bannerpesquisa h2 {
+    font-size: 6.2rem;
+    line-height: 5.6rem;
+  }
+
+  .text-container-bannerpesquisa p {
+    font-size: 2.6rem;
+  }
+}

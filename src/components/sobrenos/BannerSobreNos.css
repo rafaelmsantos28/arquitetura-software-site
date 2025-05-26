@@ -65,3 +65,18 @@
     align-items: flex-start;
   }
 }
+
+@media (min-width: 1921px) {
+  .text-container-bannersobrenos {
+    max-width: 1000px;
+  }
+
+  .text-container-bannersobrenos h2 {
+    font-size: 6.2rem;
+    line-height: 5.6rem;
+  }
+
+  .text-container-bannersobrenos p {
+    font-size: 2.6rem;
+  }
+}

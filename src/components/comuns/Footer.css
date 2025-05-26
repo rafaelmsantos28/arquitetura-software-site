@@ -41,3 +41,40 @@ footer img {
   filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg)
     brightness(99%) contrast(101%);
 }
+
+.logo-footer {
+  max-width: 150px;
+}
+
+.icon-footer-contact {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 2560px) {
+  .logo-footer {
+    max-width: 220px;
+  }
+  footer h4 {
+    font-size: 2.75rem;
+  }
+
+  footer .lead {
+    font-size: 2.25rem;
+  }
+
+  .social-icons-footer img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: contain;
+  }
+
+  .icon-footer-contact {
+    width: 32px;
+    height: 32px;
+  }
+
+  .direitos-footer span {
+    font-size: 1.3rem;
+  }
+}

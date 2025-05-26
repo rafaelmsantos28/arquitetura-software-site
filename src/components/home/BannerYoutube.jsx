@@ -68,7 +68,7 @@ function BannerYoutube() {
             <h2 className="fw-bold">Conheça nosso canal no YouTube</h2>
           </div>
 
-          <div className="col-lg-6 col-12 text-center order-lg-1 mb-4 mb-lg-0 position-relative overflow-hidden">
+          <div className="col-lg-6 col-xxl-6 col-12 text-center order-lg-1 mb-4 mb-lg-0 position-relative overflow-hidden">
             {/* Imagem de fundo */}
             <img src={circuitBg} alt="Circuito" className="circuito-bg-banneryoutube" />
 
@@ -83,7 +83,7 @@ function BannerYoutube() {
 
           {/* Conteúdo */}
           <div
-            className={`col-lg-6 col-12 text-center text-lg-start order-lg-2 fade-up ${contentVisible ? 'show' : ''}`}
+            className={`col-lg-6 col-xxl-6 col-12 text-center text-lg-start order-lg-2 fade-up ${contentVisible ? 'show' : ''}`}
             ref={contentRef}
           >
             {/* Título no desktop */}
@@ -96,7 +96,7 @@ function BannerYoutube() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-primary">Saiba mais</button>
+              <button className="btn btn-primary btn-banneryoutube">Saiba mais</button>
             </a>
           </div>
         </div>

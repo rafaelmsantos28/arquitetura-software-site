@@ -67,3 +67,22 @@ hr {
   flex-direction: column;
   height: 100%;
 }
+
+@media (min-width: 2560px) {
+  .section-title-sideinfocolumn {
+    font-size: 3rem;
+  }
+
+  .news-image-sideinfocolumn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .news-text-sideinfocolumn h4 {
+    font-size: 1.5rem;
+  }
+
+  .news-date-sideinfocolumn {
+    font-size: 1.125rem;
+  }
+}

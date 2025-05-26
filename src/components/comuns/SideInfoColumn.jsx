@@ -50,7 +50,7 @@ const newsList = [
 function SideInfoColumn() {
   return (
     <aside className="side-info-sideinfocolumn side-info-column-sideinfocolumn">
-      <div className="info-section-sideinfocolumn">
+      <div className="info-section-sideinfocolumn my-3">
         <h3 className="section-title-sideinfocolumn">Novidades</h3>
 
         {newsList.map((news) => (

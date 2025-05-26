@@ -75,3 +75,35 @@
     font-size: 1rem;
   }
 }
+
+@media (min-width: 2560px) {
+  .banner-section-banneryoutube h2 {
+    font-size: 5rem;
+  }
+
+  .banner-section-banneryoutube p {
+    font-size: 2rem;
+  }
+
+  .banner-section-banneryoutube .container {
+    max-width: 90%;
+  }
+
+  .btn-banneryoutube {
+    font-size: 1.6rem;
+    padding: 1.125rem 3rem;
+  }
+
+  .youtube-phone-img {
+    max-width: 60%;
+  }
+
+  .youtube-phone-img {
+    padding-top: 0rem; /* ou 0 se preferir colar mais no topo */
+    max-height: 100vh; /* opcional para controlar a altura */
+  }
+
+  .banner-section-banneryoutube {
+    height: calc(90vh - 178px); /* ou ajuste como 85vh se quiser reduzir mais */
+  }
+}

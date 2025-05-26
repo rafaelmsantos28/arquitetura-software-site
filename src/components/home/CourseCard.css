@@ -19,3 +19,28 @@
   border-radius: 5px;
   padding: 10px 20px;
 }
+
+@media (min-width: 2560px) {
+  .course-card .card-body {
+    font-size: 1.7rem;
+    min-height: 38rem;
+    height: 50rem;
+  }
+
+  .course-card .card-body .fs-5 {
+    font-size: 2.2rem !important;
+  }
+
+  .course-card .card-body .fs-4 {
+    font-size: 2.5rem !important;
+  }
+
+  .course-card .btn {
+    font-size: 1.5rem;
+    padding: 14px 28px;
+  }
+
+  .maintitle-courses-section h2 {
+    font-size: 4rem;
+  }
+}

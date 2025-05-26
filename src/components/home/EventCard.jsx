@@ -43,7 +43,7 @@ const sortedEvents = events.sort((a, b) => {
 
 const EventCard = () => {
   return (
-    <div className="container my-5">
+    <div className="container-fluid px-5 my-5 maintitle-event-card">
       <h2 className="text-center fw-bold mb-4">Eventos</h2>
       <div className="row">
         {sortedEvents.map((event, index) => {

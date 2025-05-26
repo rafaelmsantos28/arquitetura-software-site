@@ -30,18 +30,13 @@ function VerticalCardSection() {
   ];
 
   return (
-    <section className="container my-5">
+    <section className="container-fluid px-5 my-5">
       <div className="row g-4">
         {features.map((item, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-4">
             <div className="card h-100 text-center shadow-sm border-0 card-hover-verticalcardsection">
               <div className="card-body d-flex flex-column align-items-center">
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="mb-3"
-                  style={{ height: '128px' }}
-                />
+                <img src={item.icon} alt={item.title} className="mb-3 vertical-card-img" />
                 <h5 className="card-title mb-2">{item.title}</h5>
                 <p className="card-text text-muted mb-4">{item.text}</p>
                 <Link to={item.link} className="btn btn-primary mt-auto">

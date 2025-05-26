@@ -11,17 +11,12 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer className="bg-light pt-5">
-      <div className="container">
+      <div className="container-fluid px-5">
         <div className="row gy-4">
           <div className="col-12 col-md-3 col-lg-3 text-center text-md-start">
             {' '}
             {/* Ajuste para ocupar menos espaço em md e lg */}
-            <img
-              src={logoFooter}
-              alt="Logo"
-              className="mb-3 img-fluid"
-              style={{ maxWidth: '150px' }}
-            />
+            <img src={logoFooter} alt="Logo" className="mb-3 img-fluid logo-footer" />
             <div className="d-flex justify-content-center justify-content-md-start gap-3 social-icons-footer">
               <a
                 href="https://www.instagram.com/acadarqsoftware/"
@@ -83,19 +78,23 @@ function Footer() {
             <h4 className="fw-bold mb-4">Contatos</h4>
             <ul className="list-unstyled ">
               <li className="align-items-center mb-2 lead">
-                <img src={mailIcon} alt="E-mail" width="20" height="20" className="me-2" />
+                <img src={mailIcon} alt="E-mail" className="me-2 icon-footer-contact" />
+
                 <span className="small">a.software-unesp@gmail.com</span>
               </li>
               <li className="align-items-center mb-2 lead">
-                <img src={phoneIcon} alt="Telefone" width="20" height="20" className="me-2" />
+                <img src={phoneIcon} alt="E-mail" className="me-2 icon-footer-contact" />
+
                 <span className="small">(99) 99999-9999</span>
               </li>
               <li className="align-items-center mb-2 lead">
-                <img src={instagramIcon} alt="Instagram" width="20" height="20" className="me-2" />
+                <img src={instagramIcon} alt="E-mail" className="me-2 icon-footer-contact" />
+
                 <span className="small">@aa.softwareunesp</span>
               </li>
               <li className="align-items-center mb-2 lead">
-                <img src={linkedinIcon} alt="LinkedIn" width="20" height="20" className="me-2" />
+                <img src={linkedinIcon} alt="E-mail" className="me-2 icon-footer-contact" />
+
                 <span className="small">LinkedIn</span>
               </li>
             </ul>
@@ -104,7 +103,7 @@ function Footer() {
       </div>
 
       <div className="bg-primary text-light text-center py-3 mt-4">
-        <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
+        <div className="container-fluid px-5 d-flex flex-column flex-md-row justify-content-between align-items-center small direitos-footer">
           <span>
             © Todos os Direitos Reservados.{' '}
             <a

@@ -1,5 +1,6 @@
 import React from 'react';
 import CourseCard from './CourseCard.jsx';
+import './CoursesSection.css';
 
 const courses = [
   {
@@ -27,7 +28,7 @@ const sortedCourses = courses.sort((a, b) => new Date(a.date) - new Date(b.date)
 
 const CoursesSection = () => {
   return (
-    <div className="container my-5">
+    <div className="container-fluid px-5 my-5 maintitle-courses-section">
       <h2 className="text-center fw-bold mb-4">Cursos</h2>
       <div className="row g-4">
         {sortedCourses.map((course, index) => (
