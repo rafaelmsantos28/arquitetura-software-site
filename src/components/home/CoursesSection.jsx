@@ -4,19 +4,19 @@ import CourseCard from './CourseCard.jsx';
 const courses = [
   {
     type: 'Workshop',
-    title: 'Evento de Abertura',
+    title: 'Arquiteturas em Nuvem com AWS e Azure',
     date: '2025-06-27',
     link: '#',
   },
   {
     type: 'Curso',
-    title: 'Além do Código',
+    title: 'Fundamentos da Arquitetura de Software Moderna',
     date: '2025-06-28',
     link: '#',
   },
   {
     type: 'Curso',
-    title: 'Arquitetura Dinâmica',
+    title: 'Microservices na Prática: Do Monólito ao Distribuído',
     date: '2025-06-29',
     link: '#',
   },

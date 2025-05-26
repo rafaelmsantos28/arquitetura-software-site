@@ -1,41 +1,7 @@
 .hero-section-bannercarousel {
   width: 100%;
   height: calc(100vh - 138px);
-  /* Ajuste para o tamanho real do header */
   overflow: hidden;
-}
-
-.banner-swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.slide-content-bannercarousel {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-}
-
-.text-container-bannercarousel {
-  color: #1b1b1b;
-  max-width: 500px;
-  margin-left: 5%;
-}
-
-.text-container-bannercarousel h2 {
-  font-weight: 600;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  line-height: 3.2rem;
-}
-
-.text-container-bannercarousel p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
 }
 
 /* Customização das bolinhas */
@@ -52,65 +18,19 @@
   background: #0077ff;
 }
 
-/* RESPONSIVIDADE MOBILE */
-
-@media (max-width: 768px) {
-  .text-container-bannercarousel {
-    margin-left: 5%;
-    max-width: 90%;
-    padding-top: 5rem;
-  }
-
-  .text-container-bannercarousel h2 {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: #f1f1f1;
-  }
-
-  .text-container-bannercarousel p {
-    font-size: 0.95rem;
-    color: #f1f1f1;
-  }
-
-  .text-container-bannercarousel button {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.85rem;
-  }
-
-  .slide-content-bannercarousel {
-    overflow: hidden;
-    margin: 0; /* REMOVER MARGEM */
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .banner-swiper {
-    padding: 0;
-  }
+.btn-bannercarousel {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
 }
 
-/* Isso é pra celular bem bem pequeno */
-
-/*
-@media (max-width: 480px) {
-  .text-container {
-    margin-left: 5%;
-    max-width: 95%;
+@media screen and (min-width: 2560px) {
+  .btn-bannercarousel {
+    font-size: 2.1rem;
+    padding: 1.5rem 3rem;
   }
 
-  .text-container h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .text-container p {
-    font-size: 0.9rem;
-  }
-
-  .text-container button {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+  .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
   }
 }
-
-*/

@@ -1,14 +1,21 @@
 .course-card {
   border-radius: 16px;
   overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .course-card .card-body {
-  color: #ffffff;
-  backdrop-filter: brightness(0.9);
+  color: #1d4493;
 }
 
 .course-card .btn {
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 10px 20px;
 }

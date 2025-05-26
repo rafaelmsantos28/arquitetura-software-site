@@ -7,7 +7,6 @@ import logo from '../../assets/logo.png';
 import instagramIcon from '../../assets/redes-sociais/instagram.svg';
 import youtubeIcon from '../../assets/redes-sociais/youtube.svg';
 import linkedinIcon from '../../assets/redes-sociais/linkedin.svg';
-
 import menuIcon from '../../assets/icons/menu.svg';
 
 function Header() {
@@ -25,14 +24,14 @@ function Header() {
     <>
       <header className="header">
         <nav className="navbar navbar-expand-lg bg-white">
-          <div className="container">
+          <div className="container d-flex justify-content-between align-items-center">
             <Link className="navbar-brand logo" to="/">
-              <img src={logo} alt="Logo do site" style={{ height: '80px' }} />
+              <img src={logo} alt="Logo do site" />
             </Link>
 
             {/* Botão menu mobile */}
             <button
-              className={`navbar-toggler menu-toggle ${menuOpen ? 'open' : ''}`}
+              className={`navbar-toggler border-0 ${menuOpen ? 'open' : ''}`}
               type="button"
               onClick={toggleMenu}
               aria-controls="navbarNav"
@@ -42,119 +41,86 @@ function Header() {
               <img src={menuIcon} alt="Menu" style={{ height: '32px' }} />
             </button>
 
-            {/* Itens do menu desktop */}
+            {/* Menu desktop */}
             <div className="collapse navbar-collapse justify-content-end d-none d-lg-flex flex-column align-items-end">
-              {/* Ícones sociais no topo */}
-              <div className="d-flex gap-3 mb-2 pe-3 social-icons">
+              <div className="d-flex gap-3 mb-2 pe-3">
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                  <img src={linkedinIcon} alt="Linkedin" />
+                  <img src={linkedinIcon} alt="Linkedin" className="social-icon" />
                 </a>
                 <a
                   href="https://www.instagram.com/acadarqsoftware/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={instagramIcon} alt="Instagram" />
+                  <img src={instagramIcon} alt="Instagram" className="social-icon" />
                 </a>
                 <a
                   href="https://www.youtube.com/@acadarqsoftware?sub_confirmation=1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={youtubeIcon} alt="Youtube" />
+                  <img src={youtubeIcon} alt="Youtube" className="social-icon" />
                 </a>
               </div>
 
-              {/* Itens de navegação abaixo */}
-              <ul className="navbar-nav me-3 gap-4 nav-links">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/">
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/quemsoueu">
-                    Quem sou eu
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/atividades">
-                    Atividades
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/pesquisa">
-                    Pesquisa
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/extensao">
-                    Extensão
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/sobrenos">
-                    Sobre nós
-                  </Link>
-                </li>
+              <ul className="navbar-nav gap-4 pe-3">
+                {[
+                  { label: 'Home', path: '/' },
+                  { label: 'Quem sou eu', path: '/quemsoueu' },
+                  { label: 'Atividades', path: '/atividades' },
+                  { label: 'Pesquisa', path: '/pesquisa' },
+                  { label: 'Extensão', path: '/extensao' },
+                  { label: 'Sobre nós', path: '/sobrenos' },
+                ].map((item, idx) => (
+                  <li className="nav-item" key={idx}>
+                    <Link className="nav-link fw-medium " to={item.path}>
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </nav>
       </header>
+
       {/* Menu mobile personalizado */}
       {menuOpen && (
         <div className="menu-overlay open">
-          <ul className="overlay-links">
-            <li>
-              <Link className="nav-link" to="/" onClick={closeMenu}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/quemsoueu" onClick={closeMenu}>
-                Quem sou eu
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/atividades" onClick={closeMenu}>
-                Atividades
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/pesquisa" onClick={closeMenu}>
-                Pesquisa
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/extensao" onClick={closeMenu}>
-                Extensão
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/sobrenos" onClick={closeMenu}>
-                Sobre nós
-              </Link>
-            </li>
+          <ul className="list-unstyled d-flex flex-column align-items-center gap-4 p-0">
+            {[
+              { label: 'Home', path: '/' },
+              { label: 'Quem sou eu', path: '/quemsoueu' },
+              { label: 'Atividades', path: '/atividades' },
+              { label: 'Pesquisa', path: '/pesquisa' },
+              { label: 'Extensão', path: '/extensao' },
+              { label: 'Sobre nós', path: '/sobrenos' },
+            ].map((item, idx) => (
+              <li key={idx}>
+                <Link className="nav-link fs-4 fw-semibold" to={item.path} onClick={closeMenu}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
 
-          <div className="overlay-socials social-icons">
+          <div className="d-flex gap-4 mt-4">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <img src={linkedinIcon} alt="Linkedin" />
+              <img src={linkedinIcon} alt="Linkedin" className="social-icon-lg" />
             </a>
             <a
               href="https://www.instagram.com/acadarqsoftware/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={instagramIcon} alt="Instagram" />
+              <img src={instagramIcon} alt="Instagram" className="social-icon-lg" />
             </a>
             <a
               href="https://www.youtube.com/@acadarqsoftware?sub_confirmation=1"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={youtubeIcon} alt="Youtube" />
+              <img src={youtubeIcon} alt="Youtube" className="social-icon-lg" />
             </a>
           </div>
         </div>

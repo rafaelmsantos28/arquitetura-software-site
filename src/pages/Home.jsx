@@ -21,7 +21,7 @@ function Home() {
         </div>
 
         {/* Coluna lateral */}
-        <div className="col-lg-3">
+        <div className="col-lg-3 ">
           <SideInfoColumn />
         </div>
       </div>
