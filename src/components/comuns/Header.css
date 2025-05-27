@@ -1,15 +1,54 @@
+/* Layout geral do header */
 .header {
   padding: 1rem 0;
 }
 
 .header .container {
   max-width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 5%;
+}
+
+/* Estrutura principal */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  height: 80px;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transition: filter 0.3s ease;
+}
+
+/* Menu navegação desktop */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70%;
+  /* ✅ Ajuste feito aqui */
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-item {
   font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -17,28 +56,20 @@
   text-decoration: underline;
 }
 
-/* Logo */
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-  transition: filter 0.3s ease;
+/* Redes sociais desktop */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-/* Ícones sociais */
 .social-icon {
   height: 24px;
   transition: filter 0.3s ease;
 }
-.social-icon:hover {
-  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg)
-    brightness(99%) contrast(101%);
-}
 
-.social-icon-lg {
-  height: 32px;
-  transition: transform 0.3s ease;
-}
-.social-icon-lg:hover {
-  transform: scale(1.2);
+.social-icon:hover {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg) brightness(99%) contrast(101%);
 }
 
 /* Botão menu mobile */
@@ -46,6 +77,7 @@
   height: 32px;
   transition: transform 0.3s ease;
 }
+
 .navbar-toggler.open img {
   transform: rotate(90deg);
 }
@@ -56,7 +88,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   overflow: hidden;
   max-height: 0;
   padding: 0 2rem;
@@ -64,6 +95,7 @@
     max-height 0.5s ease,
     padding 0.3s ease;
 }
+
 .menu-overlay.open {
   max-height: 1000px;
   padding: 2rem;
@@ -71,8 +103,13 @@
   height: calc(100vh - 138px);
 }
 
-.logo img {
-  height: 80px;
+.social-icon-lg {
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon-lg:hover {
+  transform: scale(1.2);
 }
 
 /* Impede overlay no desktop */
@@ -82,11 +119,13 @@
   }
 }
 
+/* Responsividade telas maiores */
 @media (min-width: 1920px) {
   .navbar-nav {
     gap: 2.5rem;
   }
-  .nav-links a {
+
+  .nav-item {
     font-size: 1.4rem;
   }
 }
@@ -95,9 +134,11 @@
   .navbar-nav {
     gap: 3rem;
   }
+
   .nav-item {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
+
   .logo img {
     height: 120px;
   }
