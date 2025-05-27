@@ -32,3 +32,22 @@
   transform: translateY(-5px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
+@media (min-width: 2560px) {
+  .section-icon-ensinodados {
+    font-size: 64px;
+  }
+
+  .section-card-ensinodados p,
+  .section-card-ensinodados ul {
+    font-size: 1.9rem;
+  }
+
+  .section-card-ensinodados h2 {
+    font-size: 3rem;
+  }
+
+  .section-card-ensinodados {
+    padding: 60px;
+    margin-bottom: 80px;
+  }
+}

@@ -13,6 +13,7 @@ import banner4Desktop from '../../assets/banners/BannerEnsino.jpg';
 import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg';
 import banner2Mobile from '../../assets/carrossel/banner-mobile2.jpg';
 import banner3Mobile from '../../assets/carrossel/banner-mobile3.jpg';
+import banner4Mobile from '../../assets/carrossel/banner-atividades-mobile.jpg';
 import { Link } from 'react-router-dom';
 
 function BannerCarousel() {
@@ -38,7 +39,7 @@ function BannerCarousel() {
       delay: 6000,
     },
     {
-      image: isMobile ? banner2Mobile : banner4Desktop,
+      image: isMobile ? banner4Mobile : banner4Desktop,
       title: 'Confira as Atividades do Projeto!',
       text: 'Workshops, cursos, palestras e muito mais!',
       link: '/atividades',

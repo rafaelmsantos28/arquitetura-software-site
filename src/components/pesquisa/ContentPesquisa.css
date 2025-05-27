@@ -8,3 +8,22 @@
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
+
+@media (min-width: 2560px) {
+  #artigos .row {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .card-hover-contentpesquisa .card-body {
+    max-width: 1600px;
+    gap: 40px;
+    padding: 32px;
+  }
+  .card-hover-contentpesquisa .card-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.5px;
+  }
+}

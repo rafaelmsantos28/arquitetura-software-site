@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import banner2Mobile from '../../assets/carrossel/banner-mobile2.jpg'; // <------ ALTERAR
 import bannerQuemSouEuDesktop from '../../assets/banners/BannerQuemSouEu.jpg';
+import banner5Mobile from '../../assets/carrossel/banner-quemsoueu-mobile.jpg';
 
 import './BannerQuemSouEu.css';
 
@@ -20,7 +21,7 @@ function BannerQuemSouEu() {
   }, []);
 
   const banner = {
-    image: isMobile ? banner2Mobile : bannerQuemSouEuDesktop,
+    image: isMobile ? banner5Mobile : bannerQuemSouEuDesktop,
     title: 'Prof. Dr. Frank José Affonso',
     text: 'Conheça a trajetória acadêmica, profissional e áreas de atuação do coordenador do projeto.',
   };

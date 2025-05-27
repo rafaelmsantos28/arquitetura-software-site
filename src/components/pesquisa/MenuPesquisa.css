@@ -8,3 +8,13 @@
 .menu-icon-menupesquisa:hover {
   transform: translateY(-5px);
 }
+
+@media (min-width: 2560px) {
+  .menu-icon-menupesquisa {
+    max-width: 144px;
+    max-height: 144px;
+  }
+  .menu-pesquisa div {
+    font-size: 2.1rem;
+  }
+}

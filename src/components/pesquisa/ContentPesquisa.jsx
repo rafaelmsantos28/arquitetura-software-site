@@ -108,7 +108,7 @@ function ContentPesquisa() {
   });
 
   return (
-    <section id="artigos" className="container my-5">
+    <section id="artigos" className="container-fluid my-5 px-5">
       <h2 className="fw-bold section-title text-center mb-4">Artigos Publicados</h2>
       <div className="row g-4">
         {artigosOrdenados.map((item, index) => (
@@ -123,7 +123,7 @@ function ContentPesquisa() {
                 <img
                   src={artigoIcon}
                   alt="Ícone do artigo"
-                  style={{ height: '84px', width: '84px' , margin: '12px'}}
+                  style={{ height: '84px', width: '84px', margin: '12px' }}
                   className="me-4"
                 />
                 <div>

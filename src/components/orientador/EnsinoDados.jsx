@@ -35,7 +35,7 @@ const acoesPromovidas = [
 
 const EnsinoDados = () => {
   return (
-    <div className="container my-5">
+    <div className="container-fluid my-5 px-5">
       <h2 className="section-title fw-bold mb-5 text-center">Sobre o Ensino</h2>
 
       <SectionCard id="promovemos" icon={FaBook} title="O que promovemos no ensino">
