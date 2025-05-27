@@ -1,6 +1,8 @@
 import SideInfoColumn from '../components/comuns/SideInfoColumn';
 import BannerEnsino from '../components/atividades/EnsinoBanner';
 import MenuAtividades from '../components/atividades/MenuAtividades';
+import Eventos from '../components/home/EventCard';
+import CourseSection from '../components/home/CoursesSection';
 
 function Atividades() {
   return (
@@ -12,6 +14,12 @@ function Atividades() {
           <div className="d-flex justify-content-center">
             <MenuAtividades />
           </div>
+          <section id="eventos">
+            <Eventos />
+          </section>
+          <section id="cursos">
+            <CourseSection />
+          </section>
         </div>
 
         {/* Coluna lateral */}

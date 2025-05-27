@@ -8,6 +8,7 @@ import './BannerCarousel.css';
 import banner1Desktop from '../../assets/carrossel/banner1.jpg';
 import banner2Desktop from '../../assets/carrossel/banner2.jpg';
 import banner3Desktop from '../../assets/carrossel/banner3.jpg';
+import banner4Desktop from '../../assets/banners/BannerEnsino.jpg';
 
 import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg';
 import banner2Mobile from '../../assets/carrossel/banner-mobile2.jpg';
@@ -20,22 +21,36 @@ function BannerCarousel() {
 
   const banners = [
     {
-      image: isMobile ? banner1Mobile : banner1Desktop,
-      title: 'O espaço ideal para Arquitetos de Software',
-      text: 'Um projeto para alunos e toda comunidade',
-      link: '/sobrenos',
-    },
-    {
       image: isMobile ? banner2Mobile : banner2Desktop,
       title: 'Evento de abertura - 2º semestre de 2025',
       text: 'Venha participar do evento inaugural do programa',
       link: '/eventos',
+      delay: 8000,
+      buttonText: 'Veja aqui embaixo ',
+      scrollTarget: 'evento-section', // id do elemento onde ele deve rolar
     },
+
+    {
+      image: isMobile ? banner1Mobile : banner1Desktop,
+      title: 'O espaço ideal para Arquitetos de Software',
+      text: 'Um projeto para alunos e toda comunidade',
+
+      delay: 6000,
+    },
+    {
+      image: isMobile ? banner2Mobile : banner4Desktop,
+      title: 'Confira as Atividades do Projeto!',
+      text: 'Workshops, cursos, palestras e muito mais!',
+      link: '/atividades',
+      delay: 6000,
+    },
+
     {
       image: isMobile ? banner3Mobile : banner3Desktop,
       title: 'Artigos e Insights em Arquitetura de Software',
       text: 'Explore artigos especializados e fique por dentro de tudo',
       link: '/pesquisa',
+      delay: 6000,
     },
   ];
 
@@ -44,14 +59,14 @@ function BannerCarousel() {
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 60000, disableOnInteraction: false }}
+        autoplay={{ disableOnInteraction: false }}
         loop={true}
         slidesPerView={1}
         spaceBetween={0}
         className="w-100 h-100"
       >
         {banners.map((banner, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} data-swiper-autoplay={banner.delay}>
             <div
               className={`d-flex ${isMobile ? '' : 'align-items-center'} w-100 h-100`}
               style={{
@@ -81,9 +96,27 @@ function BannerCarousel() {
                 >
                   {banner.text}
                 </p>
-                <Link to={banner.link} className="btn btn-primary btn-bannercarousel">
-                  Saiba mais
-                </Link>
+
+                {/* Só exibe botão se houver link ou scrollTarget */}
+                {(banner.link || banner.scrollTarget) &&
+                  (banner.scrollTarget ? (
+                    <button
+                      className="btn btn-primary btn-bannercarousel d-flex align-items-center gap-2"
+                      onClick={() => {
+                        const target = document.getElementById(banner.scrollTarget);
+                        if (target) {
+                          target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
+                    >
+                      {banner.buttonText}
+                      <i className="bi bi-arrow-down-short"></i>
+                    </button>
+                  ) : (
+                    <Link to={banner.link} className="btn btn-primary btn-bannercarousel">
+                      {banner.buttonText || 'Saiba mais'}
+                    </Link>
+                  ))}
               </div>
             </div>
           </SwiperSlide>

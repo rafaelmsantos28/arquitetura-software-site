@@ -8,3 +8,13 @@
 .menu-icon-menuatividades:hover {
   transform: translateY(-5px);
 }
+
+@media (min-width: 2560px) {
+  .menu-icon-menuatividades {
+    max-width: 144px;
+    max-height: 144px;
+  }
+  .menu-atividades div {
+    font-size: 2rem;
+  }
+}

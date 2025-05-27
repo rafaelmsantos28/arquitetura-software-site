@@ -15,7 +15,10 @@ function Home() {
       <div className="row gx-4">
         {/* Coluna principal */}
         <div className="col-lg-9 mb-4">
-          <EventCard />
+          <section id="evento-section">
+            <EventCard />
+          </section>
+
           <VerticalCardSection />
           <CoursesSection />
         </div>
