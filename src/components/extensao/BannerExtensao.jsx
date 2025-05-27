@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
-import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg';
+import banner1Mobile from '../../assets/banners/banner-extensao-mobile.jpg';
 import bannerExtensao from '../../assets/banners/BannerExtensao.jpg';
 import './BannerExtensao.css';
 
-function BannerSobreNos() {
+function BannerExtensao() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -39,4 +39,4 @@ function BannerSobreNos() {
   );
 }
 
-export default BannerSobreNos;
+export default BannerExtensao;

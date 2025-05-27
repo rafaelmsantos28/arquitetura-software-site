@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './BannerSobreNos.css';
 
-import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg';
+import banner1Mobile from '../../assets/banners/banner-sobrenos-mobile.jpg';
 import banner1Desktop from '../../assets/banners/BannerSobreNos.jpg';
 
 function BannerSobreNos() {
