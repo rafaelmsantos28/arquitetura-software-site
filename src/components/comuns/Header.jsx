@@ -23,10 +23,10 @@ function Header() {
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'Quem sou eu', path: '/quemsoueu' },
-    { label: 'Sobre nós', path: '/sobrenos' },
     { label: 'Pesquisa', path: '/pesquisa' },
     { label: 'Atividades', path: '/atividades' },
     { label: 'Extensão', path: '/extensao' },
+    { label: 'Sobre nós', path: '/sobrenos' },
   ];
 
   return (
@@ -34,7 +34,6 @@ function Header() {
       <header className="header">
         <nav className="navbar navbar-expand-lg bg-white">
           <div className="container header-container">
-
             {/* Logo */}
             <Link className="navbar-brand logo" to="/">
               <img src={logo} alt="Logo do site" />
