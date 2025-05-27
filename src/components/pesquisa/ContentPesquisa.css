@@ -4,12 +4,25 @@
     box-shadow 0.3s ease;
 }
 
+.icone-contentpesquisa img {
+  height: 84px;
+  width: 84px;
+  margin: 12px;
+}
+
 .card-hover-contentpesquisa:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
+.title-artigopublicados {
+  font-size: 2rem;
+}
+
 @media (min-width: 2560px) {
+  .title-artigopublicados {
+    font-size: 2.8rem;
+  }
   #artigos .row {
     max-width: 1800px;
     margin: 0 auto;
@@ -25,5 +38,12 @@
     font-weight: 800;
     margin-bottom: 1.25rem;
     letter-spacing: 0.5px;
+  }
+  .icone-contentpesquisa img {
+    width: 140px;
+  }
+
+  .info-pesquisa {
+    font-size: 1.8rem;
   }
 }

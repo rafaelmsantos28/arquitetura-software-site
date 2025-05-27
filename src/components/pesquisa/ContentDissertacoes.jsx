@@ -53,9 +53,13 @@ function ContentDissertacoes() {
   });
 
   return (
-    <section id="dissertacoes" className="container my-5">
-      <h2 className="fw-bold section-title text-center mb-4">Orientações Concluídas</h2>
-      <h3 className="subsection-title mt-4 mb-3">Dissertações de Mestrado</h3>
+    <section id="dissertacoes" className="container-fluid px-5 my-5">
+      <h2 className="fw-bold section-title text-center mb-4 title-orientacoesconcluidas">
+        Orientações Concluídas
+      </h2>
+      <h3 className="subsection-title mt-4 mb-3 title-dissertacoesdemestrado">
+        Dissertações de Mestrado
+      </h3>
       <div className="row g-4">
         {dissertacoesOrdenados.map((item, index) => (
           <div key={index} className="col-12">
@@ -65,25 +69,20 @@ function ContentDissertacoes() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row">
-                <img
-                  src={dissertacoesIcon}
-                  alt="Ícone do artigo"
-                  style={{ height: '84px', width: '84px', margin: '12px' }}
-                  className="me-4"
-                />
+              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row icone-contentdissertacoes">
+                <img src={dissertacoesIcon} alt="Ícone do artigo" className="me-4" />
                 <div>
-                  <h5 className="mb-1">{item.title}</h5>
-                  <p className="mb-1 text-muted">
+                  <h5 className="mb-1 info-contentdissertacoes">{item.title}</h5>
+                  <p className="mb-1 text-muted info-contentdissertacoes">
                     <strong>Data:</strong> {item.data}
                   </p>
-                  <p className="mb-1 text-muted">
+                  <p className="mb-1 text-muted info-contentdissertacoes">
                     <strong>Autores:</strong> {item.autores}
                   </p>
-                  <p className="mb-0 text-muted">
+                  <p className="mb-0 text-muted info-contentdissertacoes">
                     <strong>Nota:</strong> {item.nota}
                   </p>
-                  <p className="mb-0 text-muted">
+                  <p className="mb-0 text-muted info-contentdissertacoes">
                     <strong>Escola:</strong> {item.escola}
                   </p>
                 </div>

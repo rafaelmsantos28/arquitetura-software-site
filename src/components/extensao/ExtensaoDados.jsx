@@ -24,8 +24,10 @@ const Section = ({ icon: Icon, title, children }) => (
 
 const ExtensaoDados = () => {
   return (
-    <div className="container my-5 container-margin">
-      <h2 className="section-title fw-bold mb-5 text-center">Academia do Arquiteto de Software</h2>
+    <div className="container-fluid px-5 my-5 container-margin">
+      <h2 className="section-title fw-bold mb-5 text-center title-extensaodados">
+        Academia do Arquiteto de Software
+      </h2>
 
       {/* Menu de Ícones */}
       <ExtensaoMenu />

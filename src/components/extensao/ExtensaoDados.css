@@ -39,3 +39,35 @@
   color: #0055ff;
   margin-bottom: 12px;
 }
+
+@media (min-width: 2560px) {
+  .title-extensaodados {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-card-extensaodados {
+    padding: 60px;
+    margin-bottom: 80px;
+  }
+
+  .section-card-extensaodados h2 {
+    font-size: 2.7rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-card-extensaodados p,
+  .section-card-extensaodados ul {
+    font-size: 1.9rem;
+    line-height: 2;
+  }
+
+  .section-icon-extensaodados {
+    font-size: 84px;
+    margin-bottom: 18px;
+  }
+
+  .title-extensaodados {
+    font-size: 3rem;
+  }
+}

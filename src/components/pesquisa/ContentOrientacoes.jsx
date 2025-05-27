@@ -73,11 +73,15 @@ function ContentOrientacoes() {
   const doutoradosOrdenados = ordenarPorData(doutorados);
 
   return (
-    <section id="orientacoes" className="container my-5">
-      <h2 className="fw-bold section-title text-center mb-4">Orientações em Andamento</h2>
+    <section id="orientacoes" className="container-fluid px-5 my-5">
+      <h2 className="fw-bold section-title text-center mb-4 title-orientacaoandamento">
+        Orientações em Andamento
+      </h2>
 
       {/* Mestrados */}
-      <h3 className="subsection-title mt-4 mb-3">Dissertações de Mestrado</h3>
+      <h3 className="subsection-title mt-4 mb-3 title-dissertacoesmestrado">
+        Dissertações de Mestrado
+      </h3>
       <div className="row g-4">
         {mestradosOrdenados.map((item, idx) => (
           <div key={`mestrado-${idx}`} className="col-12">
@@ -87,23 +91,18 @@ function ContentOrientacoes() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row">
-                <img
-                  src={orientacoesMestrado}
-                  alt="Ícone de orientação"
-                  style={{ height: '84px', width: '84px', margin: '12px' }}
-                  className="me-4"
-                />
+              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row icone-contentorientacoes">
+                <img src={orientacoesMestrado} alt="Ícone de orientação" className="me-4" />
                 <div>
-                  <h5 className="mb-1">{item.title}</h5>
-                  <p className="mb-1 text-muted">
-                    <strong>Data de início:</strong> {item.data}
+                  <h5 className="mb-1 info-dissertacaoori">{item.title}</h5>
+                  <p className="info-dissertacaoori mb-1 text-muted">
+                    <strong>Data:</strong> {item.data}
                   </p>
-                  <p className="mb-1 text-muted">
+                  <p className="info-dissertacaoori mb-1 text-muted">
                     <strong>Autores:</strong> {item.autores}
                   </p>
-                  <p className="mb-0 text-muted">
-                    <strong>Sobre:</strong> {item.publicacao}
+                  <p className="info-dissertacaoori mb-0 text-muted">
+                    <strong>Publicação:</strong> {item.publicacao}
                   </p>
                 </div>
               </div>
@@ -113,7 +112,7 @@ function ContentOrientacoes() {
       </div>
 
       {/* Doutorados */}
-      <h3 className="subsection-title mt-5 mb-3">Tese de Doutorado</h3>
+      <h3 className="subsection-title mt-5 mb-3 title-dissertacoesmestrado">Tese de Doutorado</h3>
       <div className="row g-4">
         {doutoradosOrdenados.map((item, idx) => (
           <div key={`doutorado-${idx}`} className="col-12">
@@ -123,22 +122,17 @@ function ContentOrientacoes() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row">
-                <img
-                  src={orientacoesDoutorado}
-                  alt="Ícone de orientação"
-                  style={{ height: '84px', width: '84px', margin: '12px' }}
-                  className="me-4"
-                />
+              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row icone-contentorientacoes">
+                <img src={orientacoesDoutorado} alt="Ícone de orientação" className="me-4" />
                 <div>
-                  <h5 className="mb-1">{item.title}</h5>
-                  <p className="mb-1 text-muted">
+                  <h5 className="mb-1 info-dissertacaoori">{item.title}</h5>
+                  <p className="info-dissertacaoori mb-1 text-muted">
                     <strong>Data de início:</strong> {item.data}
                   </p>
-                  <p className="mb-1 text-muted">
+                  <p className="info-dissertacaoori mb-1 text-muted">
                     <strong>Autores:</strong> {item.autores}
                   </p>
-                  <p className="mb-0 text-muted">
+                  <p className="info-dissertacaoori mb-0 text-muted">
                     <strong>Sobre:</strong> {item.publicacao}
                   </p>
                 </div>

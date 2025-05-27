@@ -113,8 +113,8 @@ function Team() {
   const others = teamMembers.slice(1);
 
   return (
-    <section className="container my-5">
-      <h2 className="section-title fw-bold mb-5 text-center">Nossa Equipe</h2>
+    <section className="container-fluid px-5 my-5">
+      <h2 className="section-title fw-bold mb-5 text-center title-nossaequipe">Nossa Equipe</h2>
 
       <div className="row justify-content-center mb-5">
         <div className="col-12 col-md-6 col-lg-4">
@@ -124,8 +124,8 @@ function Team() {
               alt={coordinator.name}
               className="member-photo-team mb-3"
             />
-            <h5 className="mb-1">{coordinator.name}</h5>
-            <p className="text-muted">{coordinator.role}</p>
+            <h5 className="mb-1 member-name-team">{coordinator.name}</h5>
+            <p className="text-muted member-role-team">{coordinator.role}</p>
             <div className="d-flex justify-content-center gap-3">
               {coordinator.socialLinks.mail && (
                 <a
@@ -161,8 +161,8 @@ function Team() {
           <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="team-card-team text-center">
               <img src={member.photo} alt={member.name} className="member-photo-team mb-3" />
-              <h5 className="mb-1">{member.name}</h5>
-              <p className="text-muted">{member.role}</p>
+              <h5 className="mb-1 member-name-team">{member.name}</h5>
+              <p className="text-muted member-role-team">{member.role}</p>
               <div className="d-flex justify-content-center gap-3">
                 {member.socialLinks.mail && (
                   <a

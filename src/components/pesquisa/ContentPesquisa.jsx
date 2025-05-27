@@ -109,7 +109,9 @@ function ContentPesquisa() {
 
   return (
     <section id="artigos" className="container-fluid my-5 px-5">
-      <h2 className="fw-bold section-title text-center mb-4">Artigos Publicados</h2>
+      <h2 className="fw-bold section-title text-center mb-4 title-artigopublicados">
+        Artigos Publicados
+      </h2>
       <div className="row g-4">
         {artigosOrdenados.map((item, index) => (
           <div key={index} className="col-12">
@@ -119,22 +121,17 @@ function ContentPesquisa() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row">
-                <img
-                  src={artigoIcon}
-                  alt="Ícone do artigo"
-                  style={{ height: '84px', width: '84px', margin: '12px' }}
-                  className="me-4"
-                />
+              <div className="card-body d-flex align-items-center d-flex flex-column flex-md-row icone-contentpesquisa">
+                <img src={artigoIcon} alt="Ícone do artigo" className="me-4" />
                 <div>
-                  <h5 className="mb-1">{item.title}</h5>
-                  <p className="mb-1 text-muted">
+                  <h5 className="mb-1 info-pesquisa">{item.title}</h5>
+                  <p className="info-pesquisa mb-1 text-muted">
                     <strong>Data:</strong> {item.data}
                   </p>
-                  <p className="mb-1 text-muted">
+                  <p className="info-pesquisa mb-1 text-muted">
                     <strong>Autores:</strong> {item.autores}
                   </p>
-                  <p className="mb-0 text-muted">
+                  <p className="info-pesquisa mb-0 text-muted">
                     <strong>Publicação:</strong> {item.publicacao}
                   </p>
                 </div>

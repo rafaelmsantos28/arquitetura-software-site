@@ -31,3 +31,21 @@
   font-size: 2rem;
   margin-bottom: 5px;
 }
+
+@media (min-width: 2560px) {
+  .icon-buttons-extensaomenu {
+    gap: 28px;
+  }
+
+  .icon-buttons-extensaomenu button {
+    font-size: 1.6rem;
+    min-width: 140px;
+    max-width: 200px;
+    padding: 18px 0;
+  }
+
+  .icon-buttons-extensaomenu button svg {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+}
