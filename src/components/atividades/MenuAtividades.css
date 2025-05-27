@@ -1,0 +1,10 @@
+.menu-icon-menuatividades {
+  max-width: 64px;
+  max-height: 64px;
+  transition: transform 0.3s ease;
+  margin: 8px;
+}
+
+.menu-icon-menuatividades:hover {
+  transform: translateY(-5px);
+}
