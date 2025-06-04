@@ -155,3 +155,8 @@ Ao realizar alterações no site, é necessárias que elas sejam enviadas para o
 - ### Usando Prettier
   O projeto vem com a dependência Prettier, que faz como que todos os códigos fiquem formatados corretamente (identação, espaços, etc).
   Antes de usar `git add .`, use `npm run format`. Ele verifica todos os arquivos do projeto e deixa todos na identação correta.
+
+## 🔨 Manutenção das Páginas
+
+📚 Consulte o guia de manutenção de componentes em [COMPONENTS.md](https://github.com/rafaelmsantos28/arquitetura-software-site/blob/master/COMPONENTS.md)
+
