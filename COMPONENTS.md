@@ -1,5 +1,5 @@
 - [Página Atividades](#página-atividades)
-  - [📦 Componente: `AtividadeBanner`](#-componente-atividadebanner)
+  - [`AtividadeBanner`](#atividadebanner)
 - [Página Extensão](#página-extensão)
 - [Página Home](#página-home)
 - [Página Pesquisa](#página-pesquisa)
@@ -9,7 +9,7 @@
 
 # Página Atividades
 
-## 📦 Componente: `AtividadeBanner`
+## `AtividadeBanner`
 
 ### 📄 Localização:
 
