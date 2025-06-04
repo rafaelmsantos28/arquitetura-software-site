@@ -1,5 +1,5 @@
 import SideInfoColumn from '../components/comuns/SideInfoColumn';
-import BannerEnsino from '../components/atividades/EnsinoBanner';
+import BannerEnsino from '../components/atividades/AtividadeBanner';
 import MenuAtividades from '../components/atividades/MenuAtividades';
 import Eventos from '../components/home/EventCard';
 import CourseSection from '../components/home/CoursesSection';

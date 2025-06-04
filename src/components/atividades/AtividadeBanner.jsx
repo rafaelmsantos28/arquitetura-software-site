@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 
-/* import banner1Mobile from '../../assets/carrossel/banner-mobile1.jpg'; */
-import bannerEnsino from '../../assets/banners/BannerEnsino.jpg';
+import bannerAtividade from '../../assets/banners/BannerAtividade.jpg';
 import banner4Mobile from '../../assets/carrossel/banner-atividades-mobile.jpg';
-import './EnsinoBanner.css';
+import './AtividadeBanner.css';
 
-function BannerSobreNos() {
+function AtividadeBanner() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -20,18 +19,18 @@ function BannerSobreNos() {
   }, []);
 
   const banner = {
-    image: isMobile ? banner4Mobile : bannerEnsino,
+    image: isMobile ? banner4Mobile : bannerAtividade,
     title: 'Atividades do Projeto',
     text: 'Participe de cursos, workshops e palestras focadas em desafios atuais.',
   };
 
   return (
-    <section className="hero-section-ensinobanner">
+    <section className="hero-section-atividadebanner">
       <div
-        className="slide-content-ensinobanner"
+        className="slide-content-atividadebanner"
         style={{ backgroundImage: `url(${banner.image})` }}
       >
-        <div className="text-container-ensinobanner">
+        <div className="text-container-atividadebanner">
           <h2 className="fw-bold">{banner.title}</h2>
           <p>{banner.text}</p>
         </div>
@@ -40,4 +39,4 @@ function BannerSobreNos() {
   );
 }
 
-export default BannerSobreNos;
+export default AtividadeBanner;

@@ -1,4 +1,4 @@
-.slide-content-ensinobanner {
+.slide-content-atividadebanner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -8,50 +8,50 @@
   align-items: center;
 }
 
-.hero-section-ensinobanner {
+.hero-section-atividadebanner {
   width: 100%;
   height: calc(100vh - 138px);
   /* Ajuste para o tamanho real do header */
   overflow: hidden;
 }
 
-.text-container-ensinobanner {
+.text-container-atividadebanner {
   color: #1b1b1b;
   max-width: 500px;
   margin-left: 5%;
 }
 
-.text-container-ensinobanner h2 {
+.text-container-atividadebanner h2 {
   font-weight: 600;
   font-size: 3rem;
   margin-bottom: 1rem;
   line-height: 3.2rem;
 }
 
-.text-container-ensinobanner p {
+.text-container-atividadebanner p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
-  .text-container-ensinobanner {
+  .text-container-atividadebanner {
     margin-left: 5%;
     max-width: 90%;
     padding-top: 5rem;
   }
 
-  .text-container-ensinobanner h2 {
+  .text-container-atividadebanner h2 {
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: #f1f1f1;
   }
 
-  .text-container-ensinobanner p {
+  .text-container-atividadebanner p {
     font-size: 0.95rem;
     color: #f1f1f1;
   }
 
-  .slide-content-ensinobanner {
+  .slide-content-atividadebanner {
     overflow: hidden;
     margin: 0; /* REMOVER MARGEM */
     display: flex;
@@ -60,16 +60,16 @@
 }
 
 @media (min-width: 1921px) {
-  .text-container-ensinobanner {
+  .text-container-atividadebanner {
     max-width: 1000px;
   }
 
-  .text-container-ensinobanner h2 {
+  .text-container-atividadebanner h2 {
     font-size: 6.2rem;
     line-height: 5.6rem;
   }
 
-  .text-container-ensinobanner p {
+  .text-container-atividadebanner p {
     font-size: 2.6rem;
   }
 }
