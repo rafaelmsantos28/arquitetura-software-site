@@ -3,14 +3,9 @@ import CourseCard from './CourseCard.jsx';
 import './CoursesSection.css';
 
 const courses = [
+  { type: 'Curso', title: 'Arquiteturas em Nuvem com AWS e Azure', date: '2025-06-27', link: '#' },
   {
     type: 'Workshop',
-    title: 'Arquiteturas em Nuvem com AWS e Azure',
-    date: '2025-06-27',
-    link: '#',
-  },
-  {
-    type: 'Curso',
     title: 'Fundamentos da Arquitetura de Software Moderna',
     date: '2025-06-28',
     link: '#',
@@ -23,15 +18,16 @@ const courses = [
   },
 ];
 
-// Ordenar pela data mais próxima
 const sortedCourses = courses.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-const CoursesSection = () => {
+const CoursesSection = ({ limit }) => {
+  const displayedCourses = limit ? sortedCourses.slice(0, limit) : sortedCourses;
+
   return (
     <div className="container-fluid px-5 my-5 maintitle-courses-section">
-      <h2 className="text-center fw-bold mb-4">Cursos</h2>
+      <h2 className="text-center fw-bold mb-4">Outras atividades</h2>
       <div className="row g-4">
-        {sortedCourses.map((course, index) => (
+        {displayedCourses.map((course, index) => (
           <div className="col-12 col-md-6 col-lg-4" key={index}>
             <CourseCard
               type={course.type}

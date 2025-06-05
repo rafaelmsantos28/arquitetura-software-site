@@ -29,6 +29,12 @@ const events = [
     description: 'Quantos eventos devem aparecer na home? Eventos passados sumirão.',
     link: 'https://forms.gle/3fFBLLaWTYWFLbv4A',
   },
+  {
+    title: 'Evento de Mais Mais Outro Exemplo',
+    date: '2025-06-30',
+    description: 'Quantos eventos devem aparecer na home? Eventos passados sumirão.',
+    link: 'https://forms.gle/3fFBLLaWTYWFLbv4A',
+  },
 ];
 
 // Ordenar eventos do mais recente para o mais antigo
@@ -41,23 +47,30 @@ const sortedEvents = events.sort((a, b) => {
   return dateA.getTime() - dateB.getTime();
 });
 
-const EventCard = () => {
+const EventCard = ({ limit }) => {
+  // Filtrar eventos futuros
+  const today = new Date();
+  const futureEvents = sortedEvents.filter((event) => {
+    const [year, month, day] = event.date.split('-').map(Number);
+    const eventDate = new Date(year, month - 1, day);
+    return eventDate >= today;
+  });
+
+  // Se houver limit, pega só os primeiros 'limit' eventos
+  const eventsToShow = limit ? futureEvents.slice(0, limit) : futureEvents;
+
   return (
     <div className="container-fluid px-5 my-5 maintitle-event-card">
       <h2 className="text-center fw-bold mb-4">Eventos</h2>
       <div className="row">
-        {sortedEvents.map((event, index) => {
-          // Criar um objeto Date para cada evento, garantindo que seja no fuso horário local
-          // ou que o dia seja mantido.
-          // Uma boa prática é analisar a string e criar a data explicitamente para evitar problemas de fuso horário.
+        {eventsToShow.map((event, index) => {
           const [year, month, day] = event.date.split('-').map(Number);
-          // month - 1 porque os meses são baseados em 0 (Janeiro é 0, Fevereiro é 1, etc.)
           const eventDate = new Date(year, month - 1, day);
 
           return (
             <div className="col-12 mb-4" key={index}>
               <div
-                className="card event-card border-0 "
+                className="card event-card border-0"
                 style={{
                   backgroundImage: `url(${eventBg})`,
                   backgroundSize: 'cover',

@@ -16,11 +16,11 @@ function Home() {
         {/* Coluna principal */}
         <div className="col-lg-9 mb-4">
           <section id="evento-section">
-            <EventCard />
+            <EventCard limit={4} />
           </section>
 
           <VerticalCardSection />
-          <CoursesSection />
+          <CoursesSection limit={3} />
         </div>
 
         {/* Coluna lateral */}

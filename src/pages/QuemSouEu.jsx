@@ -1,7 +1,7 @@
-import InformacoesCoordenador from '../components/orientador/InformacoesCoordenador';
+import InformacoesCoordenador from '../components/quemsoueu/InformacoesCoordenador';
 import SideInfoColumn from '../components/comuns/SideInfoColumn';
-import EnsinoDados from '../components/orientador/EnsinoDados';
-import BannerQuemSouEu from '../components/orientador/BannerQuemSouEu';
+import EnsinoDados from '../components/quemsoueu/EnsinoDados';
+import BannerQuemSouEu from '../components/quemsoueu/BannerQuemSouEu';
 
 function QuemSouEu() {
   return (

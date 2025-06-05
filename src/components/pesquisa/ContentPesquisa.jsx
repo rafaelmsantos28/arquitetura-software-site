@@ -13,7 +13,7 @@ function ContentPesquisa() {
     },
     {
       title: 'ReflectTools: Uma ferramenta de apoio ao desenvolvimento de software reconfigurável',
-      data: '2011',
+      data: '2011', //Data em extenso e só pega o ano para exibir
       autores: 'Affonso, Frank José; Rodrigues, Evandro Luis Linhari',
       publicacao: 'Revista Brasileira de Computação Aplicada, v. 3, n. 2, p. 73–90',
       url: 'https://seer.upf.br/index.php/rbca/article/view/1804',
