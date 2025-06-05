@@ -5,8 +5,8 @@ function ContentDissertacoes() {
   const dissertacoes = [
     {
       title:
-        'Desenvolvimento de serviços compostos autoadaptativos: um framework baseado em implantação dinâmica, métricas de QoS e informação semântica',
-      data: '2020',
+        'Desenvolvimento de serviços compostos autoadaptativos: Um framework baseado em implantação dinâmica, métricas de QoS e informação semântica',
+      data: '2018',
       autores: 'Passini, William Filisbino',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola:
@@ -15,8 +15,8 @@ function ContentDissertacoes() {
     },
     {
       title:
-        'Autoproteção para a camada de aplicação: uma abordagem baseada em técnicas de aprendizado e no laço de controle MAPE-K',
-      data: '2022',
+        'Autoproteção para a camada de aplicação: Uma abordagem baseada em técnicas de aprendizado e no laço de controle MAPE-K',
+      data: '2019',
       autores: 'Martins, Ronaldo Rodrigues',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola:
@@ -26,7 +26,7 @@ function ContentDissertacoes() {
     {
       title:
         'Estabelecimento de uma Arquitetura de Referência para Sistemas Ciber-Físicos Autoadaptativos',
-      data: '2023',
+      data: '2020',
       autores: 'Camargo, Marcos Paulo de Oliveira',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola:
@@ -35,8 +35,8 @@ function ContentDissertacoes() {
     },
     {
       title:
-        'DynaSchema: uma biblioteca para evolução de banco de dados relacional para o domínio de software autoadaptativo',
-      data: '2023',
+        'DynaSchema: Uma biblioteca para evolução de banco de dados relacional para o domínio de software autoadaptativo',
+      data: '2021',
       autores: 'Campos, Gabriel Nagassaki',
       nota: 'Programa de Pós-Graduação em Ciência da Computação (PPGCC/Unesp)',
       escola:
@@ -45,11 +45,9 @@ function ContentDissertacoes() {
     },
   ];
 
-  // Ordena os artigos por data (mais recente primeiro)
+  // Ordena por ano (mais recente primeiro)
   const dissertacoesOrdenados = [...dissertacoes].sort((a, b) => {
-    const dataA = new Date(a.data.split('/').reverse().join('-'));
-    const dataB = new Date(b.data.split('/').reverse().join('-'));
-    return dataB - dataA;
+    return parseInt(b.data) - parseInt(a.data);
   });
 
   return (

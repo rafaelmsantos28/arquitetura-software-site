@@ -30,7 +30,7 @@ function ContentOrientacoes() {
       url: 'http://lattes.cnpq.br/7012017033083102',
     },
     {
-      title: 'Tema da dissertação: A definir',
+      title: 'Tema da dissertação:  Modernização de Sistemas Legados em para Arquitetura de Microsserviços',
       data: '2023',
       autores: 'Nathalia Rodrigues de Almeida',
       publicacao:
@@ -38,35 +38,48 @@ function ContentOrientacoes() {
       url: 'http://lattes.cnpq.br/1947433919425425',
     },
     {
-      title: 'Tema da dissertação: A definir',
+      title: 'Tema da dissertação: Modernização de Sistemas Legados em Delphi para Arquitetura de Microsserviços',
       data: '2022',
       autores: 'Lucas Fernando Fávero',
       publicacao:
         'Dissertação (Mestrado em Ciência da Computação) - Universidade Estadual Paulista Júlio de Mesquita Filho',
       url: 'http://lattes.cnpq.br/0548860613594021',
     },
-    // ... adicione outras orientações de mestrado aqui
+    //Adicione mais orientações de mestrado aqui
   ];
 
   const doutorados = [
     {
-      title: 'Tema da dissertação: A definir',
+      title: 'Tema da dissertação: Desenvolvimento de Software baseado em Micro Frontends',
       data: '2023',
       autores: 'Fernando Rodrigues de Moraes',
       publicacao:
         'Tese (Doutorado em Ciência da Computação) - Universidade Estadual Paulista Júlio de Mesquita Filho',
       url: 'http://lattes.cnpq.br/7173809746210421',
     },
-    // ... adicione outras orientações de doutorado aqui
+        {
+      title: 'Tema da dissertação: A definir',
+      data: '2025',
+      autores: 'Ronaldo Rodrigues Martins',
+      publicacao:
+        'Tese (Doutorado em Ciência da Computação) - Universidade Estadual Paulista Júlio de Mesquita Filho',
+      url: 'http://lattes.cnpq.br/7099148763256951',
+    },
+
+    //Adicione mais orientações de doutorado aqui
   ];
 
-  // Função utilitária para ordenar qualquer array por data (desc)
+  // Ordenação por data (mais recente primeiro)
   const ordenarPorData = (items) => {
     return [...items].sort((a, b) => {
-      const da = new Date(a.data.split('/').reverse().join('-'));
-      const db = new Date(b.data.split('/').reverse().join('-'));
+      const da = new Date(a.data);
+      const db = new Date(b.data);
       return db - da;
     });
+  };
+
+  const extrairAno = (dataCompleta) => {
+    return dataCompleta.split('/')[0];
   };
 
   const mestradosOrdenados = ordenarPorData(mestrados);
@@ -96,7 +109,7 @@ function ContentOrientacoes() {
                 <div>
                   <h5 className="mb-1 info-dissertacaoori">{item.title}</h5>
                   <p className="info-dissertacaoori mb-1 text-muted">
-                    <strong>Data:</strong> {item.data}
+                    <strong>Ano:</strong> {extrairAno(item.data)}
                   </p>
                   <p className="info-dissertacaoori mb-1 text-muted">
                     <strong>Autores:</strong> {item.autores}
@@ -127,7 +140,7 @@ function ContentOrientacoes() {
                 <div>
                   <h5 className="mb-1 info-dissertacaoori">{item.title}</h5>
                   <p className="info-dissertacaoori mb-1 text-muted">
-                    <strong>Data de início:</strong> {item.data}
+                    <strong>Ano de início:</strong> {extrairAno(item.data)}
                   </p>
                   <p className="info-dissertacaoori mb-1 text-muted">
                     <strong>Autores:</strong> {item.autores}
