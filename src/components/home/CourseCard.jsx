@@ -2,11 +2,13 @@ import React from 'react';
 import './CourseCard.css';
 import courseBg from '../../assets/eventos-cursos/course-card-bg.jpg';
 
-const CourseCard = ({ type, title, date, link }) => {
+const CourseCard = ({ type, title, date, link, comingSoon }) => {
   return (
-    <div className="card course-card border-0 text-white text-center">
+    <div className="card course-card border-0 text-white text-center position-relative">
       <div
-        className="card-body d-flex flex-column justify-content-between"
+        className={`card-body d-flex flex-column justify-content-between ${
+          comingSoon ? 'course-card-blur' : ''
+        }`}
         style={{
           backgroundImage: `url(${courseBg})`,
           backgroundSize: 'cover',
@@ -19,21 +21,28 @@ const CourseCard = ({ type, title, date, link }) => {
           {type}
         </div>
 
-        {/* conteúdo centralizado */}
         <div className="flex-grow-1 d-flex flex-column align-items-center justify-content-center">
           <h5 className="fw-bold mb-2 fs-4">{title}</h5>
           <p className="mb-4 fs-5">{date}</p>
         </div>
 
-        <a
-          href={link}
-          className="btn btn-primary fw-bold"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          INSCREVA-SE
-        </a>
+        {!comingSoon && (
+          <a
+            href={link}
+            className="btn btn-primary fw-bold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSCREVA-SE
+          </a>
+        )}
       </div>
+
+      {comingSoon && (
+        <div className="course-overlay d-flex align-items-center justify-content-center">
+          <span className="fw-bold ">Em breve</span>
+        </div>
+      )}
     </div>
   );
 };

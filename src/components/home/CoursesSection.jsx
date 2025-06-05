@@ -3,18 +3,26 @@ import CourseCard from './CourseCard.jsx';
 import './CoursesSection.css';
 
 const courses = [
-  { type: 'Curso', title: 'Arquiteturas em Nuvem com AWS e Azure', date: '2025-06-27', link: '#' },
+  {
+    type: 'Curso',
+    title: 'Arquiteturas em Nuvem com AWS e Azure',
+    date: '2025-06-27',
+    link: '#',
+    comingSoon: true,
+  },
   {
     type: 'Workshop',
     title: 'Fundamentos da Arquitetura de Software Moderna',
     date: '2025-06-28',
     link: '#',
+    comingSoon: true,
   },
   {
     type: 'Curso',
     title: 'Microservices na Prática: Do Monólito ao Distribuído',
     date: '2025-06-29',
     link: '#',
+    comingSoon: true,
   },
 ];
 
@@ -37,6 +45,7 @@ const CoursesSection = ({ limit }) => {
                 month: 'long',
               })}
               link={course.link}
+              comingSoon={course.comingSoon}
             />
           </div>
         ))}

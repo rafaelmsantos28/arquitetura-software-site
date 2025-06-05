@@ -5,34 +5,10 @@ import eventBg from '../../assets/eventos-cursos/event-card-bg.jpg';
 // Array de eventos
 const events = [
   {
-    title: 'Evento de Abertura',
-    date: '2025-06-17',
+    title: 'Evento de Inaugural',
+    date: '2025-06-28',
     description:
       'Venha participar do evento inaugural do projeto Academia do Arquiteto de Software',
-    link: 'https://forms.gle/3fFBLLaWTYWFLbv4A',
-  },
-  {
-    title: 'Evento de Exemplo',
-    date: '2025-06-20',
-    description: 'Veja que você tem que clicar no ícone que indica "nova guia será aberta".',
-    link: 'https://forms.gle/3fFBLLaWTYWFLbv4A',
-  },
-  {
-    title: 'Evento de Outro Exemplo',
-    date: '2025-06-21',
-    description: 'Veja também que os eventos mais recentes ficam em primeiro.',
-    link: 'https://forms.gle/3fFBLLaWTYWFLbv4A',
-  },
-  {
-    title: 'Evento de Mais Outro Exemplo',
-    date: '2025-06-22',
-    description: 'Quantos eventos devem aparecer na home? Eventos passados sumirão.',
-    link: 'https://forms.gle/3fFBLLaWTYWFLbv4A',
-  },
-  {
-    title: 'Evento de Mais Mais Outro Exemplo',
-    date: '2025-06-30',
-    description: 'Quantos eventos devem aparecer na home? Eventos passados sumirão.',
     link: 'https://forms.gle/3fFBLLaWTYWFLbv4A',
   },
 ];

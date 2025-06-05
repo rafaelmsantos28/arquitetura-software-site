@@ -20,6 +20,30 @@
   padding: 10px 20px;
 }
 
+.course-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(160, 160, 160, 0.7);
+
+  border-radius: 16px;
+  color: #fff;
+  font-size: 2rem;
+  z-index: 5;
+}
+
+.course-card.disabled {
+  pointer-events: none;
+}
+
+.course-card-blur {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+}
+
 @media (min-width: 2560px) {
   .course-card .card-body {
     font-size: 1.7rem;
@@ -41,6 +65,10 @@
   }
 
   .maintitle-courses-section h2 {
+    font-size: 4rem;
+  }
+
+  .course-overlay {
     font-size: 4rem;
   }
 }
