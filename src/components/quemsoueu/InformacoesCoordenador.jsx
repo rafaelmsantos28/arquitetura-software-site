@@ -1,17 +1,15 @@
-import frank from '../../assets/team/frank.jpg';
-import phone from '../../assets/redes-sociais/phone.svg';
-import mail from '../../assets/redes-sociais/mail.svg';
+import frank from '../../assets/team/frank.jpg';  // Foto do coordenador
+import phone from '../../assets/redes-sociais/phone.svg'; // Ícone telefone
+import mail from '../../assets/redes-sociais/mail.svg';   // Ícone email
 
 import './InformacoesCoordenador.css';
 
 function InformacoesCoordenador() {
   return (
     <div className="container-fluid my-5">
-      {/*<h1 className="titulo-coordenador mb-5 fw-bold text-center text-md-start">
-        Prof. Dr. Frank José Affonso
-      </h1>*/}
-
+      {/* Estrutura principal dividida em duas colunas */}
       <div className="row align-items-start">
+        {/* Coluna da foto e contatos */}
         <div className="col-md-4 text-center mb-4 mb-md-0">
           <img
             src={frank}
@@ -19,6 +17,7 @@ function InformacoesCoordenador() {
             className="img-fluid rounded-circle border border-secondary coordenador-foto"
           />
           <div className="mt-2">
+            {/* Lista com telefone e email, com ícones */}
             <ul className="list-unstyled d-flex flex-column align-items-center coordenador-contato">
               <li className="mb-2 d-flex align-items-center">
                 <img src={phone} alt="Telefone" />
@@ -32,6 +31,7 @@ function InformacoesCoordenador() {
           </div>
         </div>
 
+        {/* Coluna com informações acadêmicas e áreas de interesse */}
         <div className="col-md-8 coordenador-info">
           <p>
             É professor assistente doutor do Departamento de Estatística, Matemática Aplicação e

@@ -87,6 +87,7 @@ function ContentPesquisa() {
       publicacao: 'IEEE Access, v. 12, p. 97476–97499',
       url: 'https://doi.org/10.1109/ACCESS.2024.3428368',
     },
+    //Adicione novas pesquisas aqui
   ];
 
   // Ordena os artigos por data (mais recente primeiro)

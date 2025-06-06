@@ -1,9 +1,12 @@
+// Importa os ícones usados para mestrado e doutorado
 import orientacoesMestrado from '../../assets/icons/iconM.png';
 import orientacoesDoutorado from '../../assets/icons/iconD.png';
+
+// Importa o arquivo de estilos CSS específico deste componente
 import './ContentOrientacoes.css';
 
 function ContentOrientacoes() {
-  // Dados de orientações divididos por tipo
+  // Lista de orientações de Mestrado em andamento
   const mestrados = [
     {
       title: 'Tema da dissertação: A definir',
@@ -45,9 +48,9 @@ function ContentOrientacoes() {
         'Dissertação (Mestrado em Ciência da Computação) - Universidade Estadual Paulista Júlio de Mesquita Filho',
       url: 'http://lattes.cnpq.br/0548860613594021',
     },
-    //Adicione mais orientações de mestrado aqui
   ];
 
+  // Lista de orientações de Doutorado em andamento
   const doutorados = [
     {
       title: 'Tema da dissertação: Desenvolvimento de Software baseado em Micro Frontends',
@@ -57,7 +60,7 @@ function ContentOrientacoes() {
         'Tese (Doutorado em Ciência da Computação) - Universidade Estadual Paulista Júlio de Mesquita Filho',
       url: 'http://lattes.cnpq.br/7173809746210421',
     },
-        {
+    {
       title: 'Tema da dissertação: A definir',
       data: '2025',
       autores: 'Ronaldo Rodrigues Martins',
@@ -65,11 +68,9 @@ function ContentOrientacoes() {
         'Tese (Doutorado em Ciência da Computação) - Universidade Estadual Paulista Júlio de Mesquita Filho',
       url: 'http://lattes.cnpq.br/7099148763256951',
     },
-
-    //Adicione mais orientações de doutorado aqui
   ];
 
-  // Ordenação por data (mais recente primeiro)
+  // Função para ordenar os itens por data (do mais recente para o mais antigo)
   const ordenarPorData = (items) => {
     return [...items].sort((a, b) => {
       const da = new Date(a.data);
@@ -78,23 +79,28 @@ function ContentOrientacoes() {
     });
   };
 
+  // Função utilitária que extrai apenas o ano de uma data
   const extrairAno = (dataCompleta) => {
     return dataCompleta.split('/')[0];
   };
 
+  // Aplicação da ordenação
   const mestradosOrdenados = ordenarPorData(mestrados);
   const doutoradosOrdenados = ordenarPorData(doutorados);
 
   return (
     <section id="orientacoes" className="container-fluid px-5 my-5">
+      {/* Título principal da seção */}
       <h2 className="fw-bold section-title text-center mb-4 title-orientacaoandamento">
         Orientações em Andamento
       </h2>
 
-      {/* Mestrados */}
+      {/* Subtítulo da seção de mestrado */}
       <h3 className="subsection-title mt-4 mb-3 title-dissertacoesmestrado">
         Dissertações de Mestrado
       </h3>
+
+      {/* Renderização dos cartões de Mestrado */}
       <div className="row g-4">
         {mestradosOrdenados.map((item, idx) => (
           <div key={`mestrado-${idx}`} className="col-12">
@@ -124,8 +130,10 @@ function ContentOrientacoes() {
         ))}
       </div>
 
-      {/* Doutorados */}
+      {/* Subtítulo da seção de doutorado */}
       <h3 className="subsection-title mt-5 mb-3 title-dissertacoesmestrado">Tese de Doutorado</h3>
+
+      {/* Renderização dos cartões de Doutorado */}
       <div className="row g-4">
         {doutoradosOrdenados.map((item, idx) => (
           <div key={`doutorado-${idx}`} className="col-12">
