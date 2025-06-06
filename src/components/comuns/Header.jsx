@@ -20,6 +20,7 @@ function Header() {
     setMenuOpen(false);
   };
 
+  // Para adicionar mais itens no menu de navegação, insira novos objetos neste array:
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'Quem sou eu', path: '/quemsoueu' },

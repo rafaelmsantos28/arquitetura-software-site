@@ -6,6 +6,7 @@ import popupEventoDesktop from '../../assets/popup/popup-eventoinaugural-desktop
 import popupEventoMobile from '../../assets/popup/popup-eventoinaugural-mobile.jpg';
 import Popup from './Popup';
 
+// Para adicionar mais notícias, insira novos objetos neste array:
 const newsList = [
   {
     id: 1,
@@ -18,12 +19,15 @@ const newsList = [
 ];
 
 function SideInfoColumn() {
+  // Estado que armazena a notícia selecionada para exibir no popup
   const [selectedPopup, setSelectedPopup] = useState(null);
 
+  // Abre o popup com a notícia clicada
   const openPopup = (news) => {
     setSelectedPopup(news);
   };
 
+  // Fecha o popup
   const closePopup = () => {
     setSelectedPopup(null);
   };

@@ -20,6 +20,7 @@ function BannerCarousel() {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const isUltraWide = useMediaQuery({ query: '(min-width: 2560px)' });
 
+  // Para adicionar ou alterar banners, edite o array abaixo:
   const banners = [
     {
       image: isMobile ? banner2Mobile : banner2Desktop,

@@ -2,6 +2,7 @@ import React from 'react';
 import './CourseCard.css';
 import courseBg from '../../assets/eventos-cursos/course-card-bg.jpg';
 
+// Use as props para personalizar o conteúdo do cartão:
 const CourseCard = ({ type, title, date, link, comingSoon }) => {
   return (
     <div className="card course-card border-0 text-white text-center position-relative">
