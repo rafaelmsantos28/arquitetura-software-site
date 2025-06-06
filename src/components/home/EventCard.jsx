@@ -1,8 +1,8 @@
 import React from 'react';
 import './EventCard.css';
-import eventBg from '../../assets/eventos-cursos/event-card-bg.jpg';
+import eventBg from '../../assets/eventos-cursos/event-card-bg.jpg'; // Imagem de fundo dos cards
 
-// Array de eventos
+// Lista de eventos com título, data, descrição e link
 const events = [
   {
     title: 'Evento de Inaugural',
@@ -11,35 +11,40 @@ const events = [
       'Venha participar do evento inaugural do projeto Academia do Arquiteto de Software',
     link: 'https://forms.gle/3fFBLLaWTYWFLbv4A',
   },
+  //Adicione novos eventos aqui
 ];
 
-// Ordenar eventos do mais recente para o mais antigo
+// Ordena os eventos do mais próximo para o mais distante
 const sortedEvents = events.sort((a, b) => {
-  // Criar objetos Date para ordenação, garantindo que sejam tratados como datas locais
-  // ou que não haja problema de fuso horário.
-  // Uma forma é adicionar 'T00:00:00' para que o JavaScript crie a data no fuso horário local.
+  // Concatena T00:00:00 para garantir consistência no fuso horário
   const dateA = new Date(a.date + 'T00:00:00');
   const dateB = new Date(b.date + 'T00:00:00');
   return dateA.getTime() - dateB.getTime();
 });
 
+// Componente principal que renderiza os cards de eventos
 const EventCard = ({ limit }) => {
-  // Filtrar eventos futuros
+  // Obtém a data atual
   const today = new Date();
+
+  // Filtra apenas os eventos com data igual ou posterior à data atual
   const futureEvents = sortedEvents.filter((event) => {
     const [year, month, day] = event.date.split('-').map(Number);
     const eventDate = new Date(year, month - 1, day);
     return eventDate >= today;
   });
 
-  // Se houver limit, pega só os primeiros 'limit' eventos
+  // Se a propriedade limit for definida, limita o número de eventos a serem exibidos
   const eventsToShow = limit ? futureEvents.slice(0, limit) : futureEvents;
 
   return (
     <div className="container-fluid px-5 my-5 maintitle-event-card">
+      {/* Título da seção de eventos */}
       <h2 className="text-center fw-bold mb-4">Eventos</h2>
+
       <div className="row">
         {eventsToShow.map((event, index) => {
+          // Converte a data do evento em objeto Date para exibição formatada
           const [year, month, day] = event.date.split('-').map(Number);
           const eventDate = new Date(year, month - 1, day);
 
@@ -48,13 +53,14 @@ const EventCard = ({ limit }) => {
               <div
                 className="card event-card border-0"
                 style={{
-                  backgroundImage: `url(${eventBg})`,
+                  backgroundImage: `url(${eventBg})`, // Define a imagem de fundo do card
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               >
                 <div className="card-body d-flex justify-content-between align-items-center">
                   <div>
+                    {/* Exibe o título do evento seguido da data formatada */}
                     <h5 className="fw-bold mb-2">
                       {event.title} -{' '}
                       {eventDate.toLocaleDateString('pt-BR', {
@@ -62,8 +68,12 @@ const EventCard = ({ limit }) => {
                         month: 'long',
                       })}
                     </h5>
+
+                    {/* Exibe a descrição do evento */}
                     <p className="mb-0">{event.description}</p>
                   </div>
+
+                  {/* Link externo para inscrição ou mais informações */}
                   <div className="event-card-icon">
                     <a target="_blank" href={event.link} rel="noopener noreferrer">
                       <i className="bi bi-box-arrow-in-up-right"></i>
