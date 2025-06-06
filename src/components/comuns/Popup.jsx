@@ -2,6 +2,7 @@ import React from 'react';
 import './Popup.css';
 
 const Popup = ({ imageDesktop, imageMobile, onClose }) => {
+  // Verifica se a tela é mobile para definir qual imagem exibir
   const isMobile = window.innerWidth <= 768;
   const imageToShow = isMobile ? imageMobile : imageDesktop;
 

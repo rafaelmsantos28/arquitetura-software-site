@@ -4,6 +4,7 @@ import cursoIcon from '../../assets/icons/curso.png';
 import dissertacoesIcon from '../../assets/icons/iconDisser.png';
 import './MenuAtividades.css';
 
+// 🔧 Para adicionar mais itens no menu, insira novos objetos neste array:
 const items = [
   { id: 'eventos', icon: eventosIcon, label: 'Eventos' },
   { id: 'cursos', icon: cursoIcon, label: 'Cursos' },

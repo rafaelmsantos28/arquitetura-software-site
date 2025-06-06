@@ -15,7 +15,13 @@ function Footer() {
         <div className="row gy-4">
           <div className="col-12 col-md-3 col-lg-3 text-center text-md-start">
             {' '}
-            {/* Ajuste para ocupar menos espaço em md e lg */}
+            {/* Para adicionar mais redes sociais siga o padrão:
+            
+            <a href="URL" target="_blank" rel="noopener noreferrer">
+              <img src={iconeNovo} alt="Nome da Rede" width="30" height="30" />
+            </a>
+            
+            */}
             <img src={logoFooter} alt="Logo" className="mb-3 img-fluid logo-footer" />
             <div className="d-flex justify-content-center justify-content-md-start gap-3 social-icons-footer">
               <a
