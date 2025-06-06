@@ -13,8 +13,18 @@
   - [`EventCard`](#eventcard)
   - [`VerticalCardSection`](#verticalcardsection)
 - [Página Pesquisa](#página-pesquisa)
+  - [`BannerPesquisa`](#bannerpesquisa)
+  - [`ContentDissertacoes`](#contentdissertacoes)
+  - [ContentOrientacoes](#contentorientacoes)
+  - [ContentPesquisa](#contentpesquisa)
+  - [MenuPesquisa](#menupesquisa)
 - [Página Quem sou eu](#página-quem-sou-eu)
+  - [`BannerQuemSouEu`](#bannerquemsoueu)
+  - [`EnsinoDados`](#ensinodados)
+  - [`InformacoesCoordenador`](#informacoescoordenador)
 - [Página Sobre nós](#página-sobre-nós)
+  - [`BannerSobreNos`](#bannersobrenos)
+  - [`Team`](#team)
 - [Componentes Gerais](#componentes-gerais)
   - [`Footer`](#footer)
   - [`Header`](#header)
@@ -914,10 +924,12 @@ Apresenta as informações de forma organizada em cards, com ícones ilustrativo
 ### ⚙️ Funcionamento:
 
 - **Listas de dados:**
+
   - `mestrados` → contém objetos com informações sobre orientações de mestrado.
   - `doutorados` → contém objetos com informações sobre orientações de doutorado.
 
 - **Funções utilitárias:**
+
   - `ordenarPorData` → ordena as listas do mais recente para o mais antigo.
   - `extrairAno` → extrai apenas o ano de uma string de data.
 
@@ -934,7 +946,7 @@ Apresenta as informações de forma organizada em cards, com ícones ilustrativo
 
 ### 🖼️ Ícones Utilizados:
 
-- `/src/assets/icons/iconM.png` → ícone para dissertações de mestrado.  
+- `/src/assets/icons/iconM.png` → ícone para dissertações de mestrado.
 - `/src/assets/icons/iconD.png` → ícone para teses de doutorado.
 
 ---
@@ -948,9 +960,9 @@ CSS específico em:
 
 ### 🛠️ Como editar:
 
-1. Para adicionar ou remover orientações → edite os arrays `mestrados` ou `doutorados` no componente.  
-2. Para trocar os ícones → substitua os arquivos no caminho `/src/assets/icons/`.  
-3. Para mudar estilos → edite `ContentOrientacoes.css`.  
+1. Para adicionar ou remover orientações → edite os arrays `mestrados` ou `doutorados` no componente.
+2. Para trocar os ícones → substitua os arquivos no caminho `/src/assets/icons/`.
+3. Para mudar estilos → edite `ContentOrientacoes.css`.
 4. Para alterar o formato de exibição da data ou ordenar de outra forma → modifique `ordenarPorData` ou `extrairAno`.
 
 ## ContentPesquisa
@@ -971,9 +983,11 @@ Apresenta cada artigo em cards clicáveis com informações detalhadas e link pa
 ### ⚙️ Funcionamento:
 
 - **Array de dados `artigos`:**
+
   - Contém objetos com título, data, autores, publicação e URL do artigo.
 
 - **Ordenação:**
+
   - Os artigos são ordenados por data, do mais recente para o mais antigo.
 
 - **Renderização:**
@@ -998,9 +1012,9 @@ CSS específico em:
 
 ### 🛠️ Como editar:
 
-1. Para atualizar a lista de artigos → edite o array `artigos` no componente.  
-2. Para trocar o ícone → substitua o arquivo em `/src/assets/icons/iconA.png`.  
-3. Para alterar o estilo → modifique o arquivo CSS associado.  
+1. Para atualizar a lista de artigos → edite o array `artigos` no componente.
+2. Para trocar o ícone → substitua o arquivo em `/src/assets/icons/iconA.png`.
+3. Para alterar o estilo → modifique o arquivo CSS associado.
 4. Para mudar a forma de ordenação → edite a lógica de ordenação no componente.
 
 ## MenuPesquisa
@@ -1013,10 +1027,11 @@ CSS específico em:
 
 ### 📌 Descrição:
 
-Componente que renderiza um menu de navegação para seções relacionadas à pesquisa acadêmica:  
-- Artigos Publicados  
-- Orientações em Andamento  
-- Orientações Defendidas  
+Componente que renderiza um menu de navegação para seções relacionadas à pesquisa acadêmica:
+
+- Artigos Publicados
+- Orientações em Andamento
+- Orientações Defendidas
 
 Cada item do menu é exibido com um ícone e texto, funcionando como link para a respectiva seção na página.
 
@@ -1024,19 +1039,19 @@ Cada item do menu é exibido com um ícone e texto, funcionando como link para a
 
 ### ⚙️ Funcionamento:
 
-- **Array `items`:** Define os itens do menu com `id` (ancora da seção), ícone e label (texto).  
-- **Renderização:**  
-  - Gera colunas responsivas com bootstrap para cada item.  
-  - Cada item é um link (`<a>`) que navega para a seção pelo id.  
-  - Mostra o texto e o ícone correspondente.  
+- **Array `items`:** Define os itens do menu com `id` (ancora da seção), ícone e label (texto).
+- **Renderização:**
+  - Gera colunas responsivas com bootstrap para cada item.
+  - Cada item é um link (`<a>`) que navega para a seção pelo id.
+  - Mostra o texto e o ícone correspondente.
 
 ---
 
 ### 🖼️ Ícones Utilizados:
 
-- artigoIcon → ícone para "Artigos Publicados"  
-- orientacoesIcon → ícone para "Orientações em Andamento"  
-- dissertacoesIcon → ícone para "Orientações Defendidas"  
+- artigoIcon → ícone para "Artigos Publicados"
+- orientacoesIcon → ícone para "Orientações em Andamento"
+- dissertacoesIcon → ícone para "Orientações Defendidas"
 
 ---
 
@@ -1049,8 +1064,8 @@ CSS específico em:
 
 ### 🛠️ Como editar:
 
-- Para adicionar um novo item no menu, adicione no array `items`.  
-- Para alterar ícones, substitua os arquivos importados.  
+- Para adicionar um novo item no menu, adicione no array `items`.
+- Para alterar ícones, substitua os arquivos importados.
 - Para ajustar o layout ou estilos, edite o CSS associado.
 
 # Página Quem sou eu
@@ -1080,8 +1095,8 @@ Adapta dinamicamente a imagem do banner com base na largura da tela, exibindo ve
 - **Efeito (`useEffect`):**
 
   - Executa `checkScreenSize()` na montagem do componente para definir se é mobile.
-  - Adiciona um *listener* de `resize` para atualizar o estado em tempo real caso o usuário redimensione a janela.
-  - Remove o *listener* ao desmontar o componente para evitar vazamento de memória (*memory leak*).
+  - Adiciona um _listener_ de `resize` para atualizar o estado em tempo real caso o usuário redimensione a janela.
+  - Remove o _listener_ ao desmontar o componente para evitar vazamento de memória (_memory leak_).
 
 - **Banner Dinâmico:**
 
@@ -1111,6 +1126,7 @@ CSS localizado em:
 `/src/components/BannerQuemSouEu.css`
 
 Classes de destaque:
+
 - `.hero-section-bannerquemsoueu` → define o layout externo do banner.
 - `.slide-content-bannerquemsoueu` → aplica a imagem de fundo e controla a área principal.
 - `.text-container-bannerquemsoueu` → alinha e estiliza o conteúdo textual.
@@ -1155,6 +1171,7 @@ Componente que exibe informações relacionadas às atividades de ensino desenvo
   Componente reutilizável que representa uma seção estilizada com ícone, título e conteúdo.
 
 - **Dados utilizados:**
+
   - `pessoas`: lista com instituições e disciplinas ministradas.
   - `acoesPromovidas`: array com ações educacionais realizadas.
 
@@ -1294,6 +1311,7 @@ Cada membro possui foto, nome, cargo/função e links para suas redes sociais (L
 ### 🖼️ Imagens utilizadas:
 
 - Fotos dos membros do time:
+
   - `../../assets/team/frank.jpg`
   - `../../assets/team/orlando.jpg`
   - `../../assets/team/veronica.jpg`
