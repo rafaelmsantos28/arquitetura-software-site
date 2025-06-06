@@ -12,12 +12,13 @@ function BannerExtensao() {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    checkScreenSize(); // checa na primeira renderização
-    window.addEventListener('resize', checkScreenSize); // escuta mudanças de tamanho
+    checkScreenSize(); // Checa na primeira renderização
+    window.addEventListener('resize', checkScreenSize); // Escuta mudanças de tamanho
 
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
+  // Para modificar o banner, altere os valores abaixo:
   const banner = {
     image: isMobile ? banner1Mobile : bannerExtensao,
     title: 'Projeto de Extensão',

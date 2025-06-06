@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 import './ExtensaoDados.css';
 
+// Para adicionar novas seções, utilize o componente Section abaixo:
 const Section = ({ icon: Icon, title, children }) => (
   <section className="card mb-5 p-4 shadow-sm section-card-extensaodados" data-title={title}>
     <div className="card-body">

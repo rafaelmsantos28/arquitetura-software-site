@@ -2,7 +2,16 @@
   - [`AtividadeBanner`](#atividadebanner)
   - [`MenuAtividades`](#menuatividades)
 - [Página Extensão](#página-extensão)
+  - [`BannerExtensao`](#bannerextensao)
+  - [`ExtensaoDados`](#extensaodados)
+  - [`ExtensaoMenu`](#extensaomenu)
 - [Página Home](#página-home)
+  - [`BannerCarousel`](#bannercarousel)
+  - [`BannerYoutube`](#banneryoutube)
+  - [`CourseCard`](#coursecard)
+  - [`CoursesSection`](#coursessection)
+  - [`EventCard`](#eventcard)
+  - [`VerticalCardSection`](#verticalcardsection)
 - [Página Pesquisa](#página-pesquisa)
 - [Página Quem sou eu](#página-quem-sou-eu)
 - [Página Sobre nós](#página-sobre-nós)
@@ -133,7 +142,400 @@ CSS específico em:
 
 # Página Extensão
 
+## `BannerExtensao`
+
+### 📄 Localização:
+
+`/src/components/BannerExtensao.jsx`
+
+---
+
+### 📌 Descrição:
+
+Responsável por exibir um banner responsivo no topo da página, apresentando o título e uma breve descrição do projeto de extensão, com troca automática da imagem de fundo conforme o tamanho da tela (desktop ou mobile).
+
+---
+
+### ⚙️ Funcionamento:
+
+- **Responsividade via Hook (`useState` + `useEffect`):**
+
+  - Detecta o tamanho da tela na renderização inicial e em mudanças de tamanho (evento `resize`).
+  - Define a imagem do banner com base na largura da janela:
+
+    - Até `768px` → imagem mobile.
+    - Acima de `768px` → imagem desktop.
+
+- **Objeto `banner`:**
+
+  - Define:
+
+    - `image` → caminho da imagem de fundo (mobile ou desktop).
+    - `title` → título exibido sobre o banner.
+    - `text` → descrição resumida do projeto.
+
+- **Renderização:**
+
+  - Um `section` com imagem de fundo via `inline-style`.
+  - Conteúdo textual com título e parágrafo sobrepostos.
+
+---
+
+### 🖼️ Imagens Utilizadas:
+
+- `/src/assets/banners/banner-extensao-mobile.jpg`
+- `/src/assets/banners/BannerExtensao.jpg`
+
+---
+
+### 🎨 Estilos:
+
+CSS específico em:
+`/src/components/BannerExtensao.css`
+
+---
+
+### 🛠️ Como editar:
+
+1. Para alterar as imagens → substitua os arquivos nos caminhos citados acima.
+2. Para mudar o título ou texto → edite os valores de `title` e `text` dentro do objeto `banner`.
+3. Para alterar o tamanho limite para considerar mobile → modifique o valor `768` no `checkScreenSize`.
+4. Para customizar o estilo do banner e texto → edite o arquivo `BannerExtensao.css`.
+
+---
+
+## `ExtensaoDados`
+
+### 📄 Localização:
+
+`/src/components/extensao/ExtensaoDados.jsx`
+
+---
+
+### 📌 Descrição:
+
+Responsável por estruturar e exibir as informações institucionais e organizacionais do projeto **Academia do Arquiteto de Software**, segmentadas em seções temáticas com ícones, títulos e conteúdos descritivos.
+
+---
+
+### ⚙️ Funcionamento:
+
+- **Menu de Navegação (`ExtensaoMenu`):**
+
+  - Um componente externo importado e renderizado no topo da página, com ícones de navegação rápida para seções específicas.
+
+- **Seções (`Section`):**
+
+  - Componente funcional interno que recebe:
+
+    - `icon` → ícone (React Icon).
+    - `title` → título da seção.
+    - `children` → conteúdo descritivo (parágrafos, listas, etc.).
+
+  - Cada seção é renderizada como um card com título, ícone e conteúdo.
+
+- **Layout Responsivo (Bootstrap):**
+
+  - `container-fluid px-5 my-5` → margem e padding horizontais e verticais.
+  - `mb-5`, `p-4`, `shadow-sm` → espaçamentos e sombra para cards.
+  - `text-center` e `text-start` controlam alinhamento de texto e títulos.
+
+---
+
+### 🖼️ Ícones Utilizados (React Icons):
+
+- `FaLightbulb` → Introdução
+- `FaBullseye` → Objetivos
+- `FaCogs` → Metodologia
+- `FaChartLine` → Resultados Esperados
+- `FaCalendarAlt` → Cronograma
+- `FaUserGraduate` → Participação Estudantil
+
+---
+
+### 🎨 Estilos:
+
+CSS específico em:
+`/src/components/extensao/ExtensaoDados.css`
+
+---
+
+### 🛠️ Como editar:
+
+1. Para adicionar uma nova seção → crie um novo bloco `Section` no `return` do `ExtensaoDados`, passando `icon`, `title` e o conteúdo dentro do `children`.
+2. Para trocar ícones → importe o novo ícone do `react-icons/fa` e substitua no componente.
+3. Para alterar os textos → edite os conteúdos dentro de cada `Section`.
+4. Para ajustar espaçamentos e aparência → edite as classes Bootstrap e os estilos em `ExtensaoDados.css`.
+
+---
+
+## `ExtensaoMenu`
+
+### 📄 Localização:
+
+`/src/components/extensao/ExtensaoMenu.jsx`
+
+---
+
+### 📌 Descrição:
+
+Componente responsável por exibir um menu de botões com ícones e rótulos, permitindo a navegação suave para seções específicas da página com base no título da seção.
+
+---
+
+### ⚙️ Funcionamento:
+
+- **Lista de Itens (`menuItems`):**
+
+  - Array contendo objetos com:
+
+    - `icon` → componente React do ícone importado da biblioteca `react-icons/fa`.
+    - `label` → texto exibido no botão e usado para localizar a seção correspondente.
+
+- **Navegação Suave:**
+
+  - Função `scrollToSection(title)` usa `document.querySelector` para buscar a seção com atributo `data-title` igual ao `label`.
+  - Se encontrada, chama `scrollIntoView({ behavior: 'smooth' })` para rolar suavemente até a seção.
+
+- **Renderização:**
+
+  - Mapeia `menuItems` e gera botões contendo ícone e texto.
+  - Cada botão ao ser clicado chama `scrollToSection` com o título da seção correspondente.
+
+---
+
+### 🖼️ Ícones Utilizados:
+
+- `FaLightbulb`
+- `FaBullseye`
+- `FaCogs`
+- `FaChartLine`
+- `FaCalendarAlt`
+- `FaUserGraduate`
+
+Todos importados da biblioteca [`react-icons/fa`](https://react-icons.github.io/react-icons/icons?name=fa).
+
+---
+
+### 🎨 Estilos:
+
+CSS específico em:
+`/src/components/extensao/ExtensaoMenu.css`
+(complementar ao arquivo `/src/components/extensao/ExtensaoDados.css`)
+
+---
+
+### 🛠️ Como editar:
+
+1. Para adicionar ou remover itens → edite o array `menuItems` no início do componente.
+2. Para trocar os ícones → importe outros ícones da biblioteca `react-icons` e altere o valor `icon` no array `menuItems`.
+3. Para mudar os textos exibidos → altere o valor `label` no array `menuItems` e nos atributos `data-title` das seções.
+4. Para alterar o comportamento de rolagem → modifique a função `scrollToSection`.
+5. Para ajustar o estilo dos botões → edite o CSS no arquivo `ExtensaoMenu.css`.
+
+---
+
 # Página Home
+
+## `BannerCarousel`
+
+### 📄 Localização:
+
+`/src/components/banner/BannerCarousel.jsx`
+
+---
+
+### 📌 Descrição:
+
+Componente que exibe um carrossel de banners com imagens, textos, títulos e botões que podem redirecionar para páginas específicas ou rolar a página para seções determinadas. O carrossel é responsivo e adapta imagens e estilos para dispositivos móveis, desktops e telas ultra wide.
+
+---
+
+### ⚙️ Funcionamento:
+
+- **Lista de Banners (`banners`):**
+
+  - Array de objetos contendo:
+
+    - `image` → imagem do banner (diferenciada para mobile e desktop).
+    - `title` → título exibido no banner.
+    - `text` → texto descritivo do banner.
+    - `link` → (opcional) rota para navegação via React Router.
+    - `scrollTarget` → (opcional) id do elemento para rolar suavemente a página.
+    - `delay` → tempo de duração (milissegundos) do slide no autoplay.
+    - `buttonText` → texto exibido no botão (quando presente).
+
+- **Renderização Dinâmica:**
+
+  - Mapeia o array `banners` para gerar slides do carrossel com Swiper.
+  - Cada slide usa a imagem de fundo configurada via inline style.
+  - Botão exibido somente se `link` ou `scrollTarget` estiverem presentes.
+  - Botão de navegação:
+
+    - Se `scrollTarget` presente → botão faz scroll suave até a seção.
+    - Se `link` presente → botão redireciona via `<Link>` do React Router.
+
+- **Responsividade:**
+
+  - Usa `useMediaQuery` para detectar se está em dispositivo móvel (`max-width: 768px`) e ultra wide (`min-width: 2560px`).
+  - Ajusta imagens e tamanhos de fonte conforme o dispositivo.
+
+- **Configuração do Swiper:**
+
+  - Módulos usados: `Pagination`, `Autoplay`.
+  - Paginação clicável.
+  - Autoplay ativo, com pausa desativada ao interagir.
+  - Loop infinito.
+  - Um slide visível por vez (`slidesPerView={1}`).
+
+---
+
+### 🖼️ Imagens Utilizadas:
+
+- Desktop:
+
+  - `/src/assets/carrossel/banner1.jpg`
+  - `/src/assets/carrossel/banner2.jpg`
+  - `/src/assets/carrossel/banner3.jpg`
+  - `/src/assets/banners/BannerAtividade.jpg`
+
+- Mobile:
+
+  - `/src/assets/carrossel/banner-mobile1.jpg`
+  - `/src/assets/carrossel/banner-mobile2.jpg`
+  - `/src/assets/carrossel/banner-mobile3.jpg`
+  - `/src/assets/carrossel/banner-atividades-mobile.jpg`
+
+---
+
+### 🎨 Estilos:
+
+CSS específico em:
+`/src/components/banner/BannerCarousel.css`
+
+---
+
+### 🛠️ Como editar:
+
+1. Para adicionar, remover ou editar banners → modifique o array `banners` no componente, ajustando as propriedades de cada objeto.
+2. Para trocar imagens → substitua os arquivos nas pastas `/src/assets/carrossel/` e `/src/assets/banners/`.
+3. Para alterar os textos ou títulos → edite os valores `title`, `text` e `buttonText` no array `banners`.
+4. Para alterar comportamento do scroll → modifique a função anônima do evento `onClick` no botão que faz scroll suave.
+5. Para ajustar responsividade → altere as queries do hook `useMediaQuery` e as regras CSS no arquivo `.css`.
+6. Para modificar estilos do botão e do carrossel → edite `/src/components/banner/BannerCarousel.css`.
+
+---
+
+## `BannerYoutube`
+
+### 📄 Localização:
+
+`/src/components/youtube/BannerYoutube.jsx`
+
+---
+
+### 📌 Descrição:
+
+Componente que exibe um banner promocional responsivo para divulgação do canal do YouTube, com animações de fade-in ao entrar na área visível da tela, imagem ilustrativa e chamada para ação com botão para inscrição.
+
+---
+
+### ⚙️ Funcionamento:
+
+- **Controle de visibilidade via Intersection Observer:**
+
+  - Três observadores monitoram a entrada na viewport de:
+
+    - Imagem principal (`youtubePhone`)
+    - Conteúdo textual
+    - Título para versão mobile
+
+  - Ao se tornarem visíveis, ativam classes CSS para animações de fade-in/fade-up.
+
+- **Layout responsivo (Bootstrap):**
+
+  - Grid de duas colunas em telas grandes (`col-lg-6` e `col-xxl-6`).
+  - Em telas pequenas, o título é exibido centralizado e separado (visível somente no mobile).
+  - Imagem principal posicionada com camada de fundo (imagem de circuito).
+
+- **Chamada para ação:**
+
+  - Texto convidando a conhecer o canal.
+  - Botão que abre o link do canal do YouTube em nova aba para inscrição direta.
+
+---
+
+### 🖼️ Imagens Utilizadas:
+
+- `/src/assets/youtube/youtube-phone.png`
+- `/src/assets/youtube/circuito.png`
+
+---
+
+### 🎨 Estilos:
+
+CSS específico em:
+`/src/components/youtube/BannerYoutube.css`
+
+---
+
+### 🛠️ Como editar:
+
+1. Para alterar imagens → substituir os arquivos em `/src/assets/youtube/`.
+2. Para modificar textos → alterar os conteúdos dentro dos elementos `<h2>`, `<p>` e do botão.
+3. Para ajustar animações → modificar classes CSS e observadores do Intersection Observer.
+4. Para ajustar layout responsivo → alterar as classes Bootstrap nos `div` das colunas.
+
+---
+
+## `CourseCard`
+
+### 📄 Localização:
+
+`/src/components/eventos-cursos/CourseCard.jsx`
+
+---
+
+### 📌 Descrição:
+
+Componente que exibe um cartão visual de curso ou evento, apresentando tipo, título, data e link para inscrição. Suporta estado "Em breve", que aplica um efeito de desfoque e sobreposição indicando que a inscrição ainda não está disponível.
+
+---
+
+### ⚙️ Funcionamento:
+
+- **Props:**
+
+  - `type` → string que indica o tipo do curso ou evento (ex: "Curso", "Evento").
+  - `title` → título do curso ou evento.
+  - `date` → data ou período do curso/evento.
+  - `link` → URL para inscrição ou informações adicionais.
+  - `comingSoon` → booleano que indica se o curso ainda não está disponível para inscrição.
+
+- **Layout e Estilo:**
+
+  - Fundo com imagem fixa (`courseBg`), ajustado para cobrir todo o card.
+  - Texto em branco e centralizado.
+  - Quando `comingSoon` é `true`, o conteúdo do card recebe um efeito de desfoque e uma camada escura com o texto "Em breve" aparece sobre o card.
+  - Botão "INSCREVA-SE" aparece apenas quando o curso está disponível (ou seja, `comingSoon` é falso).
+
+---
+
+### 🎨 Estilos:
+
+CSS específico em:
+`/src/components/eventos-cursos/CourseCard.css`
+
+---
+
+### 🛠️ Como editar:
+
+1. Para alterar a imagem de fundo → substitua o arquivo em `/src/assets/eventos-cursos/course-card-bg.jpg`.
+2. Para modificar o texto exibido → ajuste as props `type`, `title`, `date` e `comingSoon` ao usar o componente.
+3. Para mudar o link do botão → modifique a prop `link`.
+4. Para alterar estilos visuais → edite o arquivo CSS correspondente.
+
+---
 
 ## `CoursesSection`
 
@@ -153,10 +555,12 @@ A lista pode ser limitada por meio da prop `limit`, útil para reuso em outras p
 ### ⚙️ Funcionamento:
 
 - **Importações:**
+
   - `CourseCard` → Componente visual para exibir cada curso.
   - `CoursesSection.css` → Estilos específicos da seção.
 
 - **Lista de cursos (`courses`):**
+
   - Contém objetos com as propriedades:
     - `type`: Tipo da atividade (Curso ou Workshop).
     - `title`: Nome da atividade.
@@ -165,9 +569,11 @@ A lista pode ser limitada por meio da prop `limit`, útil para reuso em outras p
     - `comingSoon`: Booleano que indica se o curso ainda será lançado.
 
 - **Ordenação:**
+
   - Os cursos são ordenados por data (mais próximos primeiro) através de `Array.sort()`.
 
 - **Renderização condicional:**
+
   - Se a prop `limit` for passada, limita a quantidade de cards exibidos.
   - Caso contrário, exibe todos.
 
@@ -179,12 +585,15 @@ A lista pode ser limitada por meio da prop `limit`, útil para reuso em outras p
 ### 🛠️ Como editar:
 
 1. **Adicionar novo curso:**
+
    - Inclua um novo objeto no array `courses` com os campos `type`, `title`, `date`, `link` e `comingSoon`.
 
 2. **Editar texto do título da seção:**
+
    - Modifique a string dentro de `<h2>` no retorno do componente.
 
 3. **Alterar quantidade exibida (limite):**
+
    - Passe a prop `limit={N}` ao usar o componente `<CoursesSection limit={3} />`.
 
 4. **Modificar a lógica de ordenação:**
@@ -221,10 +630,12 @@ Cada evento mostra: título, data, descrição e um link para acesso (ex: inscri
 ### ⚙️ Funcionamento:
 
 - **Importações:**
+
   - `eventBg`: imagem de fundo para o card.
   - `EventCard.css`: arquivo de estilos para o componente.
 
 - **Lista de eventos (`events`):**
+
   - Lista fixa com os dados dos eventos, incluindo:
     - `title`: título do evento.
     - `date`: data no formato `YYYY-MM-DD`.
@@ -232,12 +643,15 @@ Cada evento mostra: título, data, descrição e um link para acesso (ex: inscri
     - `link`: URL para mais informações ou inscrição.
 
 - **Ordenação:**
+
   - Ordena os eventos por data em ordem crescente (mais próximo primeiro).
 
 - **Filtro:**
+
   - Apenas eventos **futuros** são exibidos (data >= hoje).
 
 - **Limitação (`limit`):**
+
   - Se a prop `limit` for passada, limita a quantidade de eventos renderizados.
 
 - **Formatação de data:**
@@ -248,12 +662,15 @@ Cada evento mostra: título, data, descrição e um link para acesso (ex: inscri
 ### 🛠️ Como editar:
 
 1. **Adicionar novo evento:**
+
    - Insira um novo objeto no array `events`, mantendo a estrutura dos campos `title`, `date`, `description`, e `link`.
 
 2. **Alterar imagem de fundo:**
+
    - Substitua o arquivo `event-card-bg.jpg` em `/src/assets/eventos-cursos/`.
 
 3. **Editar título da seção:**
+
    - Altere o conteúdo do `<h2>` dentro do componente.
 
 4. **Modificar limite de eventos:**
@@ -306,7 +723,7 @@ Cada card possui ícone, título, texto explicativo e um botão que redireciona 
     - `link` → rota para redirecionamento ao clicar no botão.
 
 - **Renderização Dinâmica:**
-  
+
   - Os cards são gerados com `map()`, usando os dados do array `features`.
   - Cada card ocupa uma coluna (`col-12 col-md-6 col-lg-4`) e se adapta ao grid responsivo do Bootstrap.
 
@@ -330,6 +747,7 @@ CSS localizado em:
 `/src/components/VerticalCardSection.css`
 
 Estilos aplicados:
+
 - Layout com `Bootstrap grid` (responsividade).
 - Classe `card-hover-verticalcardsection` adiciona efeito visual ao passar o mouse.
 - Estilo personalizado para as imagens com a classe `vertical-card-img`.

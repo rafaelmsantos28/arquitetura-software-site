@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 import './ExtensaoDados.css';
 
+// Para adicionar ou remover itens, edite este array:
 const menuItems = [
   { icon: FaLightbulb, label: 'Introdução' },
   { icon: FaBullseye, label: 'Objetivos' },

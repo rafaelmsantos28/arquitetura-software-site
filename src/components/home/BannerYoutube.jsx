@@ -4,13 +4,17 @@ import circuitBg from '../../assets/youtube/circuito.png';
 import './BannerYoutube.css';
 
 function BannerYoutube() {
+  // Referências para observação da visibilidade dos elementos
   const imgRef = useRef(null);
   const contentRef = useRef(null);
   const titleMobileRef = useRef(null);
+
+  // Estados que controlam a exibição das animações
   const [isVisible, setIsVisible] = useState(false);
   const [contentVisible, setContentVisible] = useState(false);
   const [titleMobileVisible, setTitleMobileVisible] = useState(false);
 
+  // Observador para imagem principal
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -26,6 +30,7 @@ function BannerYoutube() {
     };
   }, []);
 
+  // Observador para conteúdo textual
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -41,6 +46,7 @@ function BannerYoutube() {
     };
   }, []);
 
+  // Observador para título mobile
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
