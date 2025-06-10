@@ -111,14 +111,23 @@ function Footer() {
       <div className="bg-primary text-light text-center py-3 mt-4">
         <div className="container-fluid px-5 d-flex flex-column flex-md-row justify-content-between align-items-center small direitos-footer">
           <span>
-            © Todos os Direitos Reservados.{' '}
+            © Todos os Direitos Reservados. Apoio{' '}
             <a
               className="proec-unesp-footer"
               href="https://www2.unesp.br/portal#!/proec"
               rel="noopener noreferrer"
               target="_blank"
             >
-              ProEC Unesp
+              ProEC
+            </a>{' '}
+            e{' '}
+            <a
+              className="proec-unesp-footer"
+              href="https://www2.unesp.br/portal#!/prograd/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Prograd Unesp.
             </a>
           </span>
         </div>
