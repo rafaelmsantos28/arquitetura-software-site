@@ -15,9 +15,9 @@
 - [Página Pesquisa](#página-pesquisa)
   - [`BannerPesquisa`](#bannerpesquisa)
   - [`ContentDissertacoes`](#contentdissertacoes)
-  - [ContentOrientacoes](#contentorientacoes)
-  - [ContentPesquisa](#contentpesquisa)
-  - [MenuPesquisa](#menupesquisa)
+  - [`ContentOrientacoes`](#contentorientacoes)
+  - [`ContentPesquisa`](#contentpesquisa)
+  - [`MenuPesquisa`](#menupesquisa)
 - [Página Quem sou eu](#página-quem-sou-eu)
   - [`BannerQuemSouEu`](#bannerquemsoueu)
   - [`EnsinoDados`](#ensinodados)
@@ -906,7 +906,7 @@ CSS específico em:
 
 O componente está preparado para escalabilidade: basta adicionar novos itens ao array que eles serão exibidos automaticamente em ordem cronológica decrescente.
 
-## ContentOrientacoes
+## `ContentOrientacoes`
 
 ### 📄 Localização:
 
@@ -965,7 +965,7 @@ CSS específico em:
 3. Para mudar estilos → edite `ContentOrientacoes.css`.
 4. Para alterar o formato de exibição da data ou ordenar de outra forma → modifique `ordenarPorData` ou `extrairAno`.
 
-## ContentPesquisa
+## `ContentPesquisa`
 
 ### 📄 Localização:
 
@@ -1017,7 +1017,7 @@ CSS específico em:
 3. Para alterar o estilo → modifique o arquivo CSS associado.
 4. Para mudar a forma de ordenação → edite a lógica de ordenação no componente.
 
-## MenuPesquisa
+## `MenuPesquisa`
 
 ### 📄 Localização:
 
