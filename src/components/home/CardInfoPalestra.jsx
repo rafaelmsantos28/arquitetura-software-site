@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CardInfoPalestra.css';
 import Palestrante1 from '../../assets/palestra-info/erik-aceiro.jpg';
-import Palestrante2 from '../../assets/palestra-info/guilherme-menaldo.jpg';
+import Palestrante2 from '../../assets/palestra-info/guilherme-menaldo-teste.jpg';
 import FundoPalestrantes from '../../assets/palestra-info/fundo-palestrantes.jpg';
 import Popup from '../comuns/Popup.jsx';
 
