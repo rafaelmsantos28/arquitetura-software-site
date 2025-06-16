@@ -14,6 +14,7 @@ function Atividades() {
           <div className="d-flex justify-content-center">
             <MenuAtividades />
           </div>
+
           <section id="eventos">
             <Eventos />
           </section>

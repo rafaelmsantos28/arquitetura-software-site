@@ -38,7 +38,7 @@ const EventCard = ({ limit }) => {
   const eventsToShow = limit ? futureEvents.slice(0, limit) : futureEvents;
 
   return (
-    <div className="container-fluid px-5 my-5 maintitle-event-card">
+    <div className="container-fluid px-5 mt-5 maintitle-event-card">
       {/* Título da seção de eventos */}
       <h2 className="text-center fw-bold mb-4">Eventos</h2>
 
@@ -49,7 +49,7 @@ const EventCard = ({ limit }) => {
           const eventDate = new Date(year, month - 1, day);
 
           return (
-            <div className="col-12 mb-4" key={index}>
+            <div className="col-12 mb-0" key={index}>
               <div
                 className="card event-card border-0"
                 style={{

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './SideInfoColumn.css';
 
 import newsImg2 from '../../assets/noticias/news2.png';
-import popupEventoDesktop from '../../assets/popup/popup-eventoinaugural-desktop.jpg';
-import popupEventoMobile from '../../assets/popup/popup-eventoinaugural-mobile.jpg';
+import popupEventoDesktop from '../../assets/popup/eventoinaugural-desktop.jpg';
+import popupEventoMobile from '../../assets/popup/eventoinaugural-mobile.jpg';
 import Popup from './Popup';
 
 // Para adicionar mais notícias, insira novos objetos neste array:

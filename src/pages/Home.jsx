@@ -4,6 +4,7 @@ import SideInfoColumn from '../components/comuns/SideInfoColumn.jsx';
 import BannerYoutube from '../components/home/BannerYoutube.jsx';
 import EventCard from '../components/home/EventCard.jsx';
 import CoursesSection from '../components/home/CoursesSection.jsx';
+import CardInfoPalestra from '../components/home/CardInfoPalestra.jsx';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <div className="col-lg-9 mb-4">
           <section id="evento-section">
             <EventCard limit={4} />
+            <CardInfoPalestra />
           </section>
 
           <VerticalCardSection />

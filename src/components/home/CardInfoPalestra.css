@@ -1,0 +1,82 @@
+.card-info-palestra-container {
+  border-radius: 0rem 0rem 1rem 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem;
+  margin-top: -1rem;
+}
+
+.card-info-palestra {
+  background-color: #ffffff;
+  border: 1px solid #dce3ea;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-info-palestra:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.palestrante-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #dce3ea;
+}
+
+.nome-palestrante {
+  display: inline-block;
+  font-weight: 600;
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 2px;
+}
+
+.link-cardinfopalestra {
+  text-decoration: none;
+}
+
+/* Responsividade para os botões */
+.card-info-palestra-container .botoes-container {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .card-info-palestra-container .botoes-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card-info-palestra-container .botoes-container a {
+    width: 100%;
+    text-align: center;
+  }
+  .card-info-palestra {
+    text-align: center;
+  }
+
+  .card-info-palestra .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-info-palestra .palestrante-img {
+    margin-bottom: 0.5rem;
+  }
+
+  .card-info-palestra h5 {
+    font-size: 1rem;
+  }
+
+  .card-info-palestra .nome-palestrante {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+  }
+}
