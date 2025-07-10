@@ -1,0 +1,80 @@
+/* Footer.css */
+footer ul li a {
+  color: #1b1b1b;
+  text-decoration: none;
+
+  padding: 0.2rem 0; /* Opcional: adiciona um pequeno padding vertical para facilitar o toque */
+}
+
+.proec-unesp-footer {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.proec-unesp-footer:hover {
+  color: #b2d1f4;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  color: #0077ff;
+}
+
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  footer ul li a {
+    display: block; /* Opcional: torna o link um bloco para facilitar o clique em telas menores */
+  }
+}
+
+.social-icons-footer img {
+  height: 2rem;
+  transition: filter 0.3s ease;
+  margin-left: 0.2rem;
+}
+
+.social-icons-footer img:hover {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg)
+    brightness(99%) contrast(101%);
+}
+
+.logo-footer {
+  max-width: 150px;
+}
+
+.icon-footer-contact {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 2560px) {
+  .logo-footer {
+    max-width: 220px;
+  }
+  footer h4 {
+    font-size: 2.75rem;
+  }
+
+  footer .lead {
+    font-size: 2.25rem;
+  }
+
+  .social-icons-footer img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: contain;
+  }
+
+  .icon-footer-contact {
+    width: 32px;
+    height: 32px;
+  }
+
+  .direitos-footer span {
+    font-size: 1.3rem;
+  }
+}

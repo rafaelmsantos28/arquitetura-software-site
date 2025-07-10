@@ -1,0 +1,149 @@
+/* Layout geral do header */
+.header {
+  padding: 1rem 0;
+}
+
+.header .container {
+  max-width: 100%;
+  margin: 0 5%;
+}
+
+/* Estrutura principal */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  height: 80px;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transition: filter 0.3s ease;
+}
+
+/* Menu navegação desktop */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70%;
+  /* ✅ Ajuste feito aqui */
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+/* Redes sociais desktop */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-icon {
+  height: 24px;
+  transition: filter 0.3s ease;
+}
+
+.social-icon:hover {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(1741%) hue-rotate(203deg) brightness(99%) contrast(101%);
+}
+
+/* Botão menu mobile */
+.navbar-toggler img {
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler.open img {
+  transform: rotate(90deg);
+}
+
+/* Menu mobile overlay */
+.menu-overlay {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 2rem;
+  transition:
+    max-height 0.5s ease,
+    padding 0.3s ease;
+}
+
+.menu-overlay.open {
+  max-height: 1000px;
+  padding: 2rem;
+  width: 100%;
+  height: calc(100vh - 138px);
+}
+
+.social-icon-lg {
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon-lg:hover {
+  transform: scale(1.2);
+}
+
+/* Impede overlay no desktop */
+@media (min-width: 992px) {
+  .menu-overlay {
+    display: none;
+  }
+}
+
+/* Responsividade telas maiores */
+@media (min-width: 1920px) {
+  .navbar-nav {
+    gap: 2.5rem;
+  }
+
+  .nav-item {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .navbar-nav {
+    gap: 3rem;
+  }
+
+  .nav-item {
+    font-size: 2rem;
+  }
+
+  .logo img {
+    height: 120px;
+  }
+
+  .social-icon {
+    height: 2.4rem;
+  }
+}

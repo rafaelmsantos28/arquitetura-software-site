@@ -1,0 +1,25 @@
+# Diretórios a ignorar
+node_modules
+dist
+build
+.vite
+
+# Configs e arquivos específicos
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Arquivos de build e logs
+*.log
+
+# Imagens e assets binários
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.webp
+
+# Outras pastas que não precisam de formatação
+public

@@ -1,0 +1,60 @@
+.team-card-team {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 4rem 1rem 4rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.member-photo-team {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-icon-team {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  object-fit: contain;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.social-icon-team:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2200px;
+  }
+
+  .team-card-team {
+    padding: 5rem 2rem;
+  }
+
+  .member-photo-team {
+    width: 180px;
+    height: 180px;
+  }
+
+  .social-icon-team {
+    width: 40px;
+    height: 40px;
+  }
+
+  .member-name-team {
+    font-size: 2rem; /* antes 1.5rem */
+  }
+
+  .member-role-team {
+    font-size: 1.5rem; /* antes 1rem */
+  }
+
+  .title-nossaequipe {
+    font-size: 3rem;
+  }
+}

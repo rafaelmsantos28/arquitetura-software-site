@@ -1,0 +1,43 @@
+.coordenador-foto {
+  max-width: 250px;
+}
+
+.coordenador-contato img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.coordenador-info p,
+.coordenador-info li {
+  font-size: 1.2rem;
+}
+
+.coordenador-info h4 {
+  font-size: 1.6rem;
+}
+
+.coordenador-contato span {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 2560px) {
+  .coordenador-foto {
+    max-width: 400px;
+  }
+
+  .coordenador-info p,
+  .coordenador-info li {
+    font-size: 1.9rem;
+  }
+
+  .coordenador-info h4 {
+    font-size: 2.4rem;
+  }
+
+  .coordenador-contato span {
+    font-size: 1.8rem;
+  }
+  .coordenador-contato img {
+    width: 35px;
+  }
+}

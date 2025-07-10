@@ -1,0 +1,40 @@
+.hero-section-bannercarousel {
+  width: 100%;
+  height: calc(100vh - 138px);
+  overflow: hidden;
+}
+
+/* Customização das bolinhas */
+.swiper-pagination-bullets {
+  bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0077ff;
+}
+
+.btn-bannercarousel {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.content-bannercarousel {
+  margin-left: 5%;
+}
+
+@media screen and (min-width: 2560px) {
+  .btn-bannercarousel {
+    font-size: 2.1rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+  }
+}

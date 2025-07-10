@@ -1,0 +1,42 @@
+.card-hover-verticalcardsection {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-hover-verticalcardsection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.vertical-card-img {
+  height: 128px;
+}
+
+@media (min-width: 2560px) {
+  .card-hover-verticalcardsection {
+    min-height: 550px;
+  }
+
+  .card-hover-verticalcardsection .card-body {
+    padding: 3rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  .card-hover-verticalcardsection .card-title {
+    font-size: 2.4rem;
+  }
+
+  .card-hover-verticalcardsection .card-text {
+    font-size: 1.9rem;
+  }
+
+  .vertical-card-img {
+    height: 180px;
+  }
+
+  .card-hover-verticalcardsection .btn {
+    font-size: 1.8rem;
+    padding: 14px 28px;
+  }
+}

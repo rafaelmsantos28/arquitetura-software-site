@@ -1,0 +1,43 @@
+{
+  "name": "arquitetura-vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://rafaelmsantos28.github.io/arquitetura-software-site/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "copy dist\\index.html dist\\404.html",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "clean-gh-pages-cache": "rimraf node_modules/.cache/gh-pages",
+    "deploy": "npm run clean-gh-pages-cache && gh-pages -d dist --add",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1",
+    "framer-motion": "^12.12.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-responsive": "^10.0.1",
+    "react-router-dom": "^7.6.0",
+    "swiper": "^11.2.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "cpy-cli": "^5.0.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "vite": "^6.3.5"
+  }
+}

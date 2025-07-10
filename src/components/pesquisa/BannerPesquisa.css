@@ -1,0 +1,85 @@
+.hero-section-bannerpesquisa {
+  width: 100%;
+  height: calc(100vh - 138px);
+  overflow: hidden;
+}
+
+.slide-content-bannerpesquisa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.text-container-bannerpesquisa {
+  color: #1b1b1b;
+  max-width: 500px;
+  margin-left: 5%;
+}
+
+.text-container-bannerpesquisa h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 3.2rem;
+}
+
+.text-container-bannerpesquisa p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* RESPONSIVIDADE MOBILE */
+
+@media (max-width: 768px) {
+  .text-container-bannerpesquisa {
+    margin-left: 5%;
+    max-width: 90%;
+    padding-top: 5rem;
+  }
+
+  .text-container-bannerpesquisa h2 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #f1f1f1;
+  }
+
+  .text-container-bannerpesquisa p {
+    font-size: 0.95rem;
+    color: #f1f1f1;
+  }
+
+  .text-container-bannerpesquisa button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .slide-content-bannerpesquisa {
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .banner-swiper-bannerpesquisa {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1921px) {
+  .text-container-bannerpesquisa {
+    max-width: 1000px;
+  }
+
+  .text-container-bannerpesquisa h2 {
+    font-size: 6.2rem;
+    line-height: 5.6rem;
+  }
+
+  .text-container-bannerpesquisa p {
+    font-size: 2.6rem;
+  }
+}

@@ -1,0 +1,57 @@
+.card-hover-contentdissertacoes {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-hover-contentdissertacoes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.icone-contentdissertacoes img {
+  height: 84px;
+  width: 84px;
+  margin: 12px;
+}
+
+.title-orientacoesconcluidas {
+  font-size: 2em;
+}
+
+.title-dissertacoesdemestrado {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 2560px) {
+  .title-orientacoesconcluidas {
+    font-size: 2.8em;
+  }
+
+  .title-dissertacoesdemestrado {
+    font-size: 2rem;
+  }
+  #artigos .row {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .card-hover-contentdissertacoes .card-body {
+    max-width: 1600px;
+    gap: 40px;
+    padding: 32px;
+  }
+  .card-hover-contentdissertacoes .card-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.5px;
+  }
+  .icone-contentdissertacoes img {
+    width: 140px;
+  }
+
+  .info-contentdissertacoes {
+    font-size: 1.8rem;
+  }
+}
