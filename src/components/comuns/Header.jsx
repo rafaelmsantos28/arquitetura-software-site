@@ -55,7 +55,11 @@ function Header() {
 
             {/* Redes Sociais Desktop */}
             <div className="d-none d-lg-flex social-icons">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/academia-do-arquiteto-de-software/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={linkedinIcon} alt="Linkedin" className="social-icon" />
               </a>
               <a
@@ -103,7 +107,11 @@ function Header() {
           </ul>
 
           <div className="d-flex gap-4 mt-4">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/academia-do-arquiteto-de-software/posts/?feedView=all"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={linkedinIcon} alt="Linkedin" className="social-icon-lg" />
             </a>
             <a

@@ -30,15 +30,6 @@ function Team() {
         linkedin: 'https://linkedin.com/in/frank-josé-affonso-7260852a8/',
       },
     },
-    // demais membros omitidos para brevidade
-    {
-      photo: member4,
-      name: 'Daniel Pedronette',
-      role: 'Docente Participante',
-      socialLinks: {
-        linkedin: 'https://linkedin.com/in/daniel-pedronette-6525122a/',
-      },
-    },
     {
       photo: member2,
       name: 'Orlando Saraiva',
@@ -49,7 +40,67 @@ function Team() {
         x: 'https://x.com/orlandosaraivaj',
       },
     },
-    // ... outros membros ...
+    {
+      photo: member3,
+      name: 'Veronica Carvalho',
+      role: 'Docente Participante',
+      socialLinks: {
+        linkedin: 'https://linkedin.com/in/veronica-carvalho-86370137/',
+      },
+    },
+    {
+      photo: member4,
+      name: 'Daniel Pedronette',
+      role: 'Docente Participante',
+      socialLinks: {
+        linkedin: 'https://linkedin.com/in/daniel-pedronette-6525122a/',
+      },
+    },
+    {
+      photo: member5,
+      name: 'Brendo Custódio',
+      role: 'Desenvolvedor',
+      socialLinks: {
+        linkedin: 'https://linkedin.com/in/brendo-mota-botelho-custódio-64542b264/',
+        github: 'https://github.com/brendomota',
+      },
+    },
+    {
+      photo: member6,
+      name: 'Joelle Ramos',
+      role: 'Desenvolvedor',
+      socialLinks: {
+        linkedin: 'https://www.linkedin.com/in/joelle-silva-tec/',
+        github: 'https://github.com/jojors2',
+      },
+    },
+    {
+      photo: member7,
+      name: 'Rafael Medeiros',
+      role: 'Desenvolvedor',
+      socialLinks: {
+        linkedin: 'https://www.linkedin.com/in/rafael-medeiros-santos/',
+        github: 'https://github.com/rafaelmsantos28',
+      },
+    },
+    {
+      photo: member8,
+      name: 'Layna Dias',
+      role: 'Social Media',
+      socialLinks: {
+        linkedin: 'https://www.linkedin.com/in/layna-dias-13b348362/',
+        github: 'https://github.com/laynaDias',
+      },
+    },
+    {
+      photo: member9,
+      name: 'Letícia Dias',
+      role: 'Social Media',
+      socialLinks: {
+        linkedin: 'https://www.linkedin.com/in/let%C3%ADcia-dias-84ba40358/',
+        github: 'https://github.com/leticiadias2608',
+      },
+    },
     {
       photo: member10,
       name: 'Letícia Hiratsuka',

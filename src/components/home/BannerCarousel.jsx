@@ -24,11 +24,11 @@ function BannerCarousel() {
   const banners = [
     {
       image: isMobile ? banner2Mobile : banner2Desktop,
-      title: 'Evento de abertura - 2º semestre de 2025',
-      text: 'Venha participar do evento inaugural do programa',
+      title: 'Não perca: novo evento vem aí!',
+      text: 'Estamos preparando um novo evento para o dia 30/08',
       link: '/eventos',
       delay: 8000,
-      buttonText: 'Veja aqui embaixo ',
+      buttonText: 'Saiba mais ',
       scrollTarget: 'evento-section', // id do elemento onde ele deve rolar
     },
 

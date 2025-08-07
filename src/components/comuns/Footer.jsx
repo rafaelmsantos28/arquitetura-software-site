@@ -38,7 +38,11 @@ function Footer() {
               >
                 <img src={youtubeIcon} alt="YouTube" width="30" height="30" />
               </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/academia-do-arquiteto-de-software/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={linkedinIcon} alt="LinkedIn" width="30" height="30" />
               </a>
             </div>

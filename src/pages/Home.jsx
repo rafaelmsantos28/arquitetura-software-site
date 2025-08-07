@@ -18,7 +18,7 @@ function Home() {
         <div className="col-lg-9 mb-4">
           <section id="evento-section">
             <EventCard limit={4} />
-            <CardInfoPalestra />
+            {/*<CardInfoPalestra />*/}
           </section>
 
           <VerticalCardSection />

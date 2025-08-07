@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 2rem 1rem;
-  margin-top: -1rem;
+  margin-top: 2rem;
 }
 
 .card-info-palestra {
@@ -31,12 +31,31 @@
 .nome-palestrante {
   display: inline-block;
   font-weight: 600;
-  border-bottom: 2px solid #0d6efd;
+  text-decoration: underline;
   padding-bottom: 2px;
+}
+
+.nome-palestrante:hover {
+  color: #063970;
 }
 
 .link-cardinfopalestra {
   text-decoration: none;
+}
+
+.link-inscreva-se {
+  text-decoration: none;
+  color: white;
+}
+
+.pdf-link {
+  font-size: 14px;
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.pdf-link:hover {
+  color: #063970;
 }
 
 /* Responsividade para os botões */
@@ -78,5 +97,46 @@
     display: block;
     margin-top: 0.25rem;
     font-size: 0.9rem;
+  }
+}
+
+/* Wide */
+@media (min-width: 2560px) {
+  .card-info-palestra-container {
+    padding: 3rem 4rem;
+    margin-top: 3rem;
+  }
+
+  .card-info-palestra {
+    padding: 2rem;
+    border-radius: 12px;
+  }
+
+  .palestrante-img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #dce3ea;
+  }
+
+  .card-info-palestra h5 {
+    font-size: 1.8rem;
+  }
+
+  .nome-palestrante {
+    font-size: 1.4rem;
+  }
+
+  .pdf-link {
+    font-size: 1.3rem;
+  }
+
+  .card-info-palestra-container .botoes-container {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .card-info-palestra:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   }
 }
